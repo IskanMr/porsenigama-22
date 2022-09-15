@@ -1,5 +1,4 @@
 import { useState, useRef } from "react";
-import styles from "../Components/Home/Cabang.module.css";
 import { HtmlHead } from "../Components/HtmlHead";
 import { caborList, casenList } from "../resources/dataCabang";
 
