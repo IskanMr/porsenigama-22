@@ -52,7 +52,7 @@ export function PageHeader({ className }) {
       >
         <img src={Logo} alt="logo" className="h-10 w-10 md:h-14 md:w-14" />
         <div className="text-black ml-2 text-xl md:text-2xl group-hover:text-oranges-default transition ease-in-out duration-300">
-          ppsmb kesatria 2022
+          Porsenigama UGM 2022
         </div>
       </NavLinkStock>
       <div className={`${styles.navContainer} flex-grow text-base md:text-lg`}>

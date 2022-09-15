@@ -2,7 +2,7 @@ import { PageHeader } from "./Components/PageHeader";
 import { PageFooter } from "./Components/PageFooter";
 import * as pages from "./pages";
 import { Switch, Route } from "react-router-dom";
-import ScrollIntoView from "./Components/Layout/hooks/ScrollIntoView";
+import ScrollIntoView from "./utils/ScrollIntoView";
 
 function App() {
   return (

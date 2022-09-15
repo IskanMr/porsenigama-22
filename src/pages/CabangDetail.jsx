@@ -9,6 +9,7 @@ import {
   Modal,
   VocalGroup,
 } from "../Components/CabangDetail";
+import { HtmlHead } from "../Components/HtmlHead";
 
 const assetsCabangDetail = `${process.env.PUBLIC_URL}/images/CabangDetail`;
 
@@ -107,6 +108,7 @@ const CabangDetail = (props) => {
 
   return (
     <>
+      <HtmlHead title={`${id}`} decription="[insert page description]" />
       {modal && (
         <Modal modal={modal} setModal={setModal} openModal={openModal} />
       )}

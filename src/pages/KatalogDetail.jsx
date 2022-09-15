@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { db } from "../resources/db";
 import styles from "../Components/Home/Cabang.module.css";
+import { HtmlHead } from "../Components/HtmlHead";
 
 const assetsKatalog = `${process.env.PUBLIC_URL}/images/Katalog`;
 const assetsCabang = `${process.env.PUBLIC_URL}/images/Cabang`;
@@ -46,6 +47,8 @@ const KatalogDetail = (props) => {
 
   return (
     <>
+      {" "}
+      <HtmlHead title={`${id}`} decription="[insert page description]" />
       <div className="bg-biru">
         {/* Start of Header */}
         <div className="lg:mb-72 lg:h-screen relative">
