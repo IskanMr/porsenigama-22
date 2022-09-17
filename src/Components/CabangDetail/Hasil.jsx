@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import React from "react";
 import { db } from "../../resources/db";
+import { onSnapshot, collection, orderBy, query } from "firebase/firestore";
 
 const Hasil = (props) => {
   const [visiblePopup, setVisiblePopup] = useState(false);
@@ -8,14 +9,22 @@ const Hasil = (props) => {
   let filter = props.id;
 
   useEffect(() => {
-    const medalsData = db
-      .collection("standings/" + props.id + "/cabang")
-      .orderBy("name")
-      .onSnapshot((snap) => {
-        let data = snap.docs.map((doc) => doc.data());
-        setStandingsRef(data);
-        return medalsData();
-      });
+    // TODO: Ubah standings ke dataCabor, ubah cabang jadi Cabang
+    const unsubscribe = onSnapshot(
+      query(collection(db, "standings", props.id, "cabang"), orderBy("name")),
+      ({ docs }) => {
+        setStandingsRef(
+          docs.map((doc) => ({
+            ...doc.data(),
+            id: doc.id,
+          }))
+        );
+      }
+    );
+
+    return () => {
+      unsubscribe();
+    };
   }, [filter]);
 
   // useEffect(() => {
