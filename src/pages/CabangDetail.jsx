@@ -1,15 +1,18 @@
 import { useState, useEffect } from "react";
-import { db } from "../resources/db";
-import { dataFotografi } from "../resources/dataFotografi";
-import { dataVocalGroup } from "../resources/dataVocalGroup";
-import { Hasil } from "../Components/CabangDetail/Hasil";
+
+import { dataFotografi } from "../data/dataFotografi";
+import { dataVocalGroup } from "../data/dataVocalGroup";
+
+import { caborList } from "../data/dataCabangs";
+
+
+
 import {
   Common,
   Fotografi,
   Modal,
   VocalGroup,
 } from "../Components/CabangDetail";
-import { HtmlHead } from "../Components/HtmlHead";
 
 const assetsCabangDetail = `${process.env.PUBLIC_URL}/images/CabangDetail`;
 
@@ -31,7 +34,7 @@ const Header = ({ id, cabangHeader }) => {
             {id}
           </h1>
           <p className="hidden lg:block lg:text-xl">
-            {cabangHeader.description}
+            {cabangHeader}
           </p>
         </div>
       </div>
@@ -46,6 +49,7 @@ const Header = ({ id, cabangHeader }) => {
 
 const CabangDetail = (props) => {
   const id = props.match.params.id;
+  console.log(id)
   const [cabangHeader, setCabangHeader] = useState({});
   const [cabangData, setCabangData] = useState([]);
   const [showCategory, setShowCategory] = useState(false);
@@ -53,31 +57,8 @@ const CabangDetail = (props) => {
   const [schedule, setSchedule] = useState([]);
   const [modal, setModal] = useState(false);
 
-  useEffect(() => {
-    const getData = async () => {
-      const headerData = (
-        await db.collection("dataCabor").doc(id).get()
-      ).data();
-      const querySnapshot = await db
-        .collection("dataCabor")
-        .doc(id)
-        .collection("schedule")
-        .get();
-      const data = querySnapshot.docs.map((doc) => doc.data());
-      if (data.length) {
-        let category = data[0].category;
-        if (!selectedCategory) {
-          setSelectedCategory(data[0].category);
-        } else {
-          category = selectedCategory;
-        }
-        setSchedule(data.filter((item) => item.category === category)[0].data);
-        setCabangData(data);
-      }
-      setCabangHeader(headerData);
-    };
-    getData();
-  }, [id, selectedCategory]);
+ 
+   
 
   const openModal = (index) => {
     switch (id) {
@@ -108,23 +89,25 @@ const CabangDetail = (props) => {
 
   return (
     <>
-      <HtmlHead title={`${id}`} decription="[insert page description]" />
       {modal && (
         <Modal modal={modal} setModal={setModal} openModal={openModal} />
       )}
+
       <div className="pt-14 lg:pt-0 relative bg-merah min-w-full px-5 overflow-hidden">
-        <Header id={id} cabangHeader={cabangHeader} />
+        {caborList.map((dataCabor)=>{
+          if(dataCabor.title === id){
+            return(<>
+            <Header id={id} cabangHeader={dataCabor.description} />
         {id !== "Fotografi" && id !== "Vocal Group" && (
           <>
-            {!selectedCategory && (
-              <div className="pb-8">
-                <Hasil id={id} />
-              </div>
-            )}
-            {selectedCategory && (
+          
+             
+              { (
               <Common
                 id={id}
-                cabangData={cabangData}
+                cabangDatas={dataCabor.categoryData}
+                categoryDatas={dataCabor.category}
+       
                 showCategory={showCategory}
                 setShowCategory={setShowCategory}
                 selectedCategory={selectedCategory}
@@ -133,10 +116,15 @@ const CabangDetail = (props) => {
                 setSchedule={setSchedule}
               />
             )}
-          </>
+              </>
+         
         )}
         {id === "Fotografi" && <Fotografi id={id} openModal={openModal} />}
         {id === "Vocal Group" && <VocalGroup id={id} openModal={openModal} />}
+            </>)
+          }
+        })}
+        
       </div>
     </>
   );
