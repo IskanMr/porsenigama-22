@@ -11,7 +11,7 @@ const Cabang = () => {
 
   return (
     <>
-<HtmlHead title="Cabang" decription="[insert page description]" />
+      <HtmlHead title="Cabang" decription="[insert page description]" />
       <div className="relative w-full">
         <div
           className="w-full"
@@ -23,7 +23,7 @@ const Cabang = () => {
         ></div>
         {width > 1024 ? (
           <button
-            className={`absolute left-1/2 bottom-20 ${styles.arrowBounce}`}
+            className={`absolute left-1/2 bottom-20`}
             style={{ maxWidth: "5%" }}
             onClick={() =>
               content.current.scrollIntoView({ behavior: "smooth" })
