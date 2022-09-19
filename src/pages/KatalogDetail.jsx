@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import { db } from "../resources/db";
-import styles from "../Components/Home/Cabang.module.css";
 import { HtmlHead } from "../Components/HtmlHead";
 
 const assetsKatalog = `${process.env.PUBLIC_URL}/images/Katalog`;
@@ -59,7 +58,7 @@ const KatalogDetail = (props) => {
           />
           {window.innerWidth > 1024 ? (
             <button
-              className={`absolute left-1/2 bottom-8 ${styles.arrowBounce}`}
+              className={`absolute left-1/2 bottom-8`}
               style={{ maxWidth: "5%" }}
               onClick={() =>
                 content.current.scrollIntoView({ behavior: "smooth" })

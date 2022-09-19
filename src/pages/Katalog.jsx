@@ -1,4 +1,3 @@
-import styles from "../Components/Home/Cabang.module.css";
 import { useRef } from "react";
 import { supporterList } from "../resources/dataKatalog";
 import { HtmlHead } from "../Components/HtmlHead";
