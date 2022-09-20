@@ -11,7 +11,7 @@ const Hasil = (props) => {
   useEffect(() => {
     // TODO: Ubah standings ke dataCabor, ubah cabang jadi Cabang
     const unsubscribe = onSnapshot(
-      query(collection(db, "standings", props.id, "cabang"), orderBy("name")),
+      query(collection(db, "dataCabang", props.id, "cabang"), orderBy("name")),
       ({ docs }) => {
         setStandingsRef(
           docs.map((doc) => ({
@@ -79,46 +79,51 @@ const Hasil = (props) => {
                 </div>
                 {standingsRef.length > 0 && (
                   <div className="mx-4 my-4 grid grid-flow-col auto-cols-max overflow-x-auto font-sansPro text-black text-base md:text-2xl font-semibold">
+                    
                     {standingsRef.map((cabang, index) => (
+                      <>
+                      {!cabang.gold? <div/> : 
                       <div className="p-4 border-2 border-ungugaje bg-krem m-2 rounded-xl">
-                        <p
-                          className="text-2xl md:text-fivevh uppercase font-bold text-kuning"
-                          style={{
-                            textShadow: [
-                              "1.5px 1.5px 0 #000",
-                              "1.5px -1.5px 0 #000",
-                              "-1.5px 1.5px 0 #000",
-                              "-1.5px -1.5px 0 #000",
-                            ],
-                          }}
-                        >
-                          {cabang.name}
-                        </p>
-                        <p className="flex">
-                          <img
-                            src={`${process.env.PUBLIC_URL}/images/Standings/Mendali gold.png`}
-                            alt="Tabel perolehan medali emas"
-                            className="transform w-5 h-6 md:w-10 md:h-11"
-                          />
-                          {cabang.gold}
-                        </p>
-                        <p className="flex">
-                          <img
-                            src={`${process.env.PUBLIC_URL}/images/Standings/Mendali silver.png`}
-                            alt="Tabel perolehan medali emas"
-                            className="transform w-5 h-6 md:w-10 md:h-11"
-                          />
-                          {cabang.silver}
-                        </p>
-                        <p className="flex">
-                          <img
-                            src={`${process.env.PUBLIC_URL}/images/Standings/Mendali bronze.png`}
-                            alt="Tabel perolehan medali emas"
-                            className="transform w-5 h-6 md:w-10 md:h-11"
-                          />
-                          {cabang.bronze}
-                        </p>
-                      </div>
+                      <p
+                        className="text-2xl md:text-fivevh uppercase font-bold text-kuning"
+                        style={{
+                          textShadow: [
+                            "1.5px 1.5px 0 #000",
+                            "1.5px -1.5px 0 #000",
+                            "-1.5px 1.5px 0 #000",
+                            "-1.5px -1.5px 0 #000",
+                          ],
+                        }}
+                      >
+                        {cabang.name}
+                      </p>
+                      <p className="flex">
+                        <img
+                          src={`${process.env.PUBLIC_URL}/images/Standings/Mendali gold.png`}
+                          alt="Tabel perolehan medali emas"
+                          className="transform w-5 h-6 md:w-10 md:h-11"
+                        />
+                        {cabang.gold}
+                      </p>
+                      <p className="flex">
+                        <img
+                          src={`${process.env.PUBLIC_URL}/images/Standings/Mendali silver.png`}
+                          alt="Tabel perolehan medali emas"
+                          className="transform w-5 h-6 md:w-10 md:h-11"
+                        />
+                        {cabang.silver}
+                      </p>
+                      <p className="flex">
+                        <img
+                          src={`${process.env.PUBLIC_URL}/images/Standings/Mendali bronze.png`}
+                          alt="Tabel perolehan medali emas"
+                          className="transform w-5 h-6 md:w-10 md:h-11"
+                        />
+                        {cabang.bronze}
+                      </p>
+                    </div>}
+                    </>
+                      
                     ))}
                   </div>
                 )}
