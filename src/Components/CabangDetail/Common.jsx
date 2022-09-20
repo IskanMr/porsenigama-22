@@ -111,7 +111,7 @@ const Common = ({
   setSchedule,
 }) => {
   useEffect(() => {
-    setSelectedCategory(categoryDatas[1]);
+    setSelectedCategory(categoryDatas[0]);
   },[]);
 
   console.log(cabangDatas);
@@ -133,12 +133,8 @@ const Common = ({
 
   return (
     <>
-      <img
-        className="z-0 absolute w-3/4 right-0"
-        src={`${assetsCabangDetail}/rumah.png`}
-        alt=""
-      />
-      <div className="flex flex-col justify-center md:px-20 pt-8">
+     
+      <div className="flex flex-col h-screen justify-center md:px-20 pt-8">
         <div className="flex flex-row items-center justify-between">
           <div
             className={`z-10 relative bg-white sm:min-w-max sm:w-1/3 ${
@@ -194,23 +190,20 @@ const Common = ({
           </div>
           <Hasil id={id} />
         </div>
-        <ul
-          className="self-center w-full font-sansPro"
-          style={{ minHeight: `${cabangDatas.length * 70}px` }}
-        >
+        <div className="h-full">
           {cabangDatas.map((data) => {
             if(data.category === selectedCategory){
               return (
                 <>
-                <h2>
-                  {data.link}
-                </h2>
+                
+                  <iframe className="z-99 h-full" src={`${data.link}/module`} width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+                
                 </>
               )
             }
            
           })}
-        </ul>
+        </div>
       </div>
     </>
   );
