@@ -571,6 +571,401 @@ const caborList = [
 
     ],
   },
+  {
+    title: "Atletik",
+    category: [
+      "Lari 100 meter Putra",
+      "Lari 200 meter Putra",
+      "Lari 400 meter Putra",
+      "Lari 800 meter Putra",
+      "Lari 1500 meter Putra",
+      "Estafet 4x100 meter Putra",
+      "Lompat Jauh Putra",
+        "Lari 100 meter Putri",
+      "Lari 200 meter Putri",
+      "Lari 400 meter Putri",
+      "Lari 800 meter Putri",
+      "Lari 1500 meter Putri",
+      "Estafet 4x100 meter Putri",
+      "Lompat Jauh Putri",
+    ],
+    description: "Atletik secara umum adalah perlombaan olahraga yang berbentuk seperti aktivitas berjalan, berlari, melompat, dan melempar. Dari empat aktivitas itu akhirnya berkembang menjadi berbagai macam cabang dan nomor.",
+    categoryData: [{
+        category: "Lari 100 meter Putra",
+        iframe: false,
+        link: 'https://challonge.com/AtletikPutra100PSG22'
+      },
+      {
+        category: "Lari 200 meter Putra",
+        iframe: false,
+        link: 'https://challonge.com/AtletikPutra200PSG22'
+      },
+      {
+        category: "Lari 400 meter Putra",
+        iframe: false,
+        link: 'https://challonge.com/AtletikPutra400PSG22'
+      },
+      {
+        category: "Lari 800 meter Putra",
+        iframe: false,
+        link: 'https://challonge.com/AtletikPutra800PSG22'
+      },
+      {
+        category: "Lari 1500 meter Putra",
+        iframe: false,
+        link: 'https://challonge.com/AtletikPutra1500PSG22'
+      },
+      {
+        category: "Estafet 4x100 meter Putra",
+        iframe: false,
+        link: 'https://challonge.com/AtletikPutraEstafetPSG22'
+      },
+      {
+        category: "Lompat Jauh Putra",
+        iframe: false,
+        link: 'https://challonge.com/AtletikPutraLompatJauhPSG22'
+      },
+      {
+        category: "Lari 100 meter Putri",
+        iframe: false,
+        link: 'https://challonge.com/AtletikPutri100PSG22'
+      },
+      {
+        category: "Lari 200 meter Putri",
+        iframe: false,
+        link: 'https://challonge.com/AtletikPutri200PSG22'
+      },
+      {
+        category: "Lari 400 meter Putri",
+        iframe: false,
+        link: 'https://challonge.com/AtletikPutri400PSG22'
+      },
+      {
+        category: "Lari 800 meter Putri",
+        iframe: false,
+        link: 'https://challonge.com/AtletikPutri800PSG22'
+      },
+      {
+        category: "Lari 1500 meter Putri",
+        iframe: false,
+        link: 'https://challonge.com/AtletikPutri1500PSG22'
+      },
+      {
+        category: "Estafet 4x100 meter Putri",
+        iframe: false,
+        link: 'https://challonge.com/AtletikPutriEstafetPSG22'
+      },
+      {
+        category: "Lompat Jauh Putri",
+        iframe: false,
+        link: 'https://challonge.com/AtletikPutriLompatJauhPSG22'
+      },
+    ],
+  },
+  {
+    title: "Basket",
+    category: [
+      "Basket Putra",
+      "Basket Putri",
+    ],
+    description: "Olahraga yang berasal dari Amerika Serikat. Basket dimainkan secara berkelompok berisi 5 orang. Tim saling bertanding dengan cara memasukkan bola ke keranjang lawan sebanyak-banyaknya.",
+    categoryData: [{
+        category: "Basket Putra",
+        iframe: true,
+        link: 'https://challonge.com/id/BasketPutraPSG22'
+      },
+      {
+        category: "Basket Putri",
+        iframe: true,
+        link: 'https://challonge.com/id/BasketPutriPSG22'
+      },
+    ],
+  },
+  {
+    title: "Berkuda",
+    category: [
+      "Dressage Walk Trot 2",
+      "Dressage Walk Trot 3",
+        "Jumping 30-50cm Optimum Time",
+        "Jumping 50-70cm Optimum Time",
+    ],
+    description: "Cabang Olahraga yang mengacu kepada keterampilan menunggangi, mengendarai, melompat atau berlari menggunakan kuda.",
+    categoryData: [{
+        category: "Dressage Walk Trot 2",
+        iframe: false,
+        link: 'https://challonge.com/id/BerkudaWT2PSG22'
+      },
+      {
+        category: "Dressage Walk Trot 3",
+        iframe: false,
+        link: 'https://challonge.com/id/BerkudaWT3PSG22'
+      },
+      {
+        category: "Jumping 30-50cm Optimum Time",
+        iframe: false,
+        link: 'https://challonge.com/id/BerkudaJumping3050PSG22'
+      },
+      {
+        category: "Jumping 50-70cm Optimum Time",
+        iframe: false,
+        link: 'https://challonge.com/id/BerkudaJumping5070PSG22'
+      },
+    ],
+  },
+  {
+    title: "Tenis Meja",
+    category: [
+      "Tenis Meja Putra",
+      "Tenis Meja Putri",
+        "Tenis Meja Campuran",
+    ],
+    description: "Tenis meja atau pingpong adalah olahraga yang melibatkan dua atau empat pemain yang memukul bola ringan yang disebut bola pingpong di atas meja menggunakan raket pejal kecil yang disebut bet. Permainan ini dilakukan di atas meja yang dibagi dengan net.",
+    categoryData: [{
+        category: "Tenis Meja Putra",
+        iframe: true,
+        link: 'https://challonge.com/TenisMejaPutraPSG22'
+      },
+      {
+        category: "Tenis Meja Putri",
+        iframe: true,
+        link: 'https://challonge.com/TenisMejaPutriPSG22'
+      },
+      {
+        category: "Tenis Meja Campuran",
+        iframe: true,
+        link: 'https://challonge.com/TenisMejaMixPSG22'
+      },
+    ],
+  },
+  {
+    title: "Futsal",
+    category: [
+      "Futsal Putra",
+      "Futsal Putri",
+    ],
+    description: "Futsal adalah permainan bola yang dimainkan oleh dua tim, yang masing-masing beranggotakan lima orang. Tujuannya adalah memasukkan bola ke gawang lawan, dengan memanipulasi bola dengan kaki. Selain lima pemain utama, setiap regu juga diizinkan memiliki pemain cadangan.",
+    categoryData: [{
+        category: "Futsal Putra",
+        iframe: true,
+        link: 'https://challonge.com/FutsalPutraPSG22'
+      },
+      {
+        category: "Futsal Putri",
+        iframe: true,
+        link: 'https://challonge.com/FutsalPutriPSG22'
+      },
+    ],
+  },
+  {
+    title: "Softball",
+    category: [
+      "Softball Campuran",
+    ],
+    description: "Softball-Baseball adalah olahraga bola kecil beregu yang dimainkan oleh dua tim. Permainan ini terdiri dari beberapa teknik dasar seperti, memukul, melempar, dan menangkap bola. UKM Softball-Baseball UGM didirikan pada tahun 1977 dan terus beroperasi hingga sekarang. UKM ini juga memiliki beasiswa jalur prestasi yang difasilitasi oleh Universitas sejak tahun 2013.",
+    categoryData: [{
+        category: "Softball Campuran",
+        iframe: false,
+        link: 'https://challonge.com/SoftballPSG22'
+      },
+    ],
+  },
+  {
+    title: "Orienteering",
+    category: [
+      "Orienteering Kota",
+    ],
+    description: "Orienteering adalah perlombaan cabang olahraga dengan menemukan sejumlah lokasi di medan sebenarnya dengan menggunakan peta dan kompas, titik – titik lokasi dalam orienteering disebut titik kontrol. Peserta orienteering disebut orienteer. Seorang orienteer diharuskan memiliki kemampuan navigasi yang baik untuk menemukan rute terbaik dari lokasi start, menuju ke titik – titik kontrol, dan berakhir di lokasi finish.",
+    categoryData: [{
+        category: "Orienteering Kota",
+        iframe: false,
+        link: 'https://challonge.com/id/OrienteeringKotaPSG22'
+      },
+    ],
+  },
+  {
+    title: "Kempo",
+    category: [
+      "Randori Putra 50-55 Kg",
+        "Randori Putra 55-60 Kg",
+        "Randori Putra 60-65 Kg",
+        "Randori Putra >65 Kg",
+        "Randori Putri 45-50 Kg",
+        "Randori Putri 50-55 Kg",
+        "Randori Putri 55-60 Kg",
+        "Randori Putri >60 Kg",
+    ],
+    description: "Kempo merupakan salah satu seni bela diri yang berlandaskan ajaran budha, yaitu dilarang saling menyakiti dan membunuh. Oleh karena itu, semua atlet kempo yang biasa disebut Kenshi hanya diizinkan untuk mempertahankan diri dan tidak boleh menyerang terlebih dahulu.",
+    categoryData: [{
+        category: "Randori Putra 50-55 Kg",
+        iframe: true,
+        link: 'https://challonge.com/KempoPutra5055PSG2022'
+      },
+      {
+        category: "Randori Putra 55-60 Kg",
+        iframe: true,
+        link: 'https://challonge.com/KempoPutra5560PSG2022'
+      },
+      {
+        category: "Randori Putra 60-65 Kg",
+        iframe: true,
+        link: 'https://challonge.com/KempoPutra6065PSG2022'
+      },
+      {
+        category: "Randori Putra >65 Kg",
+        iframe: true,
+        link: 'https://challonge.com/KempoPutra65PSG2022'
+      },
+      {
+        category: "Randori Putri 45-50 Kg",
+        iframe: true,
+        link: 'https://challonge.com/KempoPutri4550PSG2022'
+      },
+      {
+        category: "Randori Putri 50-55 Kg",
+        iframe: true,
+        link: 'https://challonge.com/KempoPutri5055PSG2022'
+      },
+      {
+        category: "Randori Putri 55-60 Kg",
+        iframe: true,
+        link: 'https://challonge.com/KempoPutri5560PSG2022'
+      },
+      {
+        category: "Randori Putri >60 Kg",
+        iframe: true,
+        link: 'https://challonge.com/KempoPutri60PSG2022'
+      },		   
+    ],
+  },
+  {
+    title: "Renang",
+    category: [
+      "Renang 100m Gaya Bebas Putra",
+        "Renang 100m Gaya Bebas Putri",
+        "Renang 50m Gaya Dada Putra",
+        "Renang 50m Gaya Dada Putri",
+        "Renang 100m Gaya Kupu Putra",
+        "Renang 100m Gaya Kupu Putri",
+        "Renang 50m Gaya Punggung Putra",
+        "Renang 50m Gaya Punggung Putri",
+        "Renang 100m Gaya Dada Putra",
+        "Renang 100m Gaya Dada Putri",
+        "Renang 50m Gaya Kupu Putra",
+        "Renang 50m Gaya Kupu Putri",
+        "Renang 100m Gaya Punggung Putra",
+        "Renang 100m Gaya Punggung Putri",
+        "Renang 50m Gaya Bebas Putra",
+        "Renang 50m Gaya Bebas Putri",
+       "Renang Estafet 4x50 Gaya Ganti Campuran",
+    ],
+    description: "Renang merupakan salah satu cabang olahraga dengan gerakan berpindah tempat secara teratur di air menggunakan tangan dan kaki. ",
+    categoryData: [{
+        category: "Renang 100m Gaya Bebas Putra",
+        iframe: false,
+        link: 'https://challonge.com/Renang100mGB_PaPSG22'
+      },
+      {
+        category: "Renang 100m Gaya Bebas Putri",
+        iframe: false,
+        link: 'https://challonge.com/Renang100mGB_PiPSG22'
+      },
+      {
+        category: "Renang 50m Gaya Dada Putra",
+        iframe: false,
+        link: 'https://challonge.com/id/Renang50mGD_PaPSG22'
+      },
+      {
+        category: "Renang 50m Gaya Dada Putri",
+        iframe: false,
+        link: 'https://challonge.com/id/Renang50mGD_PiPSG22'
+      },
+      {
+        category: "Renang 100m Gaya Kupu Putra",
+        iframe: false,
+        link: 'https://challonge.com/id/Renang100mGK_PaPSG22'
+      },
+      {
+        category: "Renang 100m Gaya Kupu Putri",
+        iframe: false,
+        link: 'https://challonge.com/id/Renang100mGK_PiPSG22'
+      },
+      {
+        category: "Renang 50m Gaya Punggung Putra",
+        iframe: false,
+        link: 'https://challonge.com/id/Renang50mGP_PaPSG22'
+      },
+      {
+        category: "Renang 50m Gaya Punggung Putri",
+        iframe: false,
+        link: 'https://challonge.com/id/Renang50mGP_PiPSG22'
+      },
+      {
+        category: "Renang 100m Gaya Dada Putra",
+        iframe: false,
+        link: 'https://challonge.com/id/Renang100mGD_PaPSG22'
+      },
+      {
+        category: "Renang 100m Gaya Dada Putri",
+        iframe: false,
+        link: 'https://challonge.com/id/Renang100mGD_PiPSG22'
+      },
+      {
+        category: "Renang 50m Gaya Kupu Putra",
+        iframe: false,
+        link: 'https://challonge.com/id/Renang50mGK_PaPSG22'
+      },
+      {
+        category: "Renang 50m Gaya Kupu Putri",
+        iframe: false,
+        link: 'https://challonge.com/id/Renang50mGK_PiPSG22'
+      },
+      {
+        category: "Renang 100m Gaya Punggung Putra",
+        iframe: false,
+        link: 'https://challonge.com/id/Renang100mGP_PaPSG22'
+      },
+      {
+        category: "Renang 100m Gaya Punggung Putri",
+        iframe: false,
+        link: 'https://challonge.com/id/Renang100mGP_PiPSG22'
+      },
+      {
+        category: "Renang 50m Gaya Bebas Putra",
+        iframe: false,
+        link: 'https://challonge.com/id/Renang50mGB_PaPSG22'
+      },
+      {
+        category: "Renang 50m Gaya Bebas Putri",
+        iframe: false,
+        link: 'https://challonge.com/id/Renang50mGB_PiPSG22'
+      },
+      {
+        category: "Renang Estafet 4x50 Gaya Ganti Campuran",
+        iframe: false,
+        link: 'https://challonge.com/id/RenangEstafetCampuranPSG2022'
+      },			   
+    ],
+  },
+  {
+    title: "Voli",
+    category: [
+      "Voli Putra",
+        "Voli Putri",
+    ],
+    description: "Cabang olahraga yang memainkan bola dengan melewati net, agar jatuh di area lawan untuk menghasilkan poin.",
+    categoryData: [{
+        category: "Voli Putra",
+        iframe: true,
+        link: 'https://challonge.com/VoliPutraPSG2022'
+      },
+      {
+        category: "Voli Putri",
+        iframe: true,
+        link: 'https://challonge.com/VoliPutriPSG2022'
+      },
+    ],
+  },
+  
 
   {
     title: "Menulis Puisi",

@@ -2,7 +2,6 @@
  * Komponen ini compatible dengan react-router-dom v5. 
  * Jika ingin menggunakan react-router-dom v6, ubah useHistory() menjadi useNavigate()
 **/
-
 import { db } from "../resources/db";
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
@@ -18,63 +17,87 @@ const Standings = () => {
   const navigate = useHistory();
   const [standingsData, setStandingsData] = useState([]);
   const [filter, setFilter] = useState("0");
-
+  
+  /**
+   * Extra value atletik hanya untuk 'dummy', fungsinya ngambil data tp ttp yang dimap keseluruhan
+   * Tujuannya biar value paling bawah ngga undefined 
+   */
   const filterlib = [
+    "atletik",
+    "atletik",
     "badminton",
-    "badminton",
-    "sepak",
-    "panahan",
-    "esport",
-    "judo",
-    "karate",
-    "taekwondo",
-    "silat",
-    "catur",
-    "panjat",
+    "basket",
+    "berkuda",
     "bridge",
-    "puisi",
-    "monolog",
-    "band",
-    "lukis",
-    "makeup",
-    "keroncong",
-    "vocal",
-    "naskah",
-    "foto",
+    "catur",
+    "esport",
+    "futsal",
+    "hockey",   
+    "judo",    
+    "karate",  
+    "kempo",
+    "orienteering",
+    "panahan",
+    "pencak-silat",
+    "renang",
+    "sepak-bola",
+    "softball",
+    "taekwondo",
+    "tenis-meja",
+    "voli",
+    //Cabang Seni
     "tari",
+    "band",
+    "fotografi",
+    "keroncong",
+    "monolog",
+    "lukis",
+    "vokal-grup",
+    "lakon",
   ];
 
   const filtercabdetaillib = [
+    "Atletik",
+    "Atletik",
     "Badminton",
-    "Badminton",
-    "Sepak Bola",
-    "Panahan",
-    "E-Sport",
-    "Judo",
-    "Karate",
-    "Taekwondo",
-    "Silat",
-    "Catur",
-    "Panjat Tebing",
+    "Basket",
+    "Berkuda",
     "Bridge",
-    "Menulis Puisi",
-    "Monolog",
+    "Catur",
+    "E-sport",
+    "Futsal",
+    "Hockey",   
+    "Judo",    
+    "Karate",  
+    "Kempo",
+    "Orienteering",
+    "Panahan",
+    "Pencak Silat",
+    "Renang",
+    "Sepak Bola",
+    "Softball",
+    "Taekwondo",
+    "Tenis Meja",
+    "Voli",
+    //Cabang Seni
+    "Tari",
     "Band",
-    "Melukis",
-    "Make up Creation",
-    "Keroncong",
-    "Vocal Group",
-    "Naskah Lakon",
     "Fotografi",
-    "Seni Tari",
+    "Vokal Keroncong",
+    "Monolog",
+    "Lukis",
+    "Vokal Grup",
+    "Naskah Lakon",
   ];
 
-  //Standing Data each Category
+  /**
+   * Fungsi ini untuk mengambil data dari firestore
+   */
   const getAllMedals = async () => {
     const snap = await getDocs(query(collection(db, "standings"), orderBy("name")));
-    console.log(snap.docs);
+    //console.log(snap.docs);
     let data = snap.docs.map((doc) => doc.data());
-    console.log(data);
+    //console.log(data);
     data = data.sort((a, b) => {
       if (a.gold < b.gold) {
         return 1;
@@ -96,12 +119,12 @@ const Standings = () => {
         }
       }
     });
-    console.log(data);
+    //console.log(data);
     setStandingsData(data);
   };
 
   const getEachCategory = async () => {
-    console.log("data");
+    //console.log("data");
     const categoryRef = query(
       collection(db, "standings"),
       where(
@@ -112,11 +135,10 @@ const Standings = () => {
         null
       )
     );
-    console.log("test");
     const snap = await getDocs(categoryRef);
-    console.log(snap.docs);
+    //console.log(snap.docs);
     let data = snap.docs.map((doc) => doc.data());
-    console.log(data);
+    //console.log(data);
     data = data.sort((a, b) => {
       if (
         a[filterlib[Number(filter)]].gold !== null &&
@@ -159,7 +181,7 @@ const Standings = () => {
         }
       }
     });
-    console.log(data);
+    //console.log(data);
     setStandingsData(data);
   };
 
@@ -250,27 +272,35 @@ const Standings = () => {
           <option value="0" selected="selected">
             Keseluruhan
           </option>
-          <option value="1">Badminton</option>
-          <option value="2">Sepak Bola</option>
-          <option value="3">Panahan</option>
-          <option value="4">E-Sports</option>
-          <option value="5">Judo</option>
-          <option value="6">Karate</option>
-          <option value="7">Taekwondo</option>
-          <option value="8">Silat</option>
-          <option value="9">Catur</option>
-          <option value="10">Panjat Tebing</option>
-          <option value="11">Bridge</option>
-          <option value="12">Puisi</option>
-          <option value="13">Monolog</option>
-          <option value="14">Band</option>
-          <option value="15">Melukis</option>
-          <option value="16">Kreasi Makeup</option>
-          <option value="17">Keroncong</option>
-          <option value="18">Vocal Group</option>
-          <option value="19">Naskah Lakon</option>
-          <option value="20">Fotografi</option>
-          <option value="21">Seni Tari</option>
+          <option value="1">Atletik</option>
+          <option value="2">Badminton</option>
+          <option value="3">Basket</option>
+          <option value="4">Berkuda</option>
+          <option value="5">Bridge</option>
+          <option value="6">Catur</option>
+          <option value="7">E-Sport</option>
+          <option value="8">Futsal</option>
+          <option value="9">Hockey</option>
+          <option value="10">Judo</option>
+          <option value="11">Karate</option>
+          <option value="12">Kempo</option>
+          <option value="13">Orienteering</option>
+          <option value="14">Panahan</option>
+          <option value="15">Pencak Silat</option>
+          <option value="16">Renang</option>
+          <option value="17">Sepak Bola</option>
+          <option value="18">Softball</option>
+          <option value="19">Taekwondo</option>
+          <option value="20">Tenis Meja</option>
+          <option value="21">Voli</option>
+          <option value="22">Tari</option>
+          <option value="23">Band</option>
+          <option value="24">Fotografi</option>
+          <option value="25">Vokal Keroncong</option>
+          <option value="26">Monolog</option>
+          <option value="27">Lukis</option>
+          <option value="28">Vokal Grup</option>
+          <option value="29">Naskah Lakon</option>
         </select>
       </div>
       <div className="w-full flex justify-center my-12 text-center relative">
