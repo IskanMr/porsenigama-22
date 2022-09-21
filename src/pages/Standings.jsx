@@ -45,6 +45,15 @@ const Standings = () => {
     "taekwondo",
     "tenis-meja",
     "voli",
+    //Cabang Seni
+    "tari",
+    "band",
+    "fotografi",
+    "keroncong",
+    "monolog",
+    "lukis",
+    "vokal-grup",
+    "lakon",
   ];
 
   const filtercabdetaillib = [
@@ -70,6 +79,15 @@ const Standings = () => {
     "Taekwondo",
     "Tenis Meja",
     "Voli",
+    //Cabang Seni
+    "Tari",
+    "Band",
+    "Fotografi",
+    "Vokal Keroncong",
+    "Monolog",
+    "Lukis",
+    "Vokal Grup",
+    "Naskah Lakon",
   ];
 
   /**
@@ -275,6 +293,14 @@ const Standings = () => {
           <option value="19">Taekwondo</option>
           <option value="20">Tenis Meja</option>
           <option value="21">Voli</option>
+          <option value="22">Tari</option>
+          <option value="23">Band</option>
+          <option value="24">Fotografi</option>
+          <option value="25">Vokal Keroncong</option>
+          <option value="26">Monolog</option>
+          <option value="27">Lukis</option>
+          <option value="28">Vokal Grup</option>
+          <option value="29">Naskah Lakon</option>
         </select>
       </div>
       <div className="w-full flex justify-center my-12 text-center relative">
