@@ -1,11 +1,14 @@
 import { HtmlHead } from "../Components/HtmlHead";
+import Section1 from "../Components/Homepage/Section1";
 
 const Home = () => {
   return (
     <>
       {" "}
       <HtmlHead title="Beranda" decription="[insert page description]" />
-      <div className="min-h-screen text-center">Home</div>
+      <main className="overflow-hidden">
+        <Section1 />
+      </main>
     </>
   );
 };
