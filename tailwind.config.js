@@ -4,16 +4,28 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      padding: {
+        rem32: "32rem",
+      },
       colors: {
         blue: "#48C0EE",
+        purple: "#5E4795",
       },
-      fontFamily: {},
+      fontFamily: {
+        universalserif: ["Universal Serif", "sans-serif"],
+        montserrat: ["Montserrat"],
+      },
       fontSize: {},
       width: {},
       height: {},
       spacing: {},
       boxShadow: {},
-      borderRadius: {},
+      borderRadius: {
+        large: "5rem",
+      },
+      lineHeight: {
+        tes:'50vh'
+      },
       scale: {},
       borderWidth: {},
     },
