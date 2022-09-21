@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import { caborList, casenList } from "../data/dataCabang";
 import { HtmlHead } from "../Components/HtmlHead";
+import styled from 'styled-components'
 
 const assetsCabang = `${process.env.PUBLIC_URL}/images/Cabang`;
 
@@ -23,7 +24,7 @@ const Cabang = () => {
         ></div>
         {width > 1024 ? (
           <button
-            className={`absolute left-1/2 bottom-20 ${styles.arrowBounce}`}
+            className={`absolute left-1/2 bottom-20 ${styled.arrowBounce}`}
             style={{ maxWidth: "5%" }}
             onClick={() =>
               content.current.scrollIntoView({ behavior: "smooth" })
