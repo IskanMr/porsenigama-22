@@ -12,7 +12,7 @@ const Cabang = () => {
 
   return (
     <>
-<HtmlHead title="Cabang" decription="[insert page description]" />
+      <HtmlHead title="Cabang" decription="[insert page description]" />
       <div className="relative w-full">
         <div
           className="w-full"
