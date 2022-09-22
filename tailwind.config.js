@@ -5,15 +5,22 @@ module.exports = {
   theme: {
     extend: {
       padding: {
-        rem32: "32rem",
+        '32rem': "32rem",
+      },
+      backgroundImage: {
+        'homepage-section-3': "url('/src/assets/images/homepage/bg-section-3.png')",
       },
       colors: {
         blue: "#48C0EE",
+        yellow: "#FCE517",
         purple: "#5E4795",
       },
       fontFamily: {
         universalserif: ["Universal Serif", "sans-serif"],
         montserrat: ["Montserrat"],
+      },
+      inset: {
+        '32rem': "32rem",
       },
       fontSize: {},
       width: {},

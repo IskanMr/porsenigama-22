@@ -6,7 +6,7 @@ import Explode from "../../assets/images/homepage/explode-section-2.png";
 const Section2 = () => {
   return (
     <>
-      <div className="z-10 relative" style={{ height: "100vh" }}>
+      <div className="z-10 relative" style={{ height: "70vh" }}>
         <div className="relative mb-10">
           <img src={TeksTentangPorsenigama} className="mx-auto z-10" alt="" />
 

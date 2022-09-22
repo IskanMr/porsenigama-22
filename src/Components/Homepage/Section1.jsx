@@ -11,7 +11,7 @@ const Section1 = () => {
         style={{ height: "100vh" }}
       >
         <div className="relative">
-          <img src={RipPaper} className="absolute pt-rem32" alt="" />
+          <img src={RipPaper} className="absolute pt-32rem" alt="" />
           <div className="grid-cols-2 grid m-auto">
             <div className="col-span-1 mx-auto pt-16 px-10 items-center justify-center z-10">
               <img src={Stadium} className="" style={{ scale: "95%" }} alt="" />
