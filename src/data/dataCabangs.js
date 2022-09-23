@@ -965,288 +965,50 @@ const caborList = [
       },
     ],
   },
-  
-
   {
-    title: "Menulis Puisi",
-    description:
-      "Penjelasan dikit po ya Penjelasan dikit po ya Penjelasan dikit po ya",
-    category: [
-      "Beregu Campuran",
-      "Tunggal Putra",
-      "Tunggal Putri",
-      "Ganda Putra",
-      "Ganda Putri",
-      "Ganda Campuran",
-    ],
-    schedule: [
-      {
-        category: "Beregu Campuran",
-        data: [
-          {
-            isFinished: true,
-            date: "Senin, 04 Oktober 2021 06:00 - 17.00 WIB",
-            title: "FKKMK VS FMIPA",
-            stage: "PENYISIHAN",
-            venue: "STADION PANCASILA UGM",
-            winner: "FMIPA",
-          },
-        ],
-      },
-    ],
+    title: "Seni Tari",
+    description: "Tangkai Seni Tari merupakan salah satu tangkai seni yang diperlombakan dalam Porsenigama 2022. Tangkai Seni Tari pada tahun ini dilaksanakan secara offline di Auditorium Fakultas Ilmu Budaya Universitas Gadjah Mada. Tema yang diusung dalam perlombaan ini yaitu “Lestarikan Kearifan Lokal di Era Transisi Pandemi”. Kategori tangkai seni tari pada kali ini yaitu tradisional kategori kreasi atau garapan tari yang berpijak dengan tradisi budaya Indonesia. Jumlah peserta dalam 1 kontingen yaitu  2 (dua) orang penari berpasangan tiap fakultas.",
+    casen: true, 
   },
   {
-    title: "Monolog",
-    description:
-      "Penjelasan dikit po ya Penjelasan dikit po ya Penjelasan dikit po ya",
-    category: [
-      "Beregu Campuran",
-      "Tunggal Putra",
-      "Tunggal Putri",
-      "Ganda Putra",
-      "Ganda Putri",
-      "Ganda Campuran",
-    ],
-    schedule: [
-      {
-        category: "Beregu Campuran",
-        data: [
-          {
-            isFinished: true,
-            date: "Senin, 04 Oktober 2021 06:00 - 17.00 WIB",
-            title: "FKKMK VS FMIPA",
-            stage: "PENYISIHAN",
-            venue: "STADION PANCASILA UGM",
-            winner: "FMIPA",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Band",
-    description:
-      "Penjelasan dikit po ya Penjelasan dikit po ya Penjelasan dikit po ya",
-    category: [
-      "Beregu Campuran",
-      "Tunggal Putra",
-      "Tunggal Putri",
-      "Ganda Putra",
-      "Ganda Putri",
-      "Ganda Campuran",
-    ],
-    schedule: [
-      {
-        category: "Beregu Campuran",
-        data: [
-          {
-            isFinished: true,
-            date: "Senin, 04 Oktober 2021 06:00 - 17.00 WIB",
-            title: "FKKMK VS FMIPA",
-            stage: "PENYISIHAN",
-            venue: "STADION PANCASILA UGM",
-            winner: "FMIPA",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Melukis",
-    description:
-      "Penjelasan dikit po ya Penjelasan dikit po ya Penjelasan dikit po ya",
-    category: [
-      "Beregu Campuran",
-      "Tunggal Putra",
-      "Tunggal Putri",
-      "Ganda Putra",
-      "Ganda Putri",
-      "Ganda Campuran",
-    ],
-    schedule: [
-      {
-        category: "Beregu Campuran",
-        data: [
-          {
-            isFinished: true,
-            date: "Senin, 04 Oktober 2021 06:00 - 17.00 WIB",
-            title: "FKKMK VS FMIPA",
-            stage: "PENYISIHAN",
-            venue: "STADION PANCASILA UGM",
-            winner: "FMIPA",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Make up Creation",
-    description:
-      "Penjelasan dikit po ya Penjelasan dikit po ya Penjelasan dikit po ya",
-    category: [
-      "Beregu Campuran",
-      "Tunggal Putra",
-      "Tunggal Putri",
-      "Ganda Putra",
-      "Ganda Putri",
-      "Ganda Campuran",
-    ],
-    schedule: [
-      {
-        category: "Beregu Campuran",
-        data: [
-          {
-            isFinished: true,
-            date: "Senin, 04 Oktober 2021 06:00 - 17.00 WIB",
-            title: "FKKMK VS FMIPA",
-            stage: "PENYISIHAN",
-            venue: "STADION PANCASILA UGM",
-            winner: "FMIPA",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Keroncong",
-    description:
-      "Penjelasan dikit po ya Penjelasan dikit po ya Penjelasan dikit po ya",
-    category: [
-      "Beregu Campuran",
-      "Tunggal Putra",
-      "Tunggal Putri",
-      "Ganda Putra",
-      "Ganda Putri",
-      "Ganda Campuran",
-    ],
-    schedule: [
-      {
-        category: "Beregu Campuran",
-        data: [
-          {
-            isFinished: true,
-            date: "Senin, 04 Oktober 2021 06:00 - 17.00 WIB",
-            title: "FKKMK VS FMIPA",
-            stage: "PENYISIHAN",
-            venue: "STADION PANCASILA UGM",
-            winner: "FMIPA",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Vocal Group",
-    description:
-      "Penjelasan dikit po ya Penjelasan dikit po ya Penjelasan dikit po ya",
-    category: [
-      "Beregu Campuran",
-      "Tunggal Putra",
-      "Tunggal Putri",
-      "Ganda Putra",
-      "Ganda Putri",
-      "Ganda Campuran",
-    ],
-    schedule: [
-      {
-        category: "Beregu Campuran",
-        data: [
-          {
-            isFinished: true,
-            date: "Senin, 04 Oktober 2021 06:00 - 17.00 WIB",
-            title: "FKKMK VS FMIPA",
-            stage: "PENYISIHAN",
-            venue: "STADION PANCASILA UGM",
-            winner: "FMIPA",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Naskah Lakon",
-    description:
-      "Penjelasan dikit po ya Penjelasan dikit po ya Penjelasan dikit po ya",
-    category: [
-      "Beregu Campuran",
-      "Tunggal Putra",
-      "Tunggal Putri",
-      "Ganda Putra",
-      "Ganda Putri",
-      "Ganda Campuran",
-    ],
-    schedule: [
-      {
-        category: "Beregu Campuran",
-        data: [
-          {
-            isFinished: true,
-            date: "Senin, 04 Oktober 2021 06:00 - 17.00 WIB",
-            title: "FKKMK VS FMIPA",
-            stage: "PENYISIHAN",
-            venue: "STADION PANCASILA UGM",
-            winner: "FMIPA",
-          },
-        ],
-      },
-    ],
+    title: "Z-Fest",
+    description: "Tangkai Seni Band adalah sebuah perlombaan seni band yang diikuti oleh perwakilan 3-6 orang dalam tiap fakultas di UGM. Pada Porsenigama 2022, tangkai seni band mengangkat tema \"Alunan Melodi Bangkitkan Gelora Kreasi\" yang mengusung kebangkitan semangat setelah adanya pandemi.",
+    casen: true,
   },
   {
     title: "Fotografi",
-    description:
-      "Penjelasan dikit po ya Penjelasan dikit po ya Penjelasan dikit po ya",
-    category: [
-      "Beregu Campuran",
-      "Tunggal Putra",
-      "Tunggal Putri",
-      "Ganda Putra",
-      "Ganda Putri",
-      "Ganda Campuran",
-    ],
-    schedule: [
-      {
-        category: "Beregu Campuran",
-        data: [
-          {
-            isFinished: true,
-            date: "Senin, 04 Oktober 2021 06:00 - 17.00 WIB",
-            title: "FKKMK VS FMIPA",
-            stage: "PENYISIHAN",
-            venue: "STADION PANCASILA UGM",
-            winner: "FMIPA",
-          },
-        ],
-      },
-    ],
+    description: "Tangkai Seni Fotografi merupakan perlombaan seni fotografi yang diikuti oleh satu orang perwakilan kontingen dalam Porsenigama 2022. Fotografi merupakan metode untuk menghasilkan gambar atau foto dengan merekam pantulan cahaya dari objek. Dalam Porsenigama 2022, tangkai seni fotografi mengangkat tema \"Semangat Juang \" yang menjadi ajakan bagi mahasiswa untuk memvisualisasikan semangat juang dalam menyambut Porsenigama 2022."
+    ,
+    casen: true,
   },
   {
-    title: "Seni Tari",
-    description:
-      "Penjelasan dikit po ya Penjelasan dikit po ya Penjelasan dikit po ya",
-    category: [
-      "Beregu Campuran",
-      "Tunggal Putra",
-      "Tunggal Putri",
-      "Ganda Putra",
-      "Ganda Putri",
-      "Ganda Campuran",
-    ],
-    schedule: [
-      {
-        category: "Beregu Campuran",
-        data: [
-          {
-            isFinished: true,
-            date: "Senin, 04 Oktober 2021 06:00 - 17.00 WIB",
-            title: "FKKMK VS FMIPA",
-            stage: "PENYISIHAN",
-            venue: "STADION PANCASILA UGM",
-            winner: "FMIPA",
-          },
-        ],
-      },
-    ],
+    title: "Naskah Lakon",
+    description: "Naskah lakon disebut pula dengan skenario. Naskah ini menjadi bentuk penuangan ide cerita ke dalam alur cerita dan susunannya. Pada Porsenigama tahun 2022, tangkai seni naskah lakon menjadi salah satu tangkai perlombaan yang akan dilaksanakan secara daring (online) dengan metode pengumpulan naskah. Naskah lakon dibuat oleh 1 orang setiap fakultas dengan tema bebas sesuai kreativitas masing-masing.",
+    casen: true,
   },
+  {
+    title: "Monolog",
+    description: "Monolog sendiri merupakan ilmu yang  mengajarkan tentang seni peran yang mana didalamnya dibutuhkan satu orang atau dialog bisu untuk melakukan adegan seni peran tersebut. Monolog sendiri masuk kedalam salah satu bentuk pertunjukkan teater yang sering diperlombakan dalam berbagai ajang seperti Peksimida/Peksimprov, maupun Peksiminas. Pada pelaksanaan Porsenigama 2022 kali ini, tangkai lomba monolog menjadi salah satu jenis lomba yang akan dilaksanakan secara luring (offline) pada tanggal 19-20 November 2022 mendatang di Gedung ",
+    casen: true,
+  },
+  {
+    title: "Vocal Group",
+    description: "Vokal Grup merupakan sekumpulan penyanyi yang menyanyikan lagu secara bersama-sama dengan konsep satu suara, dua suara, atau lebih. Umumnya, vokal grup terdiri dari beberapa penyanyi yang mampu menyanyikan lagu dengan berbagai jenis variasi suara seperti bass, alto, sopran, dan tenor. Vokal grup sendiri terdiri dari kumpulan penyanyi yang berjumlah 3 (tiga) hingga 10 (sepuluh) orang. Pada Porsenigama 2022, perlombaan vokal grup akan diadakan secara luring/offline dimana tiap fakultas mengirimkan 1 tim perwakilan yang terdiri dari 5 (lima) hingga 8 (depalan) orang. Tiap tim bebas mengaransemen lagu yang akan dibawakan dengan syarat tidak menghilangkan nada asli lagu tersebut.",
+    casen: true,
+  },
+  {
+    title: "Vokal Keroncong",
+    description: "Musik keroncong adalah salah satu kebudayaan khas Bangsa Indonesia yang sampai sekarang masih dilestarikan. Pada Porsenigama 2022, keroncong akan turut berpartisipasi dalam rangkaian acara melalui tangkai seni vokal keroncong. Nantinya setiap fakultas mengirimkan satu perwakilan penyanyi dan membawakan 1 lagu pilihan dari 4 lagu yang tersedia. Perlombaan akan dilaksanakan secara offline di Auditorium Fakultas Kehutanan UGM.",
+    casen: true,
+  },
+  {
+    title: "Lukis",
+    description: "Seni lukis adalah salah satu cabang dari seni rupa yang berfokus pada kegiatan melukis. Seni lukis tercipta dari imajinasi seniman yang diekspresikan melalui media garis, warna, tekstur, gelap terang, maupun bidang dan bentuk. Pada Porsenigama 2022, cabang lomba seni lukis dilaksanakan secara offline dengan dua metode yaitu tradisional dan digital. Pada tahun ini cabang Seni Lukis Porsenigama mengusung tema \“Clinquant morn\” yang berarti esok yang berkilauan emas.",
+    casen: true,
+  },
+  
+
+  
 ];
 
 export { caborList };
