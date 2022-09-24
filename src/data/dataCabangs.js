@@ -965,8 +965,9 @@ const caborList = [
       },
     ],
   },
+];
   
-
+const casenList = [
   {
     title: "Menulis Puisi",
     description:
@@ -1249,4 +1250,4 @@ const caborList = [
   },
 ];
 
-export { caborList };
+export { caborList, casenList };
