@@ -6,6 +6,8 @@ module.exports = {
     extend: {
       padding: {
         '32rem': "32rem",
+        '21rem': "21rem",
+        '25rem': "25rem",
       },
       backgroundImage: {
         'homepage-section-3': "url('/src/assets/images/homepage/bg-section-3.png')",
