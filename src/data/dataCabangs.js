@@ -1,4 +1,4 @@
-const caborList = [
+const cabangList = [
   {
     title: "Panahan",
     category: [
@@ -1011,4 +1011,4 @@ const caborList = [
   
 ];
 
-export { caborList };
+export { cabangList };
