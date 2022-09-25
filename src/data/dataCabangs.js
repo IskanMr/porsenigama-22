@@ -965,6 +965,37 @@ const cabangList = [
       },
     ],
   },
+];
+  
+const casenList = [
+  {
+    title: "Menulis Puisi",
+    description:
+      "Penjelasan dikit po ya Penjelasan dikit po ya Penjelasan dikit po ya",
+    category: [
+      "Beregu Campuran",
+      "Tunggal Putra",
+      "Tunggal Putri",
+      "Ganda Putra",
+      "Ganda Putri",
+      "Ganda Campuran",
+    ],
+    schedule: [
+      {
+        category: "Beregu Campuran",
+        data: [
+          {
+            isFinished: true,
+            date: "Senin, 04 Oktober 2021 06:00 - 17.00 WIB",
+            title: "FKKMK VS FMIPA",
+            stage: "PENYISIHAN",
+            venue: "STADION PANCASILA UGM",
+            winner: "FMIPA",
+          },
+        ],
+      },
+    ],
+  },
   {
     title: "Seni Tari",
     description: "Tangkai Seni Tari merupakan salah satu tangkai seni yang diperlombakan dalam Porsenigama 2022. Tangkai Seni Tari pada tahun ini dilaksanakan secara offline di Auditorium Fakultas Ilmu Budaya Universitas Gadjah Mada. Tema yang diusung dalam perlombaan ini yaitu “Lestarikan Kearifan Lokal di Era Transisi Pandemi”. Kategori tangkai seni tari pada kali ini yaitu tradisional kategori kreasi atau garapan tari yang berpijak dengan tradisi budaya Indonesia. Jumlah peserta dalam 1 kontingen yaitu  2 (dua) orang penari berpasangan tiap fakultas.",
@@ -1011,4 +1042,4 @@ const cabangList = [
   
 ];
 
-export { cabangList };
+export { caborList, casenList };
