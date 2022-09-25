@@ -1,4 +1,4 @@
-const cabangList = [
+const caborList = [
   {
     title: "Panahan",
     category: [
