@@ -6,9 +6,12 @@ module.exports = {
     extend: {
       padding: {
         '32rem': "32rem",
+        '21rem': "21rem",
+        '25rem': "25rem",
       },
       backgroundImage: {
         'homepage-section-3': "url('/src/assets/images/homepage/bg-section-3.png')",
+        'pattern-cabang': "url('/src/assets/images/cabang/5328478.svg')",
       },
       colors: {
         blue: "#48C0EE",

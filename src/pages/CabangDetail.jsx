@@ -4,7 +4,7 @@ import { dataFotografi } from "../data/dataFotografi";
 import { dataVocalGroup } from "../data/dataVocalGroup";
 
 import { caborList } from "../data/dataCabangs";
-
+import { Hasil } from "../Components/CabangDetail";
 
 
 import {
@@ -94,19 +94,23 @@ const CabangDetail = (props) => {
       )}
 
       <div className="pt-14 lg:pt-0 relative bg-merah min-w-full px-5 overflow-hidden">
-        {caborList.map((dataCabor)=>{
-          if(dataCabor.title === id){
+        {caborList.map((dataCabang)=>{
+          if(dataCabang.title === id){
             return(<>
-            <Header id={id} cabangHeader={dataCabor.description} />
+            <Header id={id} cabangHeader={dataCabang.description} />
         {id !== "Fotografi" && id !== "Vocal Group" && (
           <>
-          
+          {dataCabang.casen == true && (
+              <div className="pb-64">
+                <Hasil id={id} />
+              </div>
+            )}
              
-              { (
+              {!dataCabang.casen == true && (
               <Common
                 id={id}
-                cabangDatas={dataCabor.categoryData}
-                categoryDatas={dataCabor.category}
+                cabangDatas={dataCabang.categoryData}
+                categoryDatas={dataCabang.category}
        
                 showCategory={showCategory}
                 setShowCategory={setShowCategory}

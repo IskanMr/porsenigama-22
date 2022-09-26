@@ -114,15 +114,7 @@ const Common = ({
     setSelectedCategory(categoryDatas[0]);
   },[]);
 
-  console.log(cabangDatas);
-  console.log("test")
-  console.log(categoryDatas);
-  console.log("dibawah ini adalah cabangData");
-  console.log(cabangData)
-  console.log("di bawah ini adalah schedule")
-  console.log(schedule)
-  console.log(selectedCategory)
-  console.log("diatas ini adalah selected category")
+
   const selectCategoryHandler = (category) => {
     if (selectedCategory !== category) {
       setSelectedCategory(category);
