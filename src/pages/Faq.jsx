@@ -16,14 +16,24 @@ const Faq = () => {
   const buttonStyle = "bg-white ";
   const clickedButtonStyles = "bg-purple text-white";
 
-  const onInputChange = (e) => {
-    setList(Questions.filter((a) => a.question.toLowerCase().includes(e)));
-  };
-  const onTabCategoryChange = (e) => {
-    setClicked(e);
-    e === "semua"
-      ? setList(Questions)
-      : setList(Questions.filter((a) => a.id === e));
+  const onFilterChange = (e) => {
+    if (e.tab != null) {
+      setClicked(e.tab);
+      var x =
+        e.tab === "semua" ? Questions : Questions.filter((a) => a.id == e.tab);
+      x = x.filter((a) =>
+        a.question.toLowerCase().includes(e.input == null ? "" : e.input)
+      );
+    } else {
+      var x =
+        clicked === "semua"
+          ? Questions
+          : Questions.filter((a) => a.id == clicked);
+      x = x.filter((a) =>
+        a.question.toLowerCase().includes(e.input == null ? "" : e.input)
+      );
+    }
+    setList(x);
   };
 
   const categories = [
@@ -36,7 +46,7 @@ const Faq = () => {
   return (
     <>
       <HtmlHead title="Faq" decription="[insert page description]" />
-      <div className="min-h-screen bg-blue font-body">
+      <div className="min-h-screen bg-blue font-body px-6 md:px-0 pb-9">
         <div className="flex flex-col w-full justify-items-center items-center">
           <span>
             <img src={Title} className="" alt="title" />
@@ -52,19 +62,19 @@ const Faq = () => {
                 placeholder="Ketik pertanyaanmu..."
                 type="text"
                 onChange={(e) => {
-                  onInputChange(e.target.value);
+                  onFilterChange({ input: e.target.value });
                 }}
               />
             </label>
           </div>
-          <div className="flex w-full justify-items-center items-center place-content-center mt-3">
+          <div className="flex w-full md:w-3/12 justify-items-center items-center place-content-center mt-3 gap-1 md:gap-3">
             {categories.map((category) => (
               <button
                 type="button"
-                onClick={() => onTabCategoryChange(category.id)}
+                onClick={() => onFilterChange({ tab: category.id })}
                 className={`${
                   clicked === category.id ? clickedButtonStyles : buttonStyle
-                } flex px-4 py-2 transition ease-in-out duration-300`}
+                } flex flex-1 px-2 py-1 md:px-4 md:py-2 transition ease-in-out duration-300 border-2 border-purple text-sm md:text-base`}
               >
                 {category.name}
               </button>
