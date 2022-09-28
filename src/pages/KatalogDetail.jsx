@@ -1,14 +1,10 @@
 import { useState, useEffect, useRef } from "react";
-import { db } from "../resources/db";
 import { HtmlHead } from "../Components/HtmlHead";
 import { supporterList } from "../resources/dataKatalog";
 import { NotFound } from "./404";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 
-// Import Swiper styles
-// import "swiper/css";
-// import "swiper/css/navigation";
 import "swiper/swiper.min.css";
 
 import kertas from "../assets/images/katalog/kertasdetail.png";
@@ -17,11 +13,6 @@ import triangleMerah from "../assets/images/katalog/trianglemerah.png";
 import triangleMerah2 from "../assets/images/katalog/trianglemerah2.png";
 import paperTitle from "../assets/images/katalog/papertitle.png";
 import namaFakultas from "../assets/images/katalog/namaFakultas.png";
-import vektor from "../assets/images/katalog/vektor.png";
-import vektor2 from "../assets/images/katalog/vektor2.png";
-
-const assetsKatalog = `${process.env.PUBLIC_URL}/images/Katalog`;
-const assetsCabang = `${process.env.PUBLIC_URL}/images/Cabang`;
 
 const KatalogDetail = (props) => {
   const id = props.match.params.id;
@@ -34,7 +25,6 @@ const KatalogDetail = (props) => {
   const [KatalogDetail, setKatalogDetail] = useState({});
   const [titleBawah, setTitleBawah] = useState([]);
 
-  const assetsCabang = `${process.env.PUBLIC_URL}/images/Cabang`;
   const assetsKatalog = `${process.env.PUBLIC_URL}/images/Katalog`;
 
   useEffect(() => {
@@ -56,11 +46,6 @@ const KatalogDetail = (props) => {
     });
   };
 
-  useEffect(() => {
-    console.log(selected);
-    console.log(titleBawah);
-  }, [selected, titleBawah]);
-
   const content = useRef(null);
 
   if (loading) return <div></div>;
@@ -73,36 +58,24 @@ const KatalogDetail = (props) => {
           style={{ marginTop: "-76px" }}
           className="relative w-full h-screen bg-orange flex flex-col justify-center items-center"
         >
-          {/* <img
-            src={vektor}
-            alt=""
-            style={{
-              filter: "drop-shadow( 0px 10px 4px #00000050)",
-            }}
-            className="absolute left-24 bottom-72 w-24"
-          />
-          <img
-            src={vektor2}
-            alt=""
-            className="absolute right-24 top-24  w-56"
-          /> */}
-          <div className="relative flex text-center items-center justify-center text-5xl text-yellow font-universalserif w-full h-full">
+          <div className="relative flex flex-col sm:flex-row text-center items-center justify-center w-full h-full">
             <div className="w-1/2 flex justify-center items-center">
               <img
                 src={`${assetsKatalog}/supporter/${Katalog.logo}`}
                 alt=""
-                className="rounded-full w-96 h-96"
+                className="mt-32 sm:mt-0 rounded-full sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-96 xl:h-96"
               />
             </div>
-            <div className="z-20 relative w-1/2 h-full flex flex-col -ml-28 items-center justify-center">
+            <div className="-mt-20 sm:-mt-0 z-20 relative w-full  sm:w-1/2 h-full flex flex-col 2xl:-ml-28 items-center justify-center">
               <img src={namaFakultas} alt="" className="absolute" />
-              <p className="z-20">{Katalog.title}</p>
-              {/* <div className="bg-nama-fakultas z-20 w-full h-full">
+              <p
+                className={`z-20  truncate text-xl sm:text-2xl xl:text-4xl text-yellow font-universalserif`}
+              >
                 {Katalog.title}
-              </div> */}
+              </p>
               <img
                 src={triangle}
-                className="absolute bottom-56 w-24 animate-bounce cursor-pointer"
+                className="absolute bottom-24 sm:bottom-32 md:bottom-96 lg:bottom-56 w-16 lg:w-20 xl:w-24 animate-bounce cursor-pointer"
                 style={{
                   filter: "drop-shadow( 0px 10px 4px #00000050)",
                 }}
@@ -120,7 +93,7 @@ const KatalogDetail = (props) => {
             }}
             src={kertas}
             alt=""
-            className="w-full absolute -bottom-1/4 2xl:-bottom-1/3"
+            className="w-full absolute -bottom-1/10 sm:-bottom-1/4 md:-bottom-1/8 lg:-bottom-1/4 xl:-bottom-1/4 2xl:-bottom-1/3"
           />
         </section>
         <section
@@ -128,7 +101,7 @@ const KatalogDetail = (props) => {
           style={{ paddingBottom: "72px" }}
           className="w-full flex flex-col justify-center items-center pt-40 2xl:pt-72 bg-yellow"
         >
-          <div className="relative w-48 h-12 mb-12 flex text-center items-center">
+          <div className="-mt-16 md:-mt-0 relative w-48 h-12 mb-12 flex text-center items-center">
             <img
               style={{
                 filter: "drop-shadow( 5px 5px 4px #00000050)",
@@ -137,7 +110,7 @@ const KatalogDetail = (props) => {
               alt=""
               className="absolute z-0"
             />
-            <h1 className="w-full z-10 font-montserrat font-bold text-3xl">
+            <h1 className="w-full z-10 font-montserrat font-bold text-xl md:text-3xl">
               {titleBawah[selected] == "article"
                 ? "Artikel"
                 : titleBawah[selected] == "video"
@@ -147,32 +120,33 @@ const KatalogDetail = (props) => {
                 : "Infografis"}
             </h1>
           </div>
-          <div
-            style={{ paddingRight: "15%", paddingLeft: "15%" }}
-            className="flex items-center gap-4 w-full h-full"
-          >
+          <div className="flex items-center gap-4 w-full h-full px-3 sm:px-1/20 lg:px-1/10">
             <img
               src={triangleMerah2}
-              className={`${begin ? "" : "cursor-pointer"} w-24 h-24`}
+              className={`${
+                begin ? "" : "cursor-pointer"
+              } w-8 h-8 md:w-14 md:h-14 xl:w-20 xl:h-20`}
               id="swiper-back"
-              // style={{ opacity: begin ? 0.5 : 1, rotate: "180deg" }}
+              hidden={titleBawah.length === 1}
               style={begin ? { opacity: 0.5 } : { opacity: 1 }}
-              // onClick={() => swiper.slideTo(selected + 1)}
+              alt="button-back"
             />
             <Swiper
               centeredSlides={true}
               navigation={{ nextEl: "#swiper-forward", prevEl: "#swiper-back" }}
               modules={[Navigation]}
               onSlideChange={(swiper) => {
-                console.log(swiper);
                 setSelected(swiper.activeIndex);
                 setBegin(swiper.isBeginning);
                 setEnd(swiper.isEnd);
               }}
-              style={{ aspectRatio: "16/9" }}
+              style={{
+                aspectRatio:
+                  titleBawah[selected] == "infografis" ? "unset" : "16/9",
+                height: titleBawah[selected] == "infografis" ? "100%" : "auto",
+              }}
               className="w-full"
             >
-              {/* {Object.entries(KatalogDetail).map(([k, v]) => console.log(k, v))} */}
               <SwiperSlide
                 hidden={!titleBawah.some((data) => data === "article")}
                 className="bg-red-500"
@@ -186,221 +160,60 @@ const KatalogDetail = (props) => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
-                <div className="relative text-xs xl:text-sm 2xl:text-base flex justify-center items-center"></div>
               </SwiperSlide>
               <SwiperSlide
                 hidden={!titleBawah.some((data) => data === "video")}
+                className="bg-gray-500"
               >
                 <iframe
-                  width="560"
-                  height="315"
-                  src={KatalogDetail.chant}
+                  style={{ aspectRatio: "16/9" }}
+                  className="w-full"
+                  src={KatalogDetail.video}
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
-                <div className="relative text-xs xl:text-sm 2xl:text-base flex justify-center items-center"></div>
               </SwiperSlide>
               <SwiperSlide
                 hidden={!titleBawah.some((data) => data === "chant")}
+                className="bg-gray-500"
               >
                 <iframe
-                  width="560"
-                  height="315"
+                  style={{ aspectRatio: "16/9" }}
+                  className="w-full"
                   src={KatalogDetail.chant}
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
-                <div className="relative text-xs xl:text-sm 2xl:text-base flex justify-center items-center"></div>
               </SwiperSlide>
               <SwiperSlide
                 hidden={!titleBawah.some((data) => data === "infografis")}
+                className="flex justify-center items-center"
               >
-                <iframe
-                  width="560"
-                  height="315"
-                  src={KatalogDetail.chant}
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-                <div className="relative text-xs xl:text-sm 2xl:text-base flex justify-center items-center"></div>
+                <img
+                  src={`${assetsKatalog}/infografis/${KatalogDetail.infografis}`}
+                  alt={" Infografis" + Katalog.title}
+                  className="h-full"
+                />
               </SwiperSlide>
             </Swiper>
             <img
               src={triangleMerah}
-              className={`${end ? "" : "cursor-pointer"} w-24 h-24`}
+              className={`${
+                end ? "" : "cursor-pointer"
+              } w-8 h-8 md:w-14 md:h-14 xl:w-20 xl:h-20`}
               id="swiper-forward"
+              hidden={titleBawah.length === 1}
               style={end ? { opacity: 0.5 } : { opacity: 1 }}
-              // onClick={() => swiper.slidePrev()}
+              alt="button-next"
             />
           </div>
         </section>
       </>
     );
-  } else if (false) {
-    // return (
-    //   <div className="bg-purple">
-    //     {/* Start of Header */}
-    //     <div className="lg:mb-72 lg:h-screen relative">
-    //       <img
-    //         className="lg:-mt-20 pointer-events-none"
-    //         src={`${assetsKatalog}/bg.png`}
-    //         alt=""
-    //       />
-    //       {window.innerWidth > 1024 ? (
-    //         <button
-    //           className={`absolute left-1/2 bottom-8`}
-    //           style={{ maxWidth: "5%" }}
-    //           onClick={() =>
-    //             content.current.scrollIntoView({ behavior: "smooth" })
-    //           }
-    //         >
-    //           <img src={`${assetsCabang}/arrow-bottom.png`} alt="" />
-    //         </button>
-    //       ) : (
-    //         <></>
-    //       )}
-    //     </div>
-    //     {/* End of Header */}
-    //     {/* Logo  */}
-    //     <div
-    //       className="relative flex flex-col items-center justify-center"
-    //       ref={content}
-    //     >
-    //       <img
-    //         className=" pointer-events-none relative w-60"
-    //         src={`${assetsKatalog}/supporter/${Katalog.logo}`}
-    //         alt=""
-    //       />
-    //       <p className="text-center md:my-4 font-sansPro text-white font-bold text-md md:text-5xl">
-    //         {" "}
-    //         {Katalog.title}{" "}
-    //       </p>
-    //       <div>
-    //         <img
-    //           src={`${assetsKatalog}/yellow-rectangle.png`}
-    //           alt="ornament kanan"
-    //           className="hidden md:block absolute top-40 right-0"
-    //           style={{ width: "2%" }}
-    //         />
-    //       </div>
-    //     </div>
-    //     {/* End of logo  */}
-    //     {/* Button */}
-    //     <div className="grid grid-cols-1 mx-4 md:mx-20 text-center ">
-    //       <div
-    //         className={
-    //           Katalog.article === ""
-    //             ? "hidden"
-    //             : toggleState === 1
-    //             ? active
-    //             : inactive
-    //         }
-    //         onClick={() => toggleTab(1)}
-    //       >
-    //         Artikel
-    //       </div>
-    //       <div
-    //         className={
-    //           toggleState === 1
-    //             ? "mt-8 text-white text-sm md:text-2xl font-bold  "
-    //             : "hidden"
-    //         }
-    //       >
-    //         {Katalog.article}
-    //       </div>
-    //     </div>
-    //     <div className="cursor-pointer mt-8  grid grid-cols-2 md:grid-cols-3 mx-4 md:mx-20 gap-x-4 md:gap-x-12 gap-y-4 text-center ">
-    //       <div
-    //         className={
-    //           Katalog.video === ""
-    //             ? "hidden"
-    //             : toggleState === 2
-    //             ? active
-    //             : inactive
-    //         }
-    //         onClick={() => toggleTab(2)}
-    //       >
-    //         Video Profil
-    //       </div>
-    //       <div
-    //         className={
-    //           Katalog.chant === ""
-    //             ? "hidden"
-    //             : toggleState === 3
-    //             ? active
-    //             : inactive
-    //         }
-    //         onClick={() => toggleTab(3)}
-    //       >
-    //         Chant
-    //       </div>
-    //       <div
-    //         className={
-    //           Katalog.infografis === ""
-    //             ? "hidden"
-    //             : toggleState === 4
-    //             ? active
-    //             : inactive
-    //         }
-    //         onClick={() => toggleTab(4)}
-    //       >
-    //         Infografis
-    //       </div>
-    //     </div>
-    //     {/*End of button */}
-    //     {/* Start of content  */}
-    //     <div className="relative grid grid-cols-1 text-justify justify-items-center  mt-5 lg:mt-10 mx-10 lg:mx-20 pb-10">
-    //       <div className={toggleState === 2 ? "w-11/12 md:w-1/2" : "hidden"}>
-    //         {/* <video
-    //             controls
-    //             src={`${assetsKatalog}/video/${Katalog.video}`}
-    //           ></video> */}
-    //         <iframe
-    //           width="560"
-    //           height="315"
-    //           src={Katalog.video}
-    //           title="YouTube video player"
-    //           frameBorder="0"
-    //           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    //           allowFullScreen
-    //         ></iframe>
-    //       </div>
-    //       <div className={toggleState === 3 ? "w-11/12 md:w-1/2" : "hidden"}>
-    //         <iframe
-    //           width="560"
-    //           height="315"
-    //           src={Katalog.chant}
-    //           title="YouTube video player"
-    //           frameBorder="0"
-    //           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    //           allowFullScreen
-    //         ></iframe>
-    //       </div>
-    //       <div className={toggleState === 4 ? "w-11/12 md:w-1/2 " : "hidden"}>
-    //         <img
-    //           className=" "
-    //           src={`${assetsKatalog}/infografis/${Katalog.infografis}`}
-    //           alt="Infografis"
-    //         />
-    //       </div>
-    //     </div>
-    //     {/* End of Content  */}
-    //     <div className="relative">
-    //       <img
-    //         src={`${assetsKatalog}/yellow-rectangle.png`}
-    //         alt="ornament kanan"
-    //         className="hidden md:block absolute bottom-0 left-0"
-    //         style={{ width: "2%" }}
-    //       />
-    //     </div>
-    //   </div>
-    // );
   } else {
     return <NotFound />;
   }

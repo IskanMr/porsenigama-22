@@ -9,11 +9,8 @@ import vektor2 from "../assets/images/katalog/vektor2.png";
 
 const Katalog = () => {
   const list = supporterList;
-  console.log(list);
   const content = useRef(null);
-  const width = window.innerWidth;
 
-  const assetsCabang = `${process.env.PUBLIC_URL}/images/Cabang`;
   const assetsKatalog = `${process.env.PUBLIC_URL}/images/Katalog`;
   return (
     <>
@@ -68,7 +65,6 @@ const Katalog = () => {
         {list.map(({ id, title, logo }, i) => (
           <div
             key={i}
-            // style={{ width: "224px", height: "224px" }}
             className="z-20 w-1/3 sm:w-1/4 lg:w-1/5 flex items-center justify-center"
           >
             <a href={`katalog/${id}`}>
@@ -78,12 +74,6 @@ const Katalog = () => {
                 className="2xl:w-56 2xl:h-56 rounded-full"
               />
             </a>
-            {/* <div
-              style={{ backgroundColor: "#D9D9D9" }}
-              className="w-56 h-56 flex justify-center items-center"
-            >
-              Logo Suporter
-            </div> */}
           </div>
         ))}
       </section>
