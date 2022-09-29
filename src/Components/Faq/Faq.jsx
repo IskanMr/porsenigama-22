@@ -52,14 +52,10 @@ export function FAQ({ item }) {
                 <Disclosure.Panel static className={disclosurePanelCSS}>
                   <div className="flex flex-col">
                     {item.answer !== "null" ? item.answer : null}
-                    <ul
-                      className={`${
-                        item.list !== "null" ? "" : "hidden"
-                      } list-disc ml-4`}
-                    >
-                      {item.list !== "null"
+                    <ul className={`list-disc ml-4`}>
+                      {item.lists !== "null"
                         ? item.lists.map((list, id) => <li key={id}>{list}</li>)
-                        : "none"}
+                        : null}
                     </ul>
                   </div>
                 </Disclosure.Panel>
