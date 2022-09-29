@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { caborList, casenList } from "../data/dataCabangs";
+import { caborList, casenList } from "../data/dataCabang";
 import { HtmlHead } from "../Components/HtmlHead";
 import styled from 'styled-components'
 import Logo from "../assets/images/cabang/Group 138.svg";

@@ -1,4 +1,4 @@
-const caborList = [
+const cabangList = [
   {
     title: "Panahan",
     category: [
@@ -965,9 +965,7 @@ const caborList = [
       },
     ],
   },
-];
-  
-const casenList = [
+
   {
     title: "Menulis Puisi",
     description:
@@ -1042,4 +1040,4 @@ const casenList = [
   
 ];
 
-export { caborList, casenList };
+export {cabangList };
