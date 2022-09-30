@@ -123,9 +123,9 @@ const KatalogDetail = (props) => {
           <div className="flex items-center gap-4 w-full h-full px-3 sm:px-1/20 lg:px-1/10">
             <img
               src={triangleMerah2}
-              className={`${
-                begin ? "" : "cursor-pointer"
-              } w-8 h-8 md:w-14 md:h-14 xl:w-20 xl:h-20`}
+              className={`${begin ? "" : "cursor-pointer"} ${
+                begin ? "" : "hover:scale-110"
+              } duration-100 transform  w-8 h-8 md:w-14 md:h-14 xl:w-20 xl:h-20`}
               id="swiper-back"
               hidden={titleBawah.length === 1}
               style={begin ? { opacity: 0.5 } : { opacity: 1 }}
@@ -202,9 +202,9 @@ const KatalogDetail = (props) => {
             </Swiper>
             <img
               src={triangleMerah}
-              className={`${
-                end ? "" : "cursor-pointer"
-              } w-8 h-8 md:w-14 md:h-14 xl:w-20 xl:h-20`}
+              className={`${end ? "" : "cursor-pointer"} ${
+                end ? "" : "hover:scale-110"
+              } duration-100 transform  w-8 h-8 md:w-14 md:h-14 xl:w-20 xl:h-20`}
               id="swiper-forward"
               hidden={titleBawah.length === 1}
               style={end ? { opacity: 0.5 } : { opacity: 1 }}
