@@ -27,7 +27,7 @@ const Header = ({ id, cabangHeader }) => {
       <div className="relative" style={{ width: "45%" }}>
         <img src={`${assetsCabangDetail}/circle-biru.svg`} alt="" />
         <div
-          className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white"
+          className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black"
           style={{ width: "70%" }}
         >
           <h1 className="md:mb-2 lg:mb-4 xl:mb-8 font-bold sm:text-2xl md:text-4xl lg:text-5xl uppercase">
