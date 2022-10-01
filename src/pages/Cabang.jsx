@@ -22,18 +22,18 @@ const Cabang = () => {
       <div className="relative w-full bg-blue py-10">
         <img 
           src={RippedPaper} 
-          className="absolute md:pt-21rem lg:pt-25rem xl:pt-32rem"
+          className="w-full absolute m-auto -bottom-14 xs:-bottom-14 sm:-bottom-20 md:-bottom-28 lg:-bottom-36 xl:-bottom-48 pointer-events-none"
         />
         <div className="grid grid-cols-2 justify-items-center content-center m-auto">
-          <div className="pt-16 px-10 items-center justify-center z-10 pointer-events-none">
+          <div className="w-full pt-5 md:pt-16 px-10 items-center justify-center z-10 pointer-events-none">
             <img 
               src={Logo} 
               className="" 
               style={{width:"600px"}} 
-              alt="Logo" 
+              alt="Logo"
             />
           </div>
-          <div className="m-auto mx-1 z-10">
+          <div className="m-auto mr-6 lg:mr-14 z-10">
             <img 
               src={TeksCabang} 
               className="mb-8 pointer-events-none" 
@@ -41,13 +41,16 @@ const Cabang = () => {
             />
             <img
               src={ScrollDown}
-              className="items-center justify-center mx-auto"
+              className="m-auto w-9 sm:w-12 md:w-20 xl:w-24 -mt-4 sm:-mt-5 lg:-mt-5 animate-bounce cursor-pointer"
+              onClick={() => {
+                content.current.scrollIntoView({ behavior: "smooth" });
+              }}
               alt=""
             />
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center bg-pattern-cabang" style={{backgroundSize: "cover"}}>
+      <div className="flex flex-col items-center justify-center bg-pattern-cabang" style={{backgroundSize: "cover"}} ref={content}>
         <div className="flex justify-center w-1/2 sm:w-1/3 pt-20 my-8 lg:my-14 xl:my-20 2xl:my-28 space-x-8 lg:space-x-24">
           <button
             className="transform duration-200 transition-300 hover:scale-110"
