@@ -20,6 +20,7 @@ module.exports = {
         yellow: "#FCE517",
         purple: "#5E4795",
         orange: "#E66D4B",
+        red: "#804964",
       },
       fontFamily: {
         display: ["Universal Serif", "system-ui", "sans-serif"],
