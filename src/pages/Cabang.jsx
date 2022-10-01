@@ -51,7 +51,7 @@ const Cabang = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center bg-pattern-cabang" style={{backgroundSize: "cover"}} ref={content}>
-        <div className="flex justify-center w-1/2 sm:w-1/3 pt-20 my-8 lg:my-14 xl:my-20 2xl:my-28 space-x-8 lg:space-x-24">
+        <div className="flex justify-center w-1/2 sm:w-2/5 md:w-1/3 pt-8 md:pt-20 my-8 sm:my-14 lg:my-14 xl:my-20 2xl:my-28 space-x-8 lg:space-x-24">
           <button
             className="transform duration-200 transition-300 hover:scale-110"
             onClick={() => setList(caborList)}
@@ -73,7 +73,7 @@ const Cabang = () => {
             />
           </button>
         </div>
-        <div className="flex flex-wrap justify-center w-5/6 gap-y-10 pb-20">
+        <div className="flex flex-wrap justify-center w-5/6 gap-y-10 lg:gap-y-14 xl:gap-y-20 pb-20">
           {list.map((item) => (
             <a
               className="w-1/3 transform duration-200 transition-transform transition-300 hover:scale-110"
