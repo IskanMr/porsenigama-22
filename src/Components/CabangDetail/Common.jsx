@@ -126,13 +126,13 @@ const Common = ({
   return (
     <>
      
-      <div className="flex flex-col h-screen justify-center md:px-20 pt-8">
-        <div className="flex flex-row items-center justify-between">
+      <div className="flex flex-col h-screen justify-center bg-blue md:px-20 pt-20 xl:pt-36 2xl:pt-56 pb-10">
+        <div className="flex flex-row items-center justify-between pb-10">
           <div
             className={`z-10 relative bg-white sm:min-w-max sm:w-1/3 ${
               showCategory
                 ? "rounded-t-3xl"
-                : "bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-3xl"
+                : "rounded-3xl"
             } py-3 lg:text-xl xl:text-2xl`}
             style={{
               boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
