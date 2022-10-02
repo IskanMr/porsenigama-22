@@ -4,6 +4,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      maxHeight: {
+        '1/2': "50%"
+      },
       padding: {
         "32rem": "32rem",
         "21rem": "21rem",
@@ -21,6 +24,7 @@ module.exports = {
         purple: "#5E4795",
         orange: "#E66D4B",
         red: "#804964",
+        inporse: "#D9D9D9"
       },
       fontFamily: {
         display: ["Universal Serif", "system-ui", "sans-serif"],

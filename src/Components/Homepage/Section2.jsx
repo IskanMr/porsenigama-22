@@ -43,15 +43,50 @@ const Section2 = () => {
           </h1>
         </div>
         <div
-          className="z-10 rounded-large w-3/4 items-center justify-center mx-auto py-80 md:py-56"
+          className="z-10 rounded-large w-3/4 mx-auto pb-5 md:pb-12"
           style={{ backgroundColor: "#D9D9D9" }}
         >
           {/* <h2 className="font-montserrat font-bold text-2xl align-middle justify-center items-center flex leading-tes">
             MENGENAL PORSENIGAMA
           </h2> */}
-          <h2 className="font-montserrat font-bold text-xl flex items-center justify-center text-center">
+          <h2 className="font-montserrat font-bold text-lg md:text-2xl flex items-center justify-center text-center pb-5 pt-5">
             MENGENAL PORSENIGAMA
           </h2>
+          <p className="text-center md:px-12 px-5 text-base md:text-xl font-montserrat">
+            Pekan Olahraga dan Seni Universitas Gadjah Mada (Porsenigama)
+            merupakan satu diantara kegiatan besar di Universitas Gadjah Mada.
+            Penyelenggaraan kegiatan ini, sebagai ajang mempertemukan seluruh
+            kontingen dari Fakultas dan Sekolah yang ada di UGM untuk berlaga
+            pada cabang olahraga dan tangkai seni yang diperlombakan.
+            Porsenigama bertujuan untuk menumbuhkan karakter kreativitas dan
+            sportivitas dalam perlombaan yang adil di kalangan mahasiswa
+            Universitas Gadjah Mada. Porsenigama dilaksanakan atas dasar
+            Rancangan Kegiatan Awal Tahun (RKAT) atau program kerja Forum
+            Komunikasi (FORKOM) UKM Universitas Gadjah Mada. Pada tahun ini,
+            Porsenigama kembali hadir dengan mengusung konsep yang berbeda
+            dengan mengembalikan euforia sebelum pandemi. Porsenigama dilakukan
+            secara luring dengan tetap menerapkan protokol kesehatan. Seluruh
+            atlet dan seniman yang berlaga, akan merebutkan gelar juara umum
+            Porsenigama dan membawa Piala Gadjah Mada. Gelar ini
+            direpresentasikan dengan Piala Gadjah Mada yang diberikan secara
+            estafet dari pemenang tahun-tahun sebelumnya. Porsenigama dari tahun
+            ke tahun telah berhasil mencuri perhatian civitas akademika UGM.
+            Meskipun tidak semua menjadi peserta lomba, mereka tetap berantusias
+            menyambut Porsenigama dan mendukung penuh kontingen. Porsenigama
+            2022 mengusung tema “Bahtera Abhipraya” dengan slogan “Pijar Laskar
+            Gadjah Mada, Cipta Gemilang Porsenigama” menjadi harapan baru untuk
+            seluruh lapisan masyarakat. Bahtera Abhipraya, tersirat makna besar
+            bagi Porsenigama 2022. Dengan terbentangnya layar bahtera
+            Porsenigama dalam mengarungi lautan samudera harapan, menjadi awal
+            lahirnya cahaya baru bersatunya Laskar Gadjah Mada”. Bahtera
+            Abhipraya juga menjadi manifestasi bagi para atlet dan seniman untuk
+            memulai sebuah perjalanan bergerak dan berpadu untuk maju dengan
+            membawa harapan besar dan bersama menerobos terpaan badai yang
+            sedang dihadapi menuju tujuan akhir, tercapainya harapan dan
+            kekuatan dalam kebersamaan. Dengan tema yang baru ini, Porsenigama
+            diharapkan dapat berjalan dengan lancar dan suportif, serta mampu
+            membawa energi positif untuk para mahasiswa UGM.
+          </p>
         </div>
         <img
           src={BintangKuning}
