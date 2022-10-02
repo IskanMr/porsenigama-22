@@ -49,7 +49,7 @@ const Faq = () => {
       <div className="min-h-screen bg-blue font-body px-6 md:px-0 pb-9">
         <div className="flex flex-col w-full justify-items-center items-center">
           <span>
-            <img src={Title} className="" alt="title" />
+            <img src={Title} alt="title" />
           </span>
 
           <div className="flex w-full mt-6 justify-items-center place-content-center">
@@ -89,7 +89,7 @@ const Faq = () => {
             ))}
           </div>
         </div>
-        <div className="flex justify-center mt-4 md:mt-8">
+        {/* <div className="flex justify-center mt-4 md:mt-8">
           Pertanyaan kamu tidak ada di laman ini? Silahkan hubungi
           <button
             type="button"
@@ -99,7 +99,7 @@ const Faq = () => {
             {" "}
             sini
           </button>
-        </div>
+        </div> */}
       </div>
     </>
   );
