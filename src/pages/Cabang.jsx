@@ -41,7 +41,7 @@ const Cabang = () => {
             />
             <img
               src={ScrollDown}
-              className="m-auto w-9 sm:w-12 md:w-20 xl:w-24 -mt-4 sm:-mt-5 lg:-mt-5 animate-bounce cursor-pointer"
+              className="m-auto w-7 sm:w-12 md:w-20 xl:w-24 -mt-7 md:-mt-6 lg:-mt-5 animate-bounce cursor-pointer"
               onClick={() => {
                 content.current.scrollIntoView({ behavior: "smooth" });
               }}
