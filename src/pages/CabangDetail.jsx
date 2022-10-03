@@ -23,7 +23,7 @@ const assetsCabangDetail = `${process.env.PUBLIC_URL}/images/CabangDetail`;
 const Header = ({ id, cabangHeader }) => {
   return (
     <div className="w-full h-full lg:min-h-screen flex flex-row md:gap-x-10 xl:gap-x-20 items-center justify-center bg-yellow pt-14 lg:pt-0 pointer-events-none">
-      <div className="relative z-20" style={{ width: "10%" }}>
+      <div className="relative z-20" style={{ width: "7%" }}>
         <img
           className="absolute top-1 left-10"
           style={{ width: "137px"}}
@@ -31,7 +31,7 @@ const Header = ({ id, cabangHeader }) => {
           alt=""
         />
       </div>
-      <div className="relative" style={{ width: "45%" }}>
+      <div className="relative" style={{ width: "30%" }}>
         <img
           className="w-full"
           style={{ width: "858px" }}
@@ -41,14 +41,14 @@ const Header = ({ id, cabangHeader }) => {
       </div>
       <div className="relative" style={{ width: "5%" }}>
         <img
-            className="absolute bottom-72 right-24"
+            className="absolute -top-52 lg:-top-72 right-20 lg:right-24"
             style={{ width: "70px" }}
             src={vector2}
             alt=""
           />
       </div>
       <div className="z-20 relative w-full h-full flex flex-col w-1/3 sm:w-1/2 -ml-20 2xl:-ml-28 items-center justify-center" style={{ width: "45%" }}>
-        <img src={paperTitle} style={{ width: "762px" }} alt="" className="absolute w-7/12 sm:w-full -mt-44" />
+        <img src={paperTitle} style={{ width: "762px" }} alt="" className="absolute w-7/12 sm:w-full -mt-44 mr-14" />
         <h1 className="font-bold sm:text-2xl md:text-4xl lg:text-5xl uppercase text-white font-universalserif z-40 -mt-56">
           {id} 
         </h1>
