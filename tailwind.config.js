@@ -4,9 +4,6 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      maxHeight: {
-        '1/2': "50%"
-      },
       padding: {
         "32rem": "32rem",
         "21rem": "21rem",
@@ -37,7 +34,9 @@ module.exports = {
       },
       fontSize: {},
       width: {},
-      height: {},
+      height: {
+        "18rem": "18rem"
+      },
       spacing: {
         "1/5": "20%",
         "1/6": "16.666667%",
@@ -50,6 +49,7 @@ module.exports = {
       boxShadow: {},
       borderRadius: {
         large: "5rem",
+        "3rem": "3rem"
       },
       lineHeight: {
         tes: "50vh",

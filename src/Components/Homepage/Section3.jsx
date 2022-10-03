@@ -1,8 +1,9 @@
 import Slider from "react-slick";
 import React from "react";
-import VectorKiri from "../../assets/images/homepage/vektor-kiri-section-3.png";
-import VectorKanan from "../../assets/images/homepage/vektor-kanan-section-3.png";
+import VectorKiri from "../../assets/images/homepage/vektor-kiri-inporse.png";
+import VectorKanan from "../../assets/images/homepage/vektor-kanan-inporse.png";
 import BorderInporse from "../../assets/images/homepage/border-inporse-section-3.png";
+import BintangKuning from "../../assets/images/homepage/bintang-kuning-inporse.png";
 import PaperKiri from "../../assets/images/homepage/paper-kiri-section-3.png";
 import PaperKanan from "../../assets/images/homepage/paper-kanan-section-3.png";
 import BorderInporseMobile from "../../assets/images/homepage/border-inporse-mobile.png";
@@ -12,31 +13,33 @@ import GambarKontinenInporse from "../../assets/images/homepage/gambar-inporse-2
 
 const Section3 = () => {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
+    arrows: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
   return (
     <>
-      <div className="z-10 relative bg-homepage-section-3 pt-80 pb-80">
+      <div className="z-10 relative bg-homepage-section-3 pt-21rem pb-40">
         <img
           src={BorderInporseMobile}
-          className="mx-auto transform translate-x-2"
+          className="mx-auto transform translate-x-2 md:hidden"
           alt=""
         />
+        <img src={BorderInporse} className="mx-auto md:block hidden transform translate-x-2" alt="" />
         <h2
           className="font-universalserif text-3xl text-yellow absolute text-center"
           style={{
-            top: "20%",
+            top: "28.5%",
             left: "50%",
             transform: "translate(-50%, -50%)",
           }}
         >
           INPORSE
         </h2>
-        <div className="mx-auto items-center justify-center w-2/3 rounded-3xl max-h-1/2 bg-opacity-20 bg-inporse font-montserrat font-medium">
+        <div className="mt-16 mx-auto items-center justify-center w-2/3 rounded-3rem bg-opacity-20 text-xl bg-inporse font-montserrat overflow-hidden font-medium py-8">
           <Slider {...settings}>
             <div className="">
               <img
@@ -44,8 +47,8 @@ const Section3 = () => {
                 src={GambarLogoInporse}
                 alt=""
               />
-              <div className="overflow-y-scroll max-h-1/2">
-                <p className="">
+              <div className="overflow-y-scroll">
+                <p className="px-14 h-18rem text-justify pt-1">
                   Piala <br />
                   melambangkan sebuah kompetisi antar fakultas yang ada di
                   Universitas Gadjah Mada guna memperebutkan gelar juara dan
@@ -102,13 +105,13 @@ const Section3 = () => {
                 </p>
               </div>
             </div>
-            <div className="">
+            <div className="overflow-hidden">
               <img
                 className="mx-auto items-center justify-center"
                 src={GambarPorsenigamaInporse}
                 alt=""
               />
-              <p>
+              <p className="px-32 text-justify pt-5">
                 Porsenigama pertama kali diselenggarakan pada tahun 1983.
                 Porsenigama lahir karena pada saat itu dinilai belum adanya
                 kegiatan yang mewadahi interaksi bersama antar fakultas di UGM,
@@ -127,7 +130,7 @@ const Section3 = () => {
                 src={GambarKontinenInporse}
                 alt=""
               />
-              <p>
+              <p className="px-32 text-justify pt-5">
                 Kontingen Porsenigama = 20 yang terdiri dari 18 fakultas dan 2
                 sekolah yang ada di Universitas Gadjah Mada.
                 <br /> Lokasi Perlombaan Porsenigama = 19 tempat perlombaanya
@@ -143,32 +146,27 @@ const Section3 = () => {
         </div>
         <img
           src={VectorKiri}
-          className="absolute top-96 left-10 hidden"
+          className="absolute top-96 left-10 hidden md:block"
           alt=""
         />
         <img
           src={VectorKanan}
-          className="absolute right-9 top-32rem hidden"
+          className="absolute right-9 top-32rem hidden md:block"
           alt=""
         />
-        <img src={BorderInporse} className="mx-auto hidden" alt="" />
-        {/* <h2
-          className="font-universalserif text-3xl text-yellow z-10 mx-auto absolute"  style={{
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
-        >
-          INPORSE
-        </h2> */}
+        <img
+          src={BintangKuning}
+          className="absolute left-96 pt-10 hidden md:block"
+          alt=""
+        />
         <img
           src={PaperKiri}
-          className="left-0 bottom-0 absolute hidden"
+          className="left-0 absolute hidden md:block"
           alt=""
         />
         <img
           src={PaperKanan}
-          className="right-0 bottom-0 absolute hidden"
+          className="right-0 absolute hidden md:block"
           alt=""
         />
       </div>
