@@ -28,7 +28,11 @@ const Section3 = () => {
           className="mx-auto transform translate-x-2 md:hidden"
           alt=""
         />
-        <img src={BorderInporse} className="mx-auto md:block hidden transform translate-x-2" alt="" />
+        <img
+          src={BorderInporse}
+          className="mx-auto md:block hidden transform translate-x-2"
+          alt=""
+        />
         <h2
           className="font-universalserif text-3xl text-yellow absolute text-center"
           style={{
@@ -39,7 +43,7 @@ const Section3 = () => {
         >
           INPORSE
         </h2>
-        <div className="mt-16 mx-auto items-center justify-center w-2/3 rounded-3rem bg-opacity-20 text-xl bg-inporse font-montserrat overflow-hidden font-medium py-8">
+        <div className="mt-16 mx-auto items-center justify-center w-2/3 rounded-3rem bg-opacity-20 text-xl bg-inporse font-montserrat overflow-hidden font-medium py-8 filter drop-shadow-2xl">
           <Slider {...settings}>
             <div className="">
               <img

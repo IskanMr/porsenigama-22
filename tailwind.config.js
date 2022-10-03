@@ -21,7 +21,9 @@ module.exports = {
         purple: "#5E4795",
         orange: "#E66D4B",
         red: "#804964",
-        inporse: "#D9D9D9"
+        inporse: "#D9D9D9",
+        borderpeta:"#D9D9D9",
+        textpeta: "#E41D21"
       },
       fontFamily: {
         display: ["Universal Serif", "system-ui", "sans-serif"],
@@ -35,7 +37,8 @@ module.exports = {
       fontSize: {},
       width: {},
       height: {
-        "18rem": "18rem"
+        "18rem": "18rem",
+        "24rem": "24rem",
       },
       spacing: {
         "1/5": "20%",
