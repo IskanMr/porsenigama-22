@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react";
 import { Hasil } from "./Hasil";
-
+import { Award } from "./Award";
 const assetsCabangDetail = `${process.env.PUBLIC_URL}/images/CabangDetail`;
 
 // const Card = (props) => {  const data = props.data;
@@ -180,6 +180,7 @@ const Common = ({
               </div>
             )}
           </div>
+          <Award id={id} />
           <Hasil id={id} />
         </div>
         <div className="h-full">
