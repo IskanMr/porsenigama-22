@@ -13,6 +13,7 @@ module.exports = {
         "homepage-section-3":
           "url('/src/assets/images/homepage/bg-section-3.png')",
         "pattern-cabang": "url('/src/assets/images/cabang/5328478.svg')",
+        "pattern-cabangDetail": "url('/src/assets/images/cabang/cabangDetail/Mask group (3).png')",
         "nama-fakultas": "url('/src/assets/images/katalog/namaFakultas.png')",
       },
       colors: {

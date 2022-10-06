@@ -126,7 +126,7 @@ const Common = ({
   return (
     <>
      
-      <div className="flex flex-col h-screen justify-center bg-blue md:px-20 pt-20 xl:pt-36 2xl:pt-56 pb-10">
+      <div className="flex flex-col h-screen justify-center bg-pattern-cabangDetail bg-cover md:px-20 pt-20 xl:pt-36 2xl:pt-56 pb-10">
         <div className="flex flex-row items-center justify-between pb-10">
           <div
             className={`z-10 relative bg-white sm:min-w-max sm:w-1/3 ${
