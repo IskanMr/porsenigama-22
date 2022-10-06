@@ -13,7 +13,8 @@ module.exports = {
         "homepage-section-3":
           "url('/src/assets/images/homepage/bg-section-3.png')",
         "pattern-cabang": "url('/src/assets/images/cabang/5328478.svg')",
-        "pattern-cabangDetail": "url('/src/assets/images/cabang/cabangDetail/Mask group (3).png')",
+        "pattern-cabangDetail":
+          "url('/src/assets/images/cabang/cabangDetail/Mask group (3).png')",
         "nama-fakultas": "url('/src/assets/images/katalog/namaFakultas.png')",
       },
       colors: {
@@ -63,9 +64,14 @@ module.exports = {
       },
       screens: {
         "450px": { min: "450px", max: "768px" },
-        "768px": { min: "768px", max: "1024px" },
+        "405px": { min: "405px", max: "767px" },
       },
       borderWidth: {},
+      margin: {
+        "23rem": "23rem",
+        "32rem": "32rem",
+        "27rem": "27rem",
+      },
     },
   },
   variants: {

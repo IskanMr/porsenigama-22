@@ -43,7 +43,7 @@ const Section3 = () => {
         >
           INPORSE
         </h2>
-        <div className="mt-16 mx-auto items-center justify-center w-2/3 rounded-3rem bg-opacity-20 text-xl bg-inporse font-montserrat overflow-hidden font-medium py-8 filter drop-shadow-2xl">
+        <div className="mt-16 mx-auto items-center justify-center md:w-2/3 w-4/5 rounded-3rem bg-opacity-20 text-xl bg-inporse font-montserrat overflow-hidden font-medium py-8 filter drop-shadow-2xl">
           <Slider {...settings}>
             <div className="">
               <img
@@ -115,7 +115,7 @@ const Section3 = () => {
                 src={GambarPorsenigamaInporse}
                 alt=""
               />
-              <p className="px-32 text-justify pt-5">
+              <p className="md:px-32 text-justify pt-5">
                 Porsenigama pertama kali diselenggarakan pada tahun 1983.
                 Porsenigama lahir karena pada saat itu dinilai belum adanya
                 kegiatan yang mewadahi interaksi bersama antar fakultas di UGM,
@@ -134,7 +134,7 @@ const Section3 = () => {
                 src={GambarKontinenInporse}
                 alt=""
               />
-              <p className="px-32 text-justify pt-5">
+              <p className="md:px-32 text-justify pt-5">
                 Kontingen Porsenigama = 20 yang terdiri dari 18 fakultas dan 2
                 sekolah yang ada di Universitas Gadjah Mada.
                 <br /> Lokasi Perlombaan Porsenigama = 19 tempat perlombaanya

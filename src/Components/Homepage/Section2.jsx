@@ -5,6 +5,8 @@ import Explode from "../../assets/images/homepage/explode-section-2.png";
 import BgTeksTentangPorsenigamaMobile from "../../assets/images/homepage/bg-text-tentang-mobile.png";
 import TigaBintangMobile from "../../assets/images/homepage/3-bintang-mobile.png";
 import BintangKuningMobile from "../../assets/images/homepage/bintang-kuning-mobile.png";
+import RipPaper from "../../assets/images/homepage/rip-paper-section-1.png";
+import RipPaperMobile from "../../assets/images/homepage/rip-paper-mobile.png";
 
 const Section2 = () => {
   return (
@@ -32,7 +34,7 @@ const Section2 = () => {
             TENTANG PORSENIGAMA
           </h1>
           <h1
-            className="font-universalserif text-3xl absolute text-purple hidden md:block"
+            className="font-universalserif md:text-2xl lg:text-3xl absolute text-purple hidden md:block"
             style={{
               top: "80%",
               left: "50%",
@@ -49,7 +51,7 @@ const Section2 = () => {
           {/* <h2 className="font-montserrat font-bold text-2xl align-middle justify-center items-center flex leading-tes">
             MENGENAL PORSENIGAMA
           </h2> */}
-          <h2 className="font-montserrat font-bold text-md md:text-2xl flex items-center justify-center text-center pb-5 pt-5">
+          <h2 className="font-montserrat font-bold text-md md:text-2xl lg:text-3xl flex items-center justify-center text-center pb-5 pt-5">
             MENGENAL PORSENIGAMA
           </h2>
           <p className="text-center md:px-12 px-5 text-base md:text-lg xl:text-xl font-montserrat hidden md:block">
