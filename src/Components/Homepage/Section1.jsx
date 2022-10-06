@@ -9,20 +9,41 @@ import RipPaperMobile from "../../assets/images/homepage/rip-paper-mobile.png";
 const Section1 = () => {
   return (
     <>
-      <div className="w-full items-center bg-blue pt-10 md:pb-24 z-10">
+      <div className="w-full items-center bg-blue pt-10 md:pb-24 z-20">
         <div className="relative">
           <img
             src={RipPaper}
-            className="absolute pt-32rem hidden md:block"
+            className="absolute hidden md:block z-10"
+            style={{ paddingTop: "32rem" }}
             alt=""
           />
-          <div className="absolute scale-x-125 transform md:hidden">
           <img
-            src={RipPaperMobile}
-            className
+            src={RipPaper}
+            className="absolute hidden 768px:block z-10"
+            style={{ paddingTop: "60rem" }}
             alt=""
-            style={{ paddingTop:'22rem' }}
           />
+          <img
+            src={RipPaper}
+            className="absolute hidden 768px:block z-10"
+            style={{ paddingTop: "90rem" }}
+            alt=""
+          />
+          <div className="absolute scale-x-150 scale-y-150 transform md:hidden z-10">
+            <img
+              src={RipPaperMobile}
+              className
+              alt=""
+              style={{ paddingTop: "38rem" }}
+            />
+          </div>
+          <div className="absolute scale-x-150 scale-y-150 transform hidden 450px:block md:hidden z-0">
+            <img
+              src={RipPaperMobile}
+              className
+              alt=""
+              style={{ paddingTop: "38rem", paddingLeft: "15rem" }}
+            />
           </div>
           <div className="md:grid-cols-2 md:grid m-auto flex flex-col">
             <div className="col-span-1 mx-auto md:pt-16 items-center justify-center z-10">
@@ -31,7 +52,11 @@ const Section1 = () => {
                 className="-translate-x-2 transform md:hidden"
                 alt=""
               />
-              <img src={ScrollDownMobile} className="mx-auto pt-2 md:hidden" alt="" />
+              <img
+                src={ScrollDownMobile}
+                className="mx-auto pt-2 md:hidden"
+                alt=""
+              />
               <img
                 src={Stadium}
                 className="hidden md:block"

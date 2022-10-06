@@ -49,10 +49,10 @@ const Section2 = () => {
           {/* <h2 className="font-montserrat font-bold text-2xl align-middle justify-center items-center flex leading-tes">
             MENGENAL PORSENIGAMA
           </h2> */}
-          <h2 className="font-montserrat font-bold text-lg md:text-2xl flex items-center justify-center text-center pb-5 pt-5">
+          <h2 className="font-montserrat font-bold text-md md:text-2xl flex items-center justify-center text-center pb-5 pt-5">
             MENGENAL PORSENIGAMA
           </h2>
-          <p className="text-center md:px-12 px-5 text-base md:text-xl font-montserrat">
+          <p className="text-center md:px-12 px-5 text-base md:text-lg xl:text-xl font-montserrat hidden md:block">
             Pekan Olahraga dan Seni Universitas Gadjah Mada (Porsenigama)
             merupakan satu diantara kegiatan besar di Universitas Gadjah Mada.
             Penyelenggaraan kegiatan ini, sebagai ajang mempertemukan seluruh
@@ -86,6 +86,27 @@ const Section2 = () => {
             kekuatan dalam kebersamaan. Dengan tema yang baru ini, Porsenigama
             diharapkan dapat berjalan dengan lancar dan suportif, serta mampu
             membawa energi positif untuk para mahasiswa UGM.
+          </p>
+          <p className="text-center md:px-12 px-2 text-sm md:text-xl font-montserrat md:hidden">
+            Pekan Olahraga dan Seni Universitas Gadjah Mada (Porsenigama)
+            merupakan satu diantara kegiatan besar di Universitas Gadjah Mada.
+            Porsenigama bertujuan untuk menumbuhkan karakter kreativitas dan
+            sportivitas dalam perlombaan yang adil di kalangan mahasiswa
+            Universitas Gadjah Mada. Pada tahun ini, Porsenigama kembali hadir
+            dengan mengusung konsep yang berbeda dengan mengembalikan euforia
+            sebelum pandemi. Porsenigama 2022 mengusung tema “Bahtera Abhipraya”
+            dengan slogan “Pijar Laskar Gadjah Mada, Cipta Gemilang Porsenigama”
+            menjadi harapan baru untuk seluruh lapisan masyarakat. Dengan
+            terbentangnya layar bahtera Porsenigama dalam mengarungi lautan
+            samudera harapan, menjadi awal lahirnya cahaya baru bersatunya
+            Laskar Gadjah Mada”. Bahtera Abhipraya juga menjadi manifestasi bagi
+            para atlet dan seniman untuk memulai sebuah perjalanan bergerak dan
+            berpadu untuk maju dengan membawa harapan besar dan bersama
+            menerobos terpaan badai yang sedang dihadapi menuju tujuan akhir,
+            tercapainya harapan dan kekuatan dalam kebersamaan. Dengan tema yang
+            baru ini, Porsenigama diharapkan dapat berjalan dengan lancar dan
+            suportif, serta mampu membawa energi positif untuk para mahasiswa
+            UGM.
           </p>
         </div>
         <img

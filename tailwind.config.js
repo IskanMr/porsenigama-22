@@ -22,8 +22,8 @@ module.exports = {
         orange: "#E66D4B",
         red: "#804964",
         inporse: "#D9D9D9",
-        borderpeta:"#D9D9D9",
-        textpeta: "#E41D21"
+        borderpeta: "#D9D9D9",
+        textpeta: "#E41D21",
       },
       fontFamily: {
         display: ["Universal Serif", "system-ui", "sans-serif"],
@@ -52,12 +52,18 @@ module.exports = {
       boxShadow: {},
       borderRadius: {
         large: "5rem",
-        "3rem": "3rem"
+        "3rem": "3rem",
       },
       lineHeight: {
         tes: "50vh",
       },
-      scale: {},
+      scale: {
+        200: "2",
+      },
+      screens: {
+        "450px": { min: "450px", max: "768px" },
+        "768px": { min: "768px", max: "1024px" },
+      },
       borderWidth: {},
     },
   },
