@@ -6,9 +6,9 @@ const supporterList = [
     detail: {
       // article: `Sastro Conthong merupakan wadah untuk mendukung pejuang-pejuang ilmu budaya yang sedang berlaga di medan laga Porsenigama. sastro Conthong berisikan seluruh mahasiswa Ilmu Budaya tanpa terkecuali. Asal-usul nama Sastro Conthong berasal dari kata Sastro yang berarti sastra dan conthong berarti Mulut, sehingga Sastro Conthong bermakna Pendukung kontingen ilmu budaya yang siap bernyanyi bersorak untuk mendukung secara penuh kontingen Ilmu Budaya yang sedang berlaga di lapangan. Sastro Conthong mempunyai Slogan " Superbia in Cultura" yang berarti "Kebanggaan dalam budaya" serta mempunyai logo (maskot) kebanggan "Gajah Ganesha" Gajah Ganesha sendiri merupakan simbol kebijaksanaan, kebenaran dan keberanian dalam kehidupan.`,
       // article: "",
-      video: "https://youtube.com/embed/ldMuRofHVsU",
+      video: "https://youtube.com/embed/pBC0-oCKBLc",
       chant: "https://youtube.com/embed/ldMuRofHVsU",
-      infografis: "peternakan.jpg",
+      infografis: "feb.jpg",
     },
   },
   {
@@ -17,9 +17,9 @@ const supporterList = [
     title: "Biologi",
     detail: {
       article: "",
-      video: "",
+      video: "https://youtube.com/embed/dwTsyHf3NPM",
       chant: "",
-      infografis: "",
+      infografis: "biologi.jpg",
     },
   },
   {
@@ -28,9 +28,9 @@ const supporterList = [
     title: "Teknologi Pertanian",
     detail: {
       article: "",
-      video: "",
-      chant: "",
-      infografis: "",
+      video: "https://youtube.com/embed/mGOjl0y5XS8",
+      chant: "https://youtube.com/embed/0H7BksdOgPk",
+      infografis: "ftp.jpg",
     },
   },
   {
@@ -39,9 +39,9 @@ const supporterList = [
     title: "FISIPOL",
     detail: {
       article: "",
-      video: "",
-      chant: "",
-      infografis: "",
+      video: "https://youtube.com/embed/w00NimLoF2w",
+      chant: "https://youtube.com/embed/y59gySq3t0E",
+      infografis: "isipol_new.jpg",
     },
   },
   {
@@ -51,8 +51,8 @@ const supporterList = [
     detail: {
       article: "",
       video: "",
-      chant: "",
-      infografis: "",
+      chant: "https://youtube.com/embed/zmI8UQY9cKU",
+      infografis: "fib_new.jpg",
     },
   },
   {
@@ -61,9 +61,9 @@ const supporterList = [
     title: "Hukum",
     detail: {
       article: "",
-      video: "",
-      chant: "",
-      infografis: "",
+      video: "https://youtube.com/embed/CeouMrF523k",
+      chant: "https://youtube.com/embed/E4vPvC6GnuA",
+      infografis: "hukum.jpg",
     },
   },
   {
@@ -72,9 +72,9 @@ const supporterList = [
     title: "Geografi",
     detail: {
       article: "",
-      video: "",
-      chant: "",
-      infografis: "",
+      video: "https://youtube.com/embed/C1UtyfYlBpI",
+      chant: "https://youtube.com/embed/9WWUy8s_Gag",
+      infografis: "geografi.jpg",
     },
   },
   {
@@ -83,9 +83,9 @@ const supporterList = [
     title: "Filsafat",
     detail: {
       article: "",
-      video: "",
-      chant: "",
-      infografis: "",
+      video: "https://youtube.com/embed/c18-z0_qFhM",
+      chant: "https://youtube.com/embed/mRs268hyxQ8",
+      infografis: "filsafat.jpg",
     },
   },
   {
@@ -94,9 +94,9 @@ const supporterList = [
     title: "Farmasi",
     detail: {
       article: "",
-      video: "",
-      chant: "",
-      infografis: "",
+      video: "https://youtube.com/embed/maU6iWUJrVg",
+      chant: "https://youtube.com/embed/qGMsuEboLNM",
+      infografis: "farmasi_new.jpg",
     },
   },
   {
@@ -118,7 +118,7 @@ const supporterList = [
       article: "",
       video: "",
       chant: "",
-      infografis: "",
+      infografis: "fkh.jpg",
     },
   },
   {
@@ -127,9 +127,9 @@ const supporterList = [
     title: "Teknik",
     detail: {
       article: "",
-      video: "",
-      chant: "",
-      infografis: "",
+      video: "https://youtube.com/embed/Nq4Lp3O6o2c",
+      chant: "https://youtube.com/embed/vJBIqaOO93Y",
+      infografis: "teknik.jpg",
     },
   },
   {
@@ -140,7 +140,7 @@ const supporterList = [
       article: "",
       video: "",
       chant: "",
-      infografis: "",
+      infografis: "vokasi.jpg",
     },
   },
   {
@@ -171,9 +171,9 @@ const supporterList = [
     title: "Peternakan",
     detail: {
       article: "",
-      video: "",
+      video: "https://youtube.com/embed/OFek_CJVd-4",
       chant: "",
-      infografis: "",
+      infografis: "peternakan_new.jpg",
     },
   },
   {
@@ -206,7 +206,7 @@ const supporterList = [
       article: "",
       video: "",
       chant: "",
-      infografis: "",
+      infografis: "fkh.jpg",
     },
   },
   {
