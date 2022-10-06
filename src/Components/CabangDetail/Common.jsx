@@ -131,8 +131,8 @@ const Common = ({
           <div
             className={`z-10 relative bg-white sm:min-w-max sm:w-1/3 ${
               showCategory
-                ? "rounded-t-3xl"
-                : "rounded-3xl"
+                ? "border-2 border-black"
+                : "border-2 border-black"
             } py-3 lg:text-xl xl:text-2xl`}
             style={{
               boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
@@ -142,8 +142,8 @@ const Common = ({
               className="flex justify-between cursor-pointer"
               onClick={() => setShowCategory((prevState) => !prevState)}
             >
-              <p className="px-6 py-3 opacity-50">{selectedCategory}</p>
-              <div className="flex justify-center px-4 border-l border-black border-opacity-60">
+              <p className="px-6 py-3 text-black">{selectedCategory}</p>
+              <div className="flex justify-center px-4">
                 <img
                   className={`py-3 ${
                     showCategory ? "transition transform rotate-180" : ""
@@ -156,7 +156,7 @@ const Common = ({
             </div>
             {showCategory && (
               <div
-                className="absolute w-full bg-white rounded-b-3xl mt-3 pb-3"
+                className="absolute w-full bg-white border-2 border-t-0 border-black mt-3 pb-3"
                 style={{ boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)" }}
               >
                 {/* <div>
@@ -171,7 +171,7 @@ const Common = ({
                   categoryDatas.map((data) => (
                     <p
                       key={data}
-                      className="px-6 py-3 opacity-50 cursor-pointer"
+                      className="px-6 py-3 text-black hover:bg-yellow hover:rounded-full cursor-pointer"
                       onClick={() => selectCategoryHandler(data)}
                     >
                       {data}
