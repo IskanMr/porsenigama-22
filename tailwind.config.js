@@ -8,6 +8,7 @@ module.exports = {
         "32rem": "32rem",
         "21rem": "21rem",
         "25rem": "25rem",
+        "28rem": "28rem",
       },
       backgroundImage: {
         "homepage-section-3":
@@ -16,6 +17,7 @@ module.exports = {
         "pattern-cabangDetail":
           "url('/src/assets/images/cabang/cabangDetail/Mask group (3).png')",
         "nama-fakultas": "url('/src/assets/images/katalog/namaFakultas.png')",
+        "pattern-lomba": "url('/src/assets/images/homepage/pattern-lomba.png')",
       },
       colors: {
         blue: "#48C0EE",

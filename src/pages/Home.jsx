@@ -1,8 +1,9 @@
 import { HtmlHead } from "../Components/HtmlHead";
-import Section1 from "../Components/Homepage/Section1";
-import Section2 from "../Components/Homepage/Section2";
-import Section3 from "../Components/Homepage/Section3"
+import Logo from "../Components/Homepage/Logo";
+import Tentang from "../Components/Homepage/Tentang";
+import Inporse from "../Components/Homepage/Inporse";
 import Peta from "../Components/Homepage/Peta";
+import Lomba from "../Components/Homepage/Lomba";
 
 const Home = () => {
   return (
@@ -10,10 +11,11 @@ const Home = () => {
       {" "}
       <HtmlHead title="Beranda" decription="[insert page description]" />
       <main className="overflow-hidden">
-        <Section1 />
-        <Section2 />
-        <Section3 />
+        <Logo />
+        <Tentang />
+        <Inporse />
         <Peta />
+        <Lomba />
       </main>
     </>
   );
