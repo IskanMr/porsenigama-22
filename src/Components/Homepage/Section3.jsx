@@ -22,7 +22,7 @@ const Section3 = () => {
   };
   return (
     <>
-      <div className="z-10 relative bg-homepage-section-3 pt-21rem pb-40">
+      <div className="z-10 relative bg-homepage-section-3 pt-21rem pb-48 md:pb-40">
         <img
           src={BorderInporseMobile}
           className="mx-auto transform translate-x-2 md:hidden"
@@ -33,26 +33,34 @@ const Section3 = () => {
           className="mx-auto md:block hidden transform translate-x-2"
           alt=""
         />
-        <h2
-          className="font-universalserif text-3xl text-yellow absolute text-center"
+        <p
+          className="font-universalserif text-3xl xl:text-4xl text-yellow absolute text-center px-10 hidden md:block"
           style={{
-            top: "28.5%",
             left: "50%",
-            transform: "translate(-50%, -50%)",
+            transform: "translate(-50%, -200%)",
           }}
         >
           INPORSE
-        </h2>
-        <div className="mt-16 mx-auto items-center justify-center md:w-2/3 w-4/5 rounded-3rem bg-opacity-20 text-xl bg-inporse font-montserrat overflow-hidden font-medium py-8 filter drop-shadow-2xl">
+        </p>
+        <p
+          className="font-universalserif text-3xl xl:text-4xl text-yellow absolute text-center px-10 md:hidden"
+          style={{
+            left: "50%",
+            transform: "translate(-50%, -150%)",
+          }}
+        >
+          INPORSE
+        </p>
+        <div className="mt-16 mx-auto items-center justify-center md:w-2/3 w-4/5 rounded-3rem bg-opacity-20 text-xl bg-inporse font-montserrat overflow-hidden font-medium py-8 shadow-xl">
           <Slider {...settings}>
-            <div className="">
+            <div className="xl:px-20 xl:py-5 px-7 py-3">
               <img
                 className="mx-auto items-center justify-center"
                 src={GambarLogoInporse}
                 alt=""
               />
               <div className="overflow-y-scroll">
-                <p className="px-14 h-18rem text-justify pt-1">
+                <p className="h-10rem md:h-18rem text-justify pt-1 text-sm md:text-base xl:text-lg">
                   Piala <br />
                   melambangkan sebuah kompetisi antar fakultas yang ada di
                   Universitas Gadjah Mada guna memperebutkan gelar juara dan
@@ -109,13 +117,13 @@ const Section3 = () => {
                 </p>
               </div>
             </div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden xl:px-20 xl:py-5 px-7 py-3">
               <img
-                className="mx-auto items-center justify-center"
+                className="mx-auto items-center justify-center rounded-3xl"
                 src={GambarPorsenigamaInporse}
                 alt=""
               />
-              <p className="md:px-32 text-justify pt-5">
+              <p className="text-justify pt-5 text-sm md:text-base xl:text-lg">
                 Porsenigama pertama kali diselenggarakan pada tahun 1983.
                 Porsenigama lahir karena pada saat itu dinilai belum adanya
                 kegiatan yang mewadahi interaksi bersama antar fakultas di UGM,
@@ -128,13 +136,13 @@ const Section3 = () => {
                 menjadi “Porsenigama”.{" "}
               </p>
             </div>
-            <div className="">
+            <div className="xl:px-20 xl:py-5 px-7 py-3">
               <img
-                className="mx-auto items-center justify-center"
+                className="mx-auto items-center justify-center rounded-3xl"
                 src={GambarKontinenInporse}
                 alt=""
               />
-              <p className="md:px-32 text-justify pt-5">
+              <p className="text-justify pt-5 text-sm md:text-base xl:text-lg">
                 Kontingen Porsenigama = 20 yang terdiri dari 18 fakultas dan 2
                 sekolah yang ada di Universitas Gadjah Mada.
                 <br /> Lokasi Perlombaan Porsenigama = 19 tempat perlombaanya

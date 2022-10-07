@@ -34,7 +34,7 @@ const Section2 = () => {
             TENTANG PORSENIGAMA
           </h1>
           <h1
-            className="font-universalserif md:text-2xl lg:text-3xl absolute text-purple hidden md:block"
+            className="font-universalserif md:text-3xl lg:text-3xl absolute text-purple hidden md:block"
             style={{
               top: "80%",
               left: "50%",
@@ -51,10 +51,10 @@ const Section2 = () => {
           {/* <h2 className="font-montserrat font-bold text-2xl align-middle justify-center items-center flex leading-tes">
             MENGENAL PORSENIGAMA
           </h2> */}
-          <h2 className="font-montserrat font-bold text-md md:text-2xl lg:text-3xl flex items-center justify-center text-center pb-5 pt-5">
+          <h2 className="font-montserrat font-bold text-xl md:text-2xl flex items-center justify-center text-center pb-5 pt-5">
             MENGENAL PORSENIGAMA
           </h2>
-          <p className="text-center md:px-12 px-5 text-base md:text-lg xl:text-xl font-montserrat hidden md:block">
+          <p className="text-justify md:px-12 px-5 text-sm md:text-lg font-montserrat hidden md:block">
             Pekan Olahraga dan Seni Universitas Gadjah Mada (Porsenigama)
             merupakan satu diantara kegiatan besar di Universitas Gadjah Mada.
             Penyelenggaraan kegiatan ini, sebagai ajang mempertemukan seluruh
@@ -89,7 +89,7 @@ const Section2 = () => {
             diharapkan dapat berjalan dengan lancar dan suportif, serta mampu
             membawa energi positif untuk para mahasiswa UGM.
           </p>
-          <p className="text-center md:px-12 px-2 text-sm md:text-xl font-montserrat md:hidden">
+          <p className="text-justify px-8 text-sm md:text-xl font-montserrat md:hidden">
             Pekan Olahraga dan Seni Universitas Gadjah Mada (Porsenigama)
             merupakan satu diantara kegiatan besar di Universitas Gadjah Mada.
             Porsenigama bertujuan untuk menumbuhkan karakter kreativitas dan

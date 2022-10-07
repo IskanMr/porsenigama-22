@@ -41,6 +41,7 @@ module.exports = {
       height: {
         "18rem": "18rem",
         "24rem": "24rem",
+        "10rem": "10rem",
       },
       spacing: {
         "1/5": "20%",
@@ -70,7 +71,8 @@ module.exports = {
       margin: {
         "23rem": "23rem",
         "32rem": "32rem",
-        "27rem": "27rem",
+        "28rem": "28rem",
+        "36rem": "36rem",
       },
     },
   },
