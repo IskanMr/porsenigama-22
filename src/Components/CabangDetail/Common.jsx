@@ -127,7 +127,7 @@ const Common = ({
     <>
      
       <div className="flex flex-col h-screen justify-center bg-pattern-cabangDetail bg-cover md:px-20 pt-20 xl:pt-36 2xl:pt-56 pb-10">
-        <div className="flex flex-row items-center justify-between pb-10">
+        <div className="flex flex-row items-start justify-between pb-10">
           <div
             className={`z-10 relative bg-white sm:min-w-max sm:w-1/3 ${
               showCategory
@@ -142,7 +142,7 @@ const Common = ({
               className="flex justify-between cursor-pointer"
               onClick={() => setShowCategory((prevState) => !prevState)}
             >
-              <p className="px-6 py-3 text-black">{selectedCategory}</p>
+              <p className="px-6 py-2 text-black">{selectedCategory}</p>
               <div className="flex justify-center px-4">
                 <img
                   className={`py-3 ${
@@ -156,7 +156,7 @@ const Common = ({
             </div>
             {showCategory && (
               <div
-                className="absolute w-full bg-white border-2 border-t-0 border-black mt-3 pb-3"
+                className="absolute w-full bg-white border-2 border-t-0 border-black py-1"
                 style={{ boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)" }}
               >
                 {/* <div>
@@ -180,8 +180,10 @@ const Common = ({
               </div>
             )}
           </div>
-          <Award id={id} />
-          <Hasil id={id} />
+          <div className="grid grid-rows-2 content-start justify-items-end gap-y-5">
+            <Hasil id={id} />
+            <Award id={id} />
+          </div>
         </div>
         <div className="h-full">
           {cabangDatas.map((data) => {

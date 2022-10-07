@@ -35,11 +35,11 @@ const Award = (props) => {
   return (
     <>
       {standingsRef.length > 0 && (
-        <div className="relative z-50">
-          <p className="text-center font-sansPro">
+        <div className="relative z-20">
+          <p className="text-center font-montserrat">
             <button
               onClick={() => setVisiblePopup(!visiblePopup)}
-              className="rounded-xl p-2 border-2 bg-biru text-white text-2xl transform scale-90 md:scale-100 transition duration-300 md:hover:scale-105"
+              className="rounded-xl py-2 px-5 border-2 bg-orange text-white text-2xl transform scale-90 md:scale-100 transition duration-300 md:hover:scale-105"
             >
               Award
             </button>
@@ -55,7 +55,7 @@ const Award = (props) => {
               onClick={() => setVisiblePopup(!visiblePopup)}
             >
               <div
-                className="bg-white border-2 border-ungugaje min-h-24 font-sansPro rounded-4xl w-5/6 md:pr-10"
+                className="bg-white border-2 border-ungugaje min-h-24 font-montserrat rounded-4xl w-5/6 md:pr-10"
                 style={{
                   backgroundImage: `url('${process.env.PUBLIC_URL}/images/News/Group 51.png')`,
                 }}
@@ -64,21 +64,13 @@ const Award = (props) => {
                 <div className="flex justify-end">
                   <button
                     onClick={() => setVisiblePopup(!visiblePopup)}
-                    className="md:mx-4 my-4 bg-merah text-kuning text-3xl md:text-2xl rounded-xl px-8 py-2 font-nuku transform scale-50 md:scale-100 transition duration-300 md:hover:scale-105"
-                    style={{
-                      textShadow: [
-                        "1.5px 1.5px 0 #000",
-                        "1.5px -1.5px 0 #000",
-                        "-1.5px 1.5px 0 #000",
-                        "-1.5px -1.5px 0 #000",
-                      ],
-                    }}
+                    className="md:mx-4 my-4 bg-merah text-kuning text-3xl md:text-2xl rounded-xl px-8 py-2 font-montserrat transform scale-50 md:scale-100 transition duration-300 md:hover:scale-105"
                   >
                     Tutup
                   </button>
                 </div>
                 {standingsRef.length > 0 && (
-                  <div className="mx-4 my-4 grid grid-flow-col auto-cols-max overflow-x-auto font-sansPro text-black text-base md:text-2xl font-semibold">
+                  <div className="mx-4 my-4 grid grid-flow-col auto-cols-max overflow-x-auto font-montserrat text-black text-base md:text-2xl font-semibold">
                     
                     {standingsRef.map((cabang, index) => (
                       <>
@@ -86,14 +78,6 @@ const Award = (props) => {
                       <div className="p-4 border-2 border-ungugaje bg-krem m-2 rounded-xl">
                       <p
                         className="text-2xl md:text-fivevh uppercase font-bold text-kuning"
-                        style={{
-                          textShadow: [
-                            "1.5px 1.5px 0 #000",
-                            "1.5px -1.5px 0 #000",
-                            "-1.5px 1.5px 0 #000",
-                            "-1.5px -1.5px 0 #000",
-                          ],
-                        }}
                       >
                         {cabang.name}
                       </p>
