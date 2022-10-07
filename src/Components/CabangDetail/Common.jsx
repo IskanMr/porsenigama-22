@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react";
 import { Hasil } from "./Hasil";
-
+import { Award } from "./Award";
 const assetsCabangDetail = `${process.env.PUBLIC_URL}/images/CabangDetail`;
 
 // const Card = (props) => {  const data = props.data;
@@ -126,13 +126,13 @@ const Common = ({
   return (
     <>
      
-      <div className="flex flex-col h-screen justify-center md:px-20 pt-8">
-        <div className="flex flex-row items-center justify-between">
+      <div className="flex flex-col h-screen justify-center bg-pattern-cabangDetail bg-cover md:px-20 pt-20 xl:pt-36 2xl:pt-56 pb-10">
+        <div className="flex flex-row items-start justify-between pb-10">
           <div
             className={`z-10 relative bg-white sm:min-w-max sm:w-1/3 ${
               showCategory
-                ? "rounded-t-3xl"
-                : "bg-opacity-80 backdrop-filter backdrop-blur-lg rounded-3xl"
+                ? "border-2 border-black"
+                : "border-2 border-black"
             } py-3 lg:text-xl xl:text-2xl`}
             style={{
               boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
@@ -142,8 +142,8 @@ const Common = ({
               className="flex justify-between cursor-pointer"
               onClick={() => setShowCategory((prevState) => !prevState)}
             >
-              <p className="px-6 py-3 opacity-50">{selectedCategory}</p>
-              <div className="flex justify-center px-4 border-l border-black border-opacity-60">
+              <p className="px-6 py-2 text-black">{selectedCategory}</p>
+              <div className="flex justify-center px-4">
                 <img
                   className={`py-3 ${
                     showCategory ? "transition transform rotate-180" : ""
@@ -156,7 +156,7 @@ const Common = ({
             </div>
             {showCategory && (
               <div
-                className="absolute w-full bg-white rounded-b-3xl mt-3 pb-3"
+                className="absolute w-full bg-white border-2 border-t-0 border-black py-1"
                 style={{ boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)" }}
               >
                 {/* <div>
@@ -171,7 +171,7 @@ const Common = ({
                   categoryDatas.map((data) => (
                     <p
                       key={data}
-                      className="px-6 py-3 opacity-50 cursor-pointer"
+                      className="px-6 py-3 text-black hover:bg-yellow hover:rounded-full cursor-pointer"
                       onClick={() => selectCategoryHandler(data)}
                     >
                       {data}
@@ -180,7 +180,10 @@ const Common = ({
               </div>
             )}
           </div>
-          <Hasil id={id} />
+          <div className="grid grid-rows-2 content-start justify-items-end gap-y-5">
+            <Hasil id={id} />
+            <Award id={id} />
+          </div>
         </div>
         <div className="h-full">
           {cabangDatas.map((data) => {

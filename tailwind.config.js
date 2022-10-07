@@ -13,6 +13,8 @@ module.exports = {
         "homepage-section-3":
           "url('/src/assets/images/homepage/bg-section-3.png')",
         "pattern-cabang": "url('/src/assets/images/cabang/5328478.svg')",
+        "pattern-cabangDetail":
+          "url('/src/assets/images/cabang/cabangDetail/Mask group (3).png')",
         "nama-fakultas": "url('/src/assets/images/katalog/namaFakultas.png')",
       },
       colors: {
@@ -21,6 +23,9 @@ module.exports = {
         purple: "#5E4795",
         orange: "#E66D4B",
         red: "#804964",
+        inporse: "#D9D9D9",
+        borderpeta: "#D9D9D9",
+        textpeta: "#E41D21",
       },
       fontFamily: {
         display: ["Universal Serif", "system-ui", "sans-serif"],
@@ -33,7 +38,11 @@ module.exports = {
       },
       fontSize: {},
       width: {},
-      height: {},
+      height: {
+        "18rem": "18rem",
+        "24rem": "24rem",
+        "10rem": "10rem",
+      },
       spacing: {
         "1/5": "20%",
         "1/6": "16.666667%",
@@ -46,12 +55,25 @@ module.exports = {
       boxShadow: {},
       borderRadius: {
         large: "5rem",
+        "3rem": "3rem",
       },
       lineHeight: {
         tes: "50vh",
       },
-      scale: {},
+      scale: {
+        200: "2",
+      },
+      screens: {
+        "450px": { min: "450px", max: "768px" },
+        "405px": { min: "405px", max: "767px" },
+      },
       borderWidth: {},
+      margin: {
+        "23rem": "23rem",
+        "32rem": "32rem",
+        "28rem": "28rem",
+        "36rem": "36rem",
+      },
     },
   },
   variants: {

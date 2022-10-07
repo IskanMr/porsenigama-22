@@ -5,7 +5,11 @@ import { dataVocalGroup } from "../data/dataVocalGroup";
 
 import { cabangList } from "../data/dataCabangs";
 import { Hasil } from "../Components/CabangDetail";
-
+import vector1 from "../assets/images/cabang/cabangDetail/Group 108.png";
+import vector2 from "../assets/images/cabang/cabangDetail/Vector (2).png";
+import paperDesc from "../assets/images/cabang/cabangDetail/Vector 13.png";
+import paperTitle from "../assets/images/cabang/cabangDetail/paper-title.png";
+import rippedPaper from "../assets/images/cabang/cabangDetail/Group 182.png";
 
 import {
   Common,
@@ -18,29 +22,47 @@ const assetsCabangDetail = `${process.env.PUBLIC_URL}/images/CabangDetail`;
 
 const Header = ({ id, cabangHeader }) => {
   return (
-    <div className="flex items-center h-full lg:min-h-screen">
-      <img
-        style={{ width: "3%" }}
-        src={`${assetsCabangDetail}/jpn-${id}.png`}
-        alt=""
-      />
-      <div className="relative" style={{ width: "45%" }}>
-        <img src={`${assetsCabangDetail}/circle-biru.svg`} alt="" />
-        <div
-          className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black"
-          style={{ width: "70%" }}
-        >
-          <h1 className="md:mb-2 lg:mb-4 xl:mb-8 font-bold sm:text-2xl md:text-4xl lg:text-5xl uppercase">
-            {id}
-          </h1>
-          <p className="hidden lg:block lg:text-xl">
-            {cabangHeader}
-          </p>
-        </div>
+    <div className="w-full h-full lg:min-h-screen flex flex-row md:gap-x-10 xl:gap-x-20 items-center justify-center bg-yellow pt-14 lg:pt-0 pointer-events-none">
+      <div className="relative z-20" style={{ width: "7%" }}>
+        <img
+          className="absolute top-1 left-10"
+          style={{ width: "137px"}}
+          src={vector1}
+          alt=""
+        />
+      </div>
+      <div className="relative" style={{ width: "30%" }}>
+        <img
+          className="w-full"
+          style={{ width: "858px" }}
+          src={`${assetsCabangDetail}/icon-${id}.png`}
+          alt=""
+        />
+      </div>
+      <div className="relative" style={{ width: "5%" }}>
+        <img
+            className="absolute -top-52 lg:-top-72 right-20 lg:right-24"
+            style={{ width: "70px" }}
+            src={vector2}
+            alt=""
+          />
+      </div>
+      <div className="z-20 relative w-full h-full flex flex-col w-1/3 sm:w-1/2 -ml-20 2xl:-ml-28 items-center justify-center" style={{ width: "45%" }}>
+        <img src={paperTitle} style={{ width: "762px" }} alt="" className="absolute w-7/12 sm:w-full -mt-44 mr-14" />
+        <h1 className="font-bold sm:text-2xl md:text-4xl lg:text-5xl uppercase text-white font-universalserif z-40 -mt-56">
+          {id} 
+        </h1>
+          {/* <div className="">
+                <img src={paperDesc} alt="" className="absolute m-auto" />
+                <p className="hidden lg:block lg:text-xl z-40">
+                  {cabangHeader} 
+                </p>
+          </div> */}
       </div>
       <img
-        className="relative ml-auto w-1/2"
-        src={`${assetsCabangDetail}/cover-${id}.png`}
+        className="w-full absolute bottom-96 2xl:bottom-1/3"
+        style={{ width: "2000px" }}
+        src={rippedPaper}
         alt=""
       />
     </div>
@@ -93,42 +115,41 @@ const CabangDetail = (props) => {
         <Modal modal={modal} setModal={setModal} openModal={openModal} />
       )}
 
-      <div className="pt-14 lg:pt-0 relative bg-merah min-w-full px-5 overflow-hidden">
+      <div className="relative min-w-full overflow-hidden">
         {cabangList.map((dataCabang)=>{
           if(dataCabang.title === id){
-            return(<>
-            <Header id={id} cabangHeader={dataCabang.description} />
-        {id !== "Fotografi" && id !== "Vocal Group" && (
-          <>
-          {dataCabang.casen == true && (
-              <div className="pb-64">
-                <Hasil id={id} />
-              </div>
-            )}
-             
-              {!dataCabang.casen == true && (
-              <Common
-                id={id}
-                cabangDatas={dataCabang.categoryData}
-                categoryDatas={dataCabang.category}
-       
-                showCategory={showCategory}
-                setShowCategory={setShowCategory}
-                selectedCategory={selectedCategory}
-                setSelectedCategory={setSelectedCategory}
-                schedule={schedule}
-                setSchedule={setSchedule}
-              />
-            )}
-              </>
-         
-        )}
-        {id === "Fotografi" && <Fotografi id={id} openModal={openModal} />}
-        {id === "Vocal Group" && <VocalGroup id={id} openModal={openModal} />}
-            </>)
+            return(
+              <>
+                <Header id={id} cabangHeader={dataCabang.description} />
+                  {id !== "Fotografi" && id !== "Vocal Group" && (
+                    <>
+                      {dataCabang.casen == true && (
+                          <div className="pb-64">
+                            <Hasil id={id} />
+                          </div>
+                        )}
+                        
+                          {!dataCabang.casen == true && (
+                          <Common
+                            id={id}
+                            cabangDatas={dataCabang.categoryData}
+                            categoryDatas={dataCabang.category}
+                  
+                            showCategory={showCategory}
+                            setShowCategory={setShowCategory}
+                            selectedCategory={selectedCategory}
+                            setSelectedCategory={setSelectedCategory}
+                            schedule={schedule}
+                            setSchedule={setSchedule}
+                          />
+                          )}
+                      </>
+                    )}
+                {id === "Fotografi" && <Fotografi id={id} openModal={openModal} />}
+                {id === "Vocal Group" && <VocalGroup id={id} openModal={openModal} />}
+              </>)
           }
         })}
-        
       </div>
     </>
   );

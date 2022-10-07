@@ -37,7 +37,7 @@ export const PageFooter = (props) => {
           <div className="flex flex-row pt-2">
             <a
               className={sosmedstyle}
-              href="https://www.instagram.com/gelexugm/"
+              href="https://www.instagram.com/porsenigama"
               target="__blank"
             >
               {" "}
@@ -45,7 +45,7 @@ export const PageFooter = (props) => {
             </a>
             <a
               className={sosmedstyle}
-              href="https://www.youtube.com/channel/UCm4N802KVS6QnqhhPvN8Olg/"
+              href="https://www.youtube.com/channel/UCiGt8R5Zuk9Wy1SKsTFE_Ew/"
               target="__blank"
             >
               {" "}
@@ -53,7 +53,7 @@ export const PageFooter = (props) => {
             </a>
             <a
               className={sosmedstyle}
-              href="http://line.me/ti/p/~@gelexugm"
+              href="https://linevoom.line.me/user/_dVUJknXsJqjR-lj7-sR0sE1LSqCmNrlKKyUu2ZM"
               target="__blank"
             >
               {" "}
@@ -61,7 +61,7 @@ export const PageFooter = (props) => {
             </a>
             <a
               className={sosmedstyle}
-              href="https://twitter.com/gelexugm"
+              href="https://twitter.com/porsenigama"
               target="__blank"
             >
               {" "}
@@ -69,7 +69,7 @@ export const PageFooter = (props) => {
             </a>
             <a
               className={sosmedstyle}
-              href="https://vt.tiktok.com/ZGJkGY4mT/"
+              href="https://www.tiktok.com/@porsenigama?is_from_webapp=1&sender_device=pc"
               target="__blank"
             >
               {" "}
@@ -98,7 +98,7 @@ export const PageFooter = (props) => {
       </div>
 
       <div className="px-4 py-1 font-semibold text-xs text-center">
-        <p>Gelex &copy; 2022</p>
+        <p>Porsenigama &copy; 2022</p>
       </div>
     </footer>
   );

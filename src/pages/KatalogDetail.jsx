@@ -48,15 +48,20 @@ const KatalogDetail = (props) => {
 
   const content = useRef(null);
 
-  if (loading) return <div></div>;
+  if (loading) return <div className="bg-blue h-screen"></div>;
 
   if (match) {
     return (
       <>
         <HtmlHead title={`${id}`} decription="[insert page description]" />
         <section
-          style={{ marginTop: "-76px" }}
-          className="relative w-full h-screen bg-orange flex flex-col justify-center items-center"
+          style={{
+            marginTop: "-76px",
+            height: titleBawah.length == 0 ? "125vh" : "100vh",
+          }}
+          className={`relative w-full ${
+            titleBawah.length == 0 ? "bg-blue" : "bg-orange"
+          } flex flex-col justify-center items-center`}
         >
           <div className="relative flex flex-col sm:flex-row text-center items-center justify-center w-full h-full">
             <div className="w-1/2 flex justify-center items-center">
@@ -75,7 +80,9 @@ const KatalogDetail = (props) => {
               </p>
               <img
                 src={triangle}
-                className="absolute bottom-24 sm:bottom-32 md:bottom-96 lg:bottom-56 w-16 lg:w-20 xl:w-24 animate-bounce cursor-pointer"
+                className={`absolute ${
+                  titleBawah.length == 0 && "hidden"
+                } bottom-24 sm:bottom-32 md:bottom-96 lg:bottom-56 w-16 lg:w-20 xl:w-24 animate-bounce cursor-pointer`}
                 style={{
                   filter: "drop-shadow( 0px 10px 4px #00000050)",
                 }}
@@ -93,14 +100,19 @@ const KatalogDetail = (props) => {
             }}
             src={kertas}
             alt=""
-            className="w-full absolute -bottom-1/10 sm:-bottom-1/4 md:-bottom-1/8 lg:-bottom-1/4 xl:-bottom-1/4 2xl:-bottom-1/3"
+            className={`w-full absolute ${
+              titleBawah.length == 0 && "hidden"
+            } -bottom-1/10 sm:-bottom-1/4 md:-bottom-1/8 lg:-bottom-1/4 xl:-bottom-1/4 2xl:-bottom-1/3`}
           />
         </section>
         <section
           ref={content}
           style={{ paddingBottom: "72px" }}
-          className="w-full flex flex-col justify-center items-center pt-40 2xl:pt-72 bg-yellow"
+          className={`w-full flex flex-col justify-center items-center pt-40 2xl:pt-72 bg-yellow ${
+            titleBawah.length == 0 && "hidden"
+          }`}
         >
+          {console.log(titleBawah.length)}
           <div className="-mt-16 md:-mt-0 relative w-48 h-12 mb-12 flex text-center items-center">
             <img
               style={{
@@ -193,6 +205,7 @@ const KatalogDetail = (props) => {
                 hidden={!titleBawah.some((data) => data === "infografis")}
                 className="flex justify-center items-center"
               >
+                {console.log(!titleBawah.some((data) => data === "infografis"))}
                 <img
                   src={`${assetsKatalog}/infografis/${KatalogDetail.infografis}`}
                   alt={" Infografis" + Katalog.title}
