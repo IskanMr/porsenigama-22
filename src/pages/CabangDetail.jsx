@@ -22,7 +22,12 @@ const assetsCabangDetail = `${process.env.PUBLIC_URL}/images/CabangDetail`;
 
 const Header = ({ id, cabangHeader }) => {
   return (
-    <div className="w-full h-full lg:min-h-screen flex flex-row md:gap-x-10 xl:gap-x-20 items-center justify-center bg-yellow pt-14 lg:pt-0 pointer-events-none">
+    <div 
+      className="w-full min-h-full lg:min-h-screen flex flex-row md:gap-x-10 xl:gap-x-20 items-center justify-center bg-yellow pt-14 lg:pt-0 pointer-events-none"
+      style={{
+        height: "100vh",
+      }}
+    >
       <div className="relative z-20" style={{ width: "7%" }}>
         <img
           className="absolute top-1 left-10"
