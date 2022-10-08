@@ -127,15 +127,15 @@ const Common = ({
     <>
      
       <div className="flex flex-col h-screen justify-center bg-pattern-cabangDetail bg-cover px-7 md:px-20 pt-20 xl:pt-36 2xl:pt-56 pb-10">
-        <div className="flex flex-col sm:flex-row items-start justify-between pb-5 sm:pb-10 font-montserrat">
+        <div className="flex flex-col sm:flex-row items-start justify-between pb-5 sm:pb-10 md:pt-14 lg:pt-20 xl:pt-20 2xl:pt-0 font-montserrat">
           <div
             className={`relative bg-white w-full sm:min-w-max sm:w-1/3 ${
               showCategory
                 ? "border-2 border-black"
                 : "border-2 border-black"
-            } py-1 md:py-2 xl:py-3 text-sm md:text-base lg:text-xl xl:text-2xl`}
+            } py-1 lg:py-2 xl:py-3 text-sm md:text-base lg:text-xl xl:text-2xl`}
             style={{
-              boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
+              boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)"
             }}
           >
             <div
@@ -156,7 +156,7 @@ const Common = ({
             </div>
             {showCategory && (
               <div
-                className="absolute w-full z-30 bg-white border-2 border-t-0 border-black py-1"
+                className="absolute min-w-full sm:h-48 lg:h-64 xl:h-80 2xl:h-auto grid grid-flow-row auto-rows-max overflow-y-auto z-30 bg-white border-2 border-t-0 border-black py-1"
                 style={{ boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)" }}
               >
                 {/* <div>

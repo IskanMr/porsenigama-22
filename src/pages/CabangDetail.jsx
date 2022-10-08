@@ -9,7 +9,7 @@ import vector1 from "../assets/images/cabang/cabangDetail/Group 108.png";
 import vector2 from "../assets/images/cabang/cabangDetail/Vector (2).png";
 import paperDesc from "../assets/images/cabang/cabangDetail/Vector 13.png";
 import paperTitle from "../assets/images/cabang/cabangDetail/paper-title.png";
-import rippedPaper from "../assets/images/cabang/cabangDetail/Group 182.png";
+import rippedPaper from "../assets/images/cabang/cabangDetail/Group 141.png";
 
 import {
   Common,
@@ -23,9 +23,9 @@ const assetsCabangDetail = `${process.env.PUBLIC_URL}/images/CabangDetail`;
 const Header = ({ id, cabangHeader }) => {
   return (
     <div 
-      className="w-full min-h-full lg:min-h-screen flex flex-row md:gap-x-10 xl:gap-x-20 items-center justify-center bg-yellow pt-14 lg:pt-0 pointer-events-none"
+      className="relative w-full min-h-full lg:min-h-screen flex flex-row md:gap-x-10 xl:gap-x-20 items-center justify-center bg-yellow pt-14 lg:pt-0 pointer-events-none"
       style={{
-        height: "100vh",
+        height: "100vh"
       }}
     >
       <div className="relative z-20" style={{ width: "7%" }}>
@@ -41,7 +41,7 @@ const Header = ({ id, cabangHeader }) => {
           className="w-full"
           style={{ width: "858px" }}
           src={`${assetsCabangDetail}/icon-${id}.png`}
-          alt=""
+          alt="Gambar Cabang"
         />
       </div>
       <div className="relative" style={{ width: "5%" }}>
@@ -65,10 +65,13 @@ const Header = ({ id, cabangHeader }) => {
           </div> */}
       </div>
       <img
-        className="w-full absolute bottom-96 2xl:bottom-1/3"
-        style={{ width: "2000px" }}
         src={rippedPaper}
         alt=""
+        className="w-screen absolute -bottom-14 xs:-bottom-14 sm:-bottom-20 md:-bottom-28 lg:-bottom-36 xl:-bottom-48"
+        style={{
+          filter:
+            "drop-shadow(12px -3px 4px rgba(0, 0, 0, 0.25))"
+        }}
       />
     </div>
   );

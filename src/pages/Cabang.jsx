@@ -19,7 +19,12 @@ const Cabang = () => {
   return (
     <>
       <HtmlHead title="Cabang" decription="[insert page description]" />
-      <div className="relative w-full bg-blue py-10">
+      <div 
+        className="relative w-full bg-blue py-10"
+        style={{
+          height: "100vh"
+        }}
+      >
         <img 
           src={RippedPaper} 
           className="w-full absolute m-auto -bottom-14 xs:-bottom-14 sm:-bottom-20 md:-bottom-28 lg:-bottom-36 xl:-bottom-48 pointer-events-none"
@@ -30,22 +35,22 @@ const Cabang = () => {
               src={Logo} 
               className="" 
               style={{width:"600px"}} 
-              alt="Logo"
+              alt="Logo Porsenigama"
             />
           </div>
           <div className="m-auto mr-6 lg:mr-14 z-10">
             <img 
               src={TeksCabang} 
               className="mb-8 pointer-events-none" 
-              alt="" 
+              alt="Cabang Lomba" 
             />
             <img
               src={ScrollDown}
-              className="m-auto w-7 sm:w-12 md:w-20 xl:w-24 -mt-7 md:-mt-6 lg:-mt-5 animate-bounce cursor-pointer"
+              className="m-auto w-7 sm:w-12 md:w-16 lg:w-20 xl:w-24 2xl:w-28 -mt-8 2xl:-mt-16 animate-bounce cursor-pointer"
               onClick={() => {
                 content.current.scrollIntoView({ behavior: "smooth" });
               }}
-              alt=""
+              alt="Scroll Down"
             />
           </div>
         </div>
@@ -59,7 +64,7 @@ const Cabang = () => {
             <img
               className="pointer-events-none transform transition-transform transition-300 hover:scale-110"
               src={TeksOlahraga}
-              alt=""
+              alt="Cabang Olahraga"
             />
           </button>
           <button
@@ -69,7 +74,7 @@ const Cabang = () => {
             <img
               className="pointer-events-none"
               src={TeksSeni}
-              alt=""
+              alt="Cabang Seni"
             />
           </button>
         </div>
@@ -84,7 +89,7 @@ const Cabang = () => {
                 <img
                   className="pointer-events-none"
                   src={`${assetsCabang}/ICON-${item.title}.png`}
-                  alt=""
+                  alt="Icon cabang"
                 />
                 <p className="font-montserrat font-bold uppercase text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl text-center">
                   {item.title}

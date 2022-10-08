@@ -84,7 +84,8 @@ const Award = (props) => {
                         <p className="flex gap-x-3">
                           <img
                             src={`${process.env.PUBLIC_URL}/images/Standings/Mendali gold.png`}
-                            alt="Tabel perolehan medali emas"
+                            alt="Tabel perolehan penghargaan"
+                            title="MVP"
                             className="transform w-5 h-6 md:w-10 md:h-11"
                           />
                           {cabang.peraih}
