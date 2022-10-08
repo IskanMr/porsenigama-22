@@ -8,8 +8,8 @@ import TigaBintangLomba from "../../assets/images/homepage/3-bintang-lomba.png";
 import ExplodeLombaKanan from "../../assets/images/homepage/explode-lomba-kanan.png";
 import ExplodeLombaKiri from "../../assets/images/homepage/explode-lomba-kiri.png";
 import ExplodeLombaKecil from "../../assets/images/homepage/explode-kecil-lomba.png";
-import CabangSeni from "../../assets/images/homepage/seni-lomba.png"
-import CabangOlahraga from "../../assets/images/homepage/olahraga-lomba.png"
+import CabangSeni from "../../assets/images/homepage/seni-lomba.png";
+import CabangOlahraga from "../../assets/images/homepage/olahraga-lomba.png";
 
 const Lomba = () => {
   var settings = {
@@ -26,7 +26,7 @@ const Lomba = () => {
         <img src={BorderLomba} className="mx-auto hidden md:block" alt="" />
         <img src={BorderLombaMobile} className="mx-auto md:hidden" alt="" />
         <p
-          className="font-universalserif text-2xl md:text-2xl xl:text-4xl text-yellow absolute text-center"
+          className="font-universalserif text-2xl md:text-2xl xl:text-4xl text-yellow absolute text-center md:hidden"
           style={{
             left: "49.5%",
             transform: "translate(-50%, -170%)",
@@ -34,40 +34,66 @@ const Lomba = () => {
         >
           LOMBA
         </p>
-        <div className="pt-10 rounded-3rem w-3/4 xl:w-1/2 gap-8 lg mx-auto z-10 hidden md:flex md:flex-row">
+        <p
+          className="font-universalserif text-2xl md:text-2xl xl:text-4xl text-yellow absolute text-center hidden md:block"
+          style={{
+            left: "49.5%",
+            transform: "translate(-50%, -200%)",
+          }}
+        >
+          LOMBA
+        </p>
+        <div className="pt-10 rounded-3rem w-3/4 xl:w-1/2 gap-24 lg mx-auto z-10 hidden md:flex md:flex-row">
           <div className="h-full w-full pb-36 z-10">
-            <img src={CabangSeni} className="mx-auto z-10" alt="" />
+            <img src={CabangSeni} className="mx-auto z-10 cursor-pointer" alt="" />
             {/* <p className="text-center">SENI</p> */}
           </div>
           <div className="h-full w-full pb-36 z-10">
-          <img src={CabangOlahraga} className="mx-auto z-10" alt="" />
+            <img src={CabangOlahraga} className="mx-auto z-10 cursor-pointer" alt="" />
             {/* <p>OLAHRAGA</p> */}
           </div>
         </div>
         <div className="mx-auto items-center justify-center md:hidden">
           <Slider {...settings}>
-            <div className="xl:px-20 xl:py-5 px-7 py-3">
-              {/* <img src={PatternLombaMobile} className="mx-auto" alt="" /> */}
-              <img src={CabangSeni} className="mx-auto cursor-pointer" alt="" />
+            <div className="xl:px-20 xl:py-5 px-7 py-10">
+              {/* <img
+                src={PatternLombaMobile}
+                className="absolute mx-auto"
+                alt=""
+              /> */}
+              <img
+                src={CabangSeni}
+                className="mx-auto cursor-pointer"
+                alt=""
+              />
             </div>
-            <div className="xl:px-20 xl:py-5 px-7 py-3">
-              <img src={CabangOlahraga} className="mx-auto cursor-pointer" alt="" />
+            <div className="xl:px-20 xl:py-5 px-7 py-10">
+              {/* <img
+                src={PatternLombaMobile}
+                className="absolute mx-auto"
+                alt=""
+              /> */}
+              <img
+                src={CabangOlahraga}
+                className="mx-auto cursor-pointer"
+                alt=""
+              />
             </div>
           </Slider>
         </div>
         <img
           src={TigaBintangLomba}
-          className="absolute top-24 left-24 hidden md:block"
+          className="absolute top-24 left-24 hidden xl:block"
           alt=""
         />
         <img
           src={ExplodeLombaKanan}
-          className="absolute right-24 top-12 hidden md:block"
+          className="absolute right-24 top-12 hidden xl:block"
           alt=""
         />
         <img
           src={ExplodeLombaKiri}
-          className="absolute top-96 left-24 z-0 hidden md:block"
+          className="absolute top-96 left-24 z-0 hidden xl:block"
           alt=""
         />
         {/* <img
