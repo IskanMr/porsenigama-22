@@ -13,7 +13,7 @@ import GambarKontinenInporse from "../../assets/images/homepage/gambar-inporse-2
 
 const Inporse = () => {
   var settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     arrows: false,
     speed: 500,
@@ -60,7 +60,7 @@ const Inporse = () => {
                 alt=""
               />
               <div className="overflow-y-scroll">
-                <p className="h-10rem md:h-18rem text-justify pt-1 text-sm md:text-base xl:text-lg">
+                <p className="h-18rem md:h-18rem text-justify pt-1 text-sm md:text-base xl:text-lg">
                   Piala <br />
                   melambangkan sebuah kompetisi antar fakultas yang ada di
                   Universitas Gadjah Mada guna memperebutkan gelar juara dan
