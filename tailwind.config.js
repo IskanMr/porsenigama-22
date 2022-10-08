@@ -29,7 +29,7 @@ module.exports = {
         inporse: "#D9D9D9",
         borderpeta: "#D9D9D9",
         textpeta: "#E41D21",
-        "hyperlink": "#3366CC",
+        hyperlink: "#3366CC",
       },
       fontFamily: {
         display: ["Universal Serif", "system-ui", "sans-serif"],
@@ -77,6 +77,10 @@ module.exports = {
         "32rem": "32rem",
         "28rem": "28rem",
         "36rem": "36rem",
+      },
+      zIndex: {
+        "-1": "-1",
+        "-2": "-2",
       },
     },
   },

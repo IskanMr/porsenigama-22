@@ -8,7 +8,7 @@ import { ReactComponent as RetractUpIcon } from "../assets/icons/chevron-up.svg"
 
 const footLinks = [
   { name: "Beranda", url: "/" },
-  { name: "Standings", url: "/klasemen" },
+  { name: "Klasemen", url: "/klasemen" },
   { name: "Cabang", url: "/cabang" },
   { name: "Galeri", url: "/galeri" },
   { name: "Faq", url: "/faq" },
@@ -48,12 +48,12 @@ export function PageHeader({ className }) {
     >
       <NavLinkStock
         to={"/2022/porsenigama/"}
-        className="flex flex-shrink-0 pl-6 pb-2 pt-1 pr-8 items-center uppercase group"
+        className="flex flex-shrink-0 pl-6 pb-2 pt-1 pr-8 items-center align-middle justify-items-center uppercase group"
       >
         <img
           src={assets + "logo-psg.png"}
           alt="logo"
-          className="h-10 w-10 md:h-14 md:w-14"
+          className="h-10 w-auto md:h-14"
         />
         <div className="hidden md:block text-white ml-2 text-xl md:text-2xl group-hover:text-oranges-default transition ease-in-out duration-300">
           Porsenigama UGM 2022
@@ -81,7 +81,7 @@ export function PageHeader({ className }) {
           }}
         >
           <MobileIcon
-            className={`${styles.mobileIcon} text-white block h-6 w-auto z-50`}
+            className={`${styles.mobileIcon} text-white block h-6 w-auto`}
           />
         </button>
       </div>
