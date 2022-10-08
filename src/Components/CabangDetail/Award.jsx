@@ -77,7 +77,7 @@ const Award = (props) => {
                       {!cabang.peraih? <div/> : 
                       <div className="p-4 border-2 border-white bg-white m-2 rounded-xl">
                         <p
-                          className="text-2xl md:text-fivevh uppercase font-bold text-kuning mb-3"
+                          className="text-xl md:text-2xl uppercase font-bold mb-3"
                         >
                           {cabang.name}
                         </p>

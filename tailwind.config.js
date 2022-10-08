@@ -25,6 +25,7 @@ module.exports = {
         purple: "#5E4795",
         orange: "#E66D4B",
         red: "#804964",
+        krem: "#FDE9B6",
         inporse: "#D9D9D9",
         borderpeta: "#D9D9D9",
         textpeta: "#E41D21",
