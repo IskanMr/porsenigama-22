@@ -64,7 +64,7 @@ const Hasil = (props) => {
                 <div className="flex justify-end">
                   <button
                     onClick={() => setVisiblePopup(!visiblePopup)}
-                    className="md:mx-4 mt-3 xl:my-4 text-3xl md:text-2xl rounded-xl px-2 md:px-8 py-2 font-montserrat transform scale-50 md:scale-100 transition duration-300 md:hover:scale-105"
+                    className="md:mx-4 mt-3 xl:my-4 text-3xl md:text-xl lg:text-2xl rounded-xl px-2 md:px-8 py-2 font-montserrat transform scale-50 md:scale-100 transition duration-300 md:hover:scale-105"
                   >
                     Tutup
                   </button>
@@ -85,6 +85,7 @@ const Hasil = (props) => {
                           <img
                             src={`${process.env.PUBLIC_URL}/images/Standings/Mendali gold.png`}
                             alt="Tabel perolehan medali emas"
+                            title="Emas"
                             className="transform w-5 h-6 md:w-10 md:h-11"
                           />
                           {cabang.gold}
@@ -93,6 +94,7 @@ const Hasil = (props) => {
                           <img
                             src={`${process.env.PUBLIC_URL}/images/Standings/Mendali silver.png`}
                             alt="Tabel perolehan medali perak"
+                            title="Perak"
                             className="transform w-5 h-6 md:w-10 md:h-11"
                           />
                           {cabang.silver}
@@ -101,6 +103,7 @@ const Hasil = (props) => {
                           <img
                             src={`${process.env.PUBLIC_URL}/images/Standings/Mendali bronze.png`}
                             alt="Tabel perolehan medali perunggu"
+                            title="Perunggu"
                             className="transform w-5 h-6 md:w-10 md:h-11"
                           />
                           {cabang.bronze}
