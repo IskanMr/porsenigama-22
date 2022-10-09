@@ -11,7 +11,7 @@ import TeksSeni from "../assets/images/cabang/Group 171.png";
 import CoverMobile from "../assets/images/cabang/Cover Mobile.png";
 import Cover from "../assets/images/cabang/Cover.png";
 
-const assetsCabang = `${process.env.PUBLIC_URL}/images/cabang`;
+const assetsCabang = `${process.env.PUBLIC_URL}/images/Cabang`;
 
 const Cabang = () => {
   const [list, setList] = useState(caborList);
@@ -36,7 +36,7 @@ const Cabang = () => {
             <img 
               src={Cover} 
               className="w-3/4 lg:w-11/12 mb-8" 
-              style={{width:"600px"}} 
+              style={{ width: "600px"}} 
               alt="Orang yang sedang bermain basket dan menari"
             />
           </div>
@@ -44,7 +44,7 @@ const Cabang = () => {
             <img 
               src={CoverMobile} 
               className="w-full" 
-              style={{scale:"1000px"}} 
+              style={{ width:"300px"}} 
               alt="Orang yang sedang bermain basket dan menari"
             />
           </div>
