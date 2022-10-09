@@ -17,7 +17,6 @@ module.exports = {
         "pattern-cabangDetail":
           "url('/src/assets/images/cabang/cabangDetail/Mask group (3).png')",
         "nama-fakultas": "url('/src/assets/images/katalog/namaFakultas.png')",
-        "pattern-lomba": "url('/src/assets/images/homepage/pattern-lomba.png')",
       },
       colors: {
         blue: "#48C0EE",
@@ -26,7 +25,7 @@ module.exports = {
         orange: "#E66D4B",
         red: "#804964",
         krem: "#FDE9B6",
-        inporse: "#D9D9D9",
+        inporse: "#FAFBFC",
         borderpeta: "#D9D9D9",
         textpeta: "#E41D21",
         hyperlink: "#3366CC",
@@ -70,6 +69,7 @@ module.exports = {
       screens: {
         "450px": { min: "450px", max: "768px" },
         "405px": { min: "405px", max: "767px" },
+        "1700px": "1700px",
       },
       borderWidth: {},
       margin: {
@@ -77,6 +77,7 @@ module.exports = {
         "32rem": "32rem",
         "28rem": "28rem",
         "36rem": "36rem",
+        "38rem": "38rem",
       },
       zIndex: {
         "-1": "-1",

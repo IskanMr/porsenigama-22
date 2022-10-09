@@ -42,12 +42,12 @@ const Peta = () => {
         />
         <img
           src={RipPaperPetaKiri}
-          className="left-0 absolute hidden md:block z-20"
+          className="left-0 absolute hidden xl:block z-20"
           alt=""
         />
         <img
           src={RipPaperPetaKanan}
-          className="right-0 absolute hidden md:block z-20"
+          className="right-0 absolute hidden xl:block z-20"
           alt=""
         />
       </div>

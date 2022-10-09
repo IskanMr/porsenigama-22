@@ -1,5 +1,8 @@
 import Slider from "react-slick";
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useRef } from "react";
 import VectorKiri from "../../assets/images/homepage/vektor-kiri-inporse.png";
 import VectorKanan from "../../assets/images/homepage/vektor-kanan-inporse.png";
 import BorderInporse from "../../assets/images/homepage/border-inporse-section-3.png";
@@ -10,8 +13,17 @@ import BorderInporseMobile from "../../assets/images/homepage/border-inporse-mob
 import GambarLogoInporse from "../../assets/images/homepage/gambar-inporse-3.png";
 import GambarPorsenigamaInporse from "../../assets/images/homepage/gambar-inporse-1.png";
 import GambarKontinenInporse from "../../assets/images/homepage/gambar-inporse-2.png";
+import ArrowKananInporse from "../../assets/images/homepage/arrow-kanan-inporse.png";
+import ArrowKiriInporse from "../../assets/images/homepage/arrow-kiri-inporse.png";
 
 const Inporse = () => {
+  const slider = useRef();
+  const Next = () => {
+    slider.current.slickNext();
+  };
+  const Previous = () => {
+    slider.current.slickPrev();
+  };
   var settings = {
     dots: true,
     infinite: true,
@@ -20,9 +32,13 @@ const Inporse = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
+  AOS.init({});
+  AOS.refresh();
+
   return (
     <>
-      <div className="z-10 relative bg-homepage-section-3 pt-21rem pb-48 md:pb-40">
+      <div className="z-10 relative bg-homepage-section-3 pt-80 md:pt-21rem pb-24 md:pb-32">
         <img
           src={BorderInporseMobile}
           className="mx-auto transform translate-x-2 md:hidden"
@@ -51,8 +67,19 @@ const Inporse = () => {
         >
           INPORSE
         </p>
-        <div className="mt-16 mx-auto items-center justify-center md:w-2/3 w-4/5 rounded-3rem bg-opacity-20 text-xl bg-inporse font-montserrat overflow-hidden font-medium py-8 shadow-xl">
-          <Slider {...settings}>
+        <img
+          onClick={Previous}
+          src={ArrowKiriInporse}
+          className="absolute left-0 ml-8 bottom-96 mb-5 lg:ml-16 xl:ml-32 1700px:ml-48 cursor-pointer opacity-70 ease-in-out transition-all hover:opacity-100 hidden md:block"
+          alt=""
+        />
+        <div
+          className="mt-16 mx-auto items-center justify-center md:w-2/3 w-4/5 rounded-3rem bg-opacity-100 text-xl bg-inporse font-montserrat overflow-hidden font-medium py-8 shadow-2xl"
+          data-aos="fade-down"
+          data-aos-offset="800"
+          data-aos-duration="1600"
+        >
+          <Slider ref={(c) => (slider.current = c)} {...settings}>
             <div className="xl:px-20 xl:py-5 px-7 py-3">
               <img
                 className="mx-auto items-center justify-center"
@@ -157,6 +184,12 @@ const Inporse = () => {
           </Slider>
         </div>
         <img
+          src={ArrowKananInporse}
+          onClick={Next}
+          className="absolute right-0 mr-8 bottom-96 lg:mr-16 xl:mr-32 1700px:mr-48 mb-5 cursor-pointer opacity-70 hover:opacity-100 hidden md:block ease-in-out transition-all"
+          alt=""
+        />
+        <img
           src={VectorKiri}
           className="absolute top-96 left-10 hidden md:block"
           alt=""
@@ -168,17 +201,17 @@ const Inporse = () => {
         />
         <img
           src={BintangKuning}
-          className="absolute left-96 pt-10 hidden md:block"
+          className="absolute left-96 pt-2 hidden md:block"
           alt=""
         />
         <img
           src={PaperKiri}
-          className="left-0 absolute hidden md:block"
+          className="left-0 absolute hidden xl:block"
           alt=""
         />
         <img
           src={PaperKanan}
-          className="right-0 absolute hidden md:block"
+          className="right-0 absolute hidden xl:block"
           alt=""
         />
       </div>

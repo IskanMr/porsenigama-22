@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import "./Logo.css";
 import LogoSection1 from "../../assets/images/homepage/logo-section-1.png";
 import LogoSection1Mobile from "../../assets/images/homepage/logo-section-1-mobile.png";
 import TeksPorsenigama from "../../assets/images/homepage/text-porsenigama-section-1.png";
@@ -14,19 +15,19 @@ const Logo = () => {
   const contentmobile = useRef(null);
   return (
     <>
-      <div className="w-full items-center bg-blue py-10 pb-24 md:pb-48 z-20">
+      <div className="w-full items-center bg-blue pt-10 md:pt-0 py-10 pb-24 md:pb-60 z-20">
         <div className="relative">
           <img
             src={RipPaper}
-            className="absolute hidden md:block z-0 md:mt-23rem lg:mt-28rem xl:mt-36rem"
+            className="absolute hidden md:block z-0 md:mt-23rem lg:mt-28rem xl:mt-38rem"
             alt=""
+            ref={content}
           />
           <img
             src={RipPaperAdd}
             className="absolute hidden md:block z-0"
             style={{ marginTop: "53rem" }}
             alt=""
-            ref={content}
           />
           <img
             src={RipPaperAdd}
@@ -66,15 +67,15 @@ const Logo = () => {
             style={{ marginTop: "45rem", marginLeft: "20rem" }}
           />
           <div className="md:grid-cols-2 md:grid m-auto flex flex-col">
-            <div className="col-span-1 mx-auto md:pt-16 items-center justify-center z-10">
+            <div className="col-span-1 mx-auto md:pt-0 items-center justify-center z-10">
               <img
                 src={TeksPorsenigamaMobile}
-                className="-translate-x-2 transform md:hidden"
+                className="-translate-x-2 transform md:hidden fadein"
                 alt=""
               />
               <img
                 src={ScrollDownMobile}
-                className="mx-auto pt-2 md:hidden animate-bounce cursor-pointer"
+                className="mx-auto pt-2 md:hidden animate-bounce cursor-pointer fadein"
                 alt=""
                 onClick={() => {
                   contentmobile.current.scrollIntoView({ behavior: "smooth" });
@@ -82,7 +83,7 @@ const Logo = () => {
               />
               <img
                 src={LogoSection1}
-                className="hidden md:block"
+                className="hidden md:block logo"
                 style={{ scale: "95%" }}
                 alt=""
               />
@@ -90,17 +91,17 @@ const Logo = () => {
             <div className="col-span-1 m-auto md:px-3 xl:px-5 pt-8 rounded-lg z-10">
               <img
                 src={LogoSection1Mobile}
-                className="md:hidden p-5 translate-x-7 transform"
+                className="md:hidden p-5 translate-x-7 transform logo"
                 alt=""
               />
               <img
                 src={TeksPorsenigama}
-                className="mb-8 hidden md:block transform xl:-translate-x-8 -translate-x-6"
+                className="mb-8 hidden md:block transform xl:-translate-x-8 -translate-x-6 fadein"
                 alt=""
               />
               <img
                 src={ScrollDown}
-                className="items-center justify-center mx-auto hidden md:block px-32 animate-bounce cursor-pointer"
+                className="items-center justify-center mx-auto hidden md:block animate-bounce cursor-pointer fadein"
                 onClick={() => {
                   content.current.scrollIntoView({ behavior: "smooth" });
                 }}
