@@ -148,13 +148,11 @@ const cabangList = [
       "Kelas E Putra (65-70 kg)",
       "Kelas F Putra (70-75 kg)",
       "Kelas G Putra (75-80 kg)",
-      "Kelas H Putra (80-85 kg)",
       "Kelas I Putra (85-90 kg)",
       "Kelas A Putri (45-50 kg)",
       "Kelas B Putri (50-55 kg)",
       "Kelas C Putri (55-60 kg)",
       "Kelas D Putri (60-65 kg)",
-      "Kelas E Putri (65-70 kg)",
       "Kelas F Putri (70-75 kg)",
     ],
     categoryData: [
@@ -204,11 +202,6 @@ const cabangList = [
         link: 'https://challonge.com/SilatPaKlsG_PSG22'
       },
       {
-        category: "Kelas H Putra (80-85 kg)",
-        iframe: true,
-        link: 'https://challonge.com/SilatPaKlsH_PSG22'
-      },
-      {
         category: "Kelas I Putra (85-90 kg)",
         iframe: true,
         link: 'https://challonge.com/SilatPaKlsI_PSG22'
@@ -232,11 +225,6 @@ const cabangList = [
         category: "Kelas D Putri (60-65 kg)",
         iframe: true,
         link: 'https://challonge.com/SilatPiKlsD_PSG22'
-      },
-      {
-        category: "Kelas E Putri (65-70 kg)",
-        iframe: true,
-        link: 'https://challonge.com/SilatPiKlsE_PSG22'
       },
       {
         category: "Kelas F Putri (70-75 kg)",
