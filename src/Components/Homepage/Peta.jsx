@@ -8,7 +8,7 @@ import RipPaperPetaKanan from "../../assets/images/homepage/rip-paper-peta-kanan
 const Peta = () => {
   return (
     <>
-      <div className="relative bg-purple py-10 pb-80">
+      <div className="relative bg-purple py-10 pb-32">
         <img
           src={BgTextInporse}
           className="mx-auto pb-5 transform -translate-x-2"
@@ -17,37 +17,38 @@ const Peta = () => {
         <p
           className="font-universalserif text-3xl text-textpeta absolute text-center"
           style={{
-            top: "9%",
             left: "50%",
-            transform: "translate(-50%, -9%)",
+            transform: "translate(-50%, -250%)",
           }}
         >
           PETA
         </p>
-        <div className="bg-borderpeta mx-auto w-2/3 h-24rem"></div>
+        <div className="bg-borderpeta mx-auto w-2/3 h-24rem text-center justify-center items-center font-montserrat text-4xl font-bold animate-pulse">
+          <p className="transform translate-y-36">COMING SOON!</p>
+        </div>
         <img
           src={ExplodePetaKiri}
-          className="absolute left-10 hidden md:block top-0 pt-96"
+          className="absolute left-10 hidden lg:block top-0 pt-96"
           alt=""
         />
         <img
           src={ExplodePetaKanan}
-          className="absolute right-9 top-0 pt-80 hidden md:block"
+          className="absolute right-9 top-0 pt-80 hidden lg:block"
           alt=""
         />
         <img
           src={TigaBintangPeta}
-          className="absolute right-56 top-16 hidden md:block"
+          className="absolute right-56 top-16 hidden lg:block"
           alt=""
         />
         <img
           src={RipPaperPetaKiri}
-          className="left-0 absolute hidden xl:block z-20"
+          className="-left-16 -top-48 lg:-left-16 absolute scale-50 lg:scale-75 transform z-20"
           alt=""
         />
         <img
           src={RipPaperPetaKanan}
-          className="right-0 absolute hidden xl:block z-20"
+          className="-right-20 -top-48  lg:-right-16 absolute scale-50 lg:scale-75 transform z-20"
           alt=""
         />
       </div>

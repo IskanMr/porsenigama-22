@@ -120,17 +120,17 @@ const Lomba = () => {
         </div>
         <img
           src={TigaBintangLomba}
-          className="absolute top-20 left-8 xl:left-24 transform scale-50 lg:scale-75 xl:scale-90"
+          className="absolute top-20 left-8 xl:left-24 transform scale-50 lg:scale-75 xl:scale-90 hidden lg:block"
           alt=""
         />
         <img
           src={ExplodeLombaKanan}
-          className="absolute right-1 top-12 transform scale-40 lg:scale-50 xl:scale-90 xl:right-32"
+          className="absolute right-1 top-12 transform scale-40 lg:scale-50 xl:scale-90 xl:right-32 hidden lg:block"
           alt=""
         />
         <img
           src={ExplodeLombaKiri}
-          className="absolute -bottom-16 lg:-bottom-12 xl:left-20 xl:-bottom-2 -left-5 z-0 transform scale-40 lg:scale-50 xl:scale-90"
+          className="absolute -bottom-16 lg:-bottom-12 xl:left-20 xl:bottom-12 -left-5 z-0 transform scale-40 lg:scale-50 xl:scale-90 hidden lg:block"
           alt=""
         />
         <img

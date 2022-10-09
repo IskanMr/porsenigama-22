@@ -12,7 +12,7 @@ import RipPaperAdd from "../../assets/images/homepage/rip-paper-add.png";
 const Logo = () => {
   return (
     <>
-      <div className="bg-blue py-14 pb-48 md:pb-60 z-20">
+      <div className="bg-blue py-14 pb-56 md:pb-60 z-20">
         <div className="relative">
           <img
             src={RipPaper}
@@ -85,8 +85,9 @@ const Logo = () => {
           </div>
           <div className="col-span-1 m-auto md:px-3 xl:px-5 pt-8 rounded-lg z-10">
             <img
-              src={LogoSection1Mobile}
-              className="md:hidden p-5 translate-x-7 transform logo"
+              src={LogoSection1}
+              className="md:hidden logo"
+              style={{ scale:"150%" }}
               alt=""
             />
             <img

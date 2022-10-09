@@ -19,6 +19,7 @@ module.exports = {
         "pattern-cabangDetail":
           "url('/src/assets/images/cabang/cabangDetail/Mask group (3).png')",
         "nama-fakultas": "url('/src/assets/images/katalog/namaFakultas.png')",
+        "galeri-mobile": "url('/src/assets/images/galeri/bg-isi-galeri-mobile.png')",
       },
       colors: {
         blue: "#48C0EE",

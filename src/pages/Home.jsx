@@ -14,8 +14,8 @@ const Home = () => {
         <Logo />
         <Tentang id="tentang" />
         <Inporse />
-        {/* <Peta /> */}
         <Lomba />
+        <Peta />
       </main>
     </>
   );
