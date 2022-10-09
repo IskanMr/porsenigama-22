@@ -156,7 +156,7 @@ const Common = ({
             </div>
             {showCategory && (
               <div
-                className="absolute min-w-full sm:h-48 lg:h-64 xl:h-80 2xl:h-auto grid grid-flow-row auto-rows-max overflow-y-auto z-30 bg-white border-2 border-t-0 border-black py-1"
+                className="absolute min-w-full sm:h-48 lg:h-64 xl:h-80 2xl:h-96 grid grid-flow-row auto-rows-max overflow-y-auto z-30 bg-white border-2 border-t-0 border-black py-1"
                 style={{ boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)" }}
               >
                 {/* <div>
