@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import { HtmlHead } from "../Components/HtmlHead";
 import { dataFotografi } from "../data/dataFotografi";
 import { dataVocalGroup } from "../data/dataVocalGroup";
 
@@ -22,58 +22,61 @@ const assetsCabangDetail = `${process.env.PUBLIC_URL}/images/CabangDetail`;
 
 const Header = ({ id, cabangHeader }) => {
   return (
-    <div 
-      className="relative w-full min-h-full lg:min-h-screen flex flex-row md:gap-x-10 xl:gap-x-20 items-center justify-center bg-yellow pt-14 lg:pt-0 pointer-events-none"
-      style={{
-        height: "100vh"
-      }}
-    >
-      <div className="relative z-20" style={{ width: "7%" }}>
-        <img
-          className="absolute top-1 left-10"
-          style={{ width: "137px"}}
-          src={vector1}
-          alt=""
-        />
-      </div>
-      <div className="relative" style={{ width: "30%" }}>
-        <img
-          className="w-full"
-          style={{ width: "858px" }}
-          src={`${assetsCabangDetail}/icon-${id}.png`}
-          alt="Gambar Cabang"
-        />
-      </div>
-      <div className="relative" style={{ width: "5%" }}>
-        <img
-            className="absolute -top-52 lg:-top-72 right-20 lg:right-24"
-            style={{ width: "70px" }}
-            src={vector2}
-            alt=""
-          />
-      </div>
-      <div className="z-20 relative w-full h-full flex flex-col w-1/3 sm:w-1/2 -ml-20 2xl:-ml-28 items-center justify-center" style={{ width: "45%" }}>
-        <img src={paperTitle} style={{ width: "762px" }} alt="" className="absolute w-7/12 sm:w-full -mt-44 mr-14" />
-        <h1 className="font-bold sm:text-2xl md:text-4xl lg:text-5xl uppercase text-white font-universalserif z-40 -mt-56">
-          {id} 
-        </h1>
-          {/* <div className="">
-                <img src={paperDesc} alt="" className="absolute m-auto" />
-                <p className="hidden lg:block lg:text-xl z-40">
-                  {cabangHeader} 
-                </p>
-          </div> */}
-      </div>
-      <img
-        src={rippedPaper}
-        alt=""
-        className="w-screen absolute -bottom-14 xs:-bottom-14 sm:-bottom-20 md:-bottom-28 lg:-bottom-36 xl:-bottom-48"
+    <>
+      <HtmlHead title={`${id}`} decription="[insert page description]" />
+      <div 
+        className="relative w-full min-h-full flex flex-row md:gap-x-10 xl:gap-x-20 items-center justify-center bg-yellow pt-14 lg:pt-0 pointer-events-none m-auto"
         style={{
-          filter:
-            "drop-shadow(12px -3px 4px rgba(0, 0, 0, 0.25))"
+          height: "100vh"
         }}
-      />
-    </div>
+      >
+        <div className="relative z-20 m-auto" style={{ width: "7%" }}>
+          <img
+            className="absolute top-1 lg:top-6 xl:top-10 2xl:top-4 left-10 xl:left-16"
+            style={{ width: "137px"}}
+            src={vector1}
+            alt="Vector"
+          />
+        </div>
+        <div className="relative" style={{ width: "30%" }}>
+          <img
+            className="w-full mt-10"
+            style={{ width: "858px" }}
+            src={`${assetsCabangDetail}/icon-${id}.png`}
+            alt={`Cabang ${id}`}
+          />
+        </div>
+        <div className="relative" style={{ width: "5%" }}>
+          <img
+              className="absolute -top-52 lg:-top-64 xl:-top-72 2xl:-top-80 right-20 lg:right-24 2xl:right-36"
+              style={{ width: "70px" }}
+              src={vector2}
+              alt="Vector"
+            />
+        </div>
+        <div className="z-20 relative w-full h-full flex flex-col w-1/3 sm:w-1/2 -ml-20 2xl:-ml-28 items-center justify-center m-auto" style={{ width: "45%" }}>
+          <img src={paperTitle} style={{ width: "762px" }} alt="" className="absolute w-7/12 sm:w-full -mt-44 mr-14 m-auto" />
+          <h1 className="font-bold sm:text-2xl md:text-4xl lg:text-4xl 2xl:text-5xl uppercase text-white font-universalserif z-40 -mt-56 ">
+            {id} 
+          </h1>
+            {/* <div className="">
+                  <img src={paperDesc} alt="Robekan kertas" className="absolute m-auto" />
+                  <p className="hidden lg:block lg:text-xl z-40">
+                    {cabangHeader} 
+                  </p>
+            </div> */}
+        </div>
+        <img
+          src={rippedPaper}
+          alt="Robekan kertas"
+          className="w-screen absolute -bottom-14 xs:-bottom-14 sm:-bottom-20 md:-bottom-28 lg:-bottom-36 xl:-bottom-48"
+          style={{
+            filter:
+              "drop-shadow(12px -3px 4px rgba(0, 0, 0, 0.25))"
+          }}
+        />
+      </div>
+    </>
   );
 };
 
