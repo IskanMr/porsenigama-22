@@ -53,8 +53,8 @@
 }
 
 .logo {
-  animation: scaleUp 1s 0s ease-in-out alternate, tilt-shaking 1.5s 1s infinite;
-  -webkit-animation: scaleUp 1s 0s ease-in-out alternate, tilt-shaking 1.5s 1s infinite;
+  animation: scaleUp 1s 0s ease-in-out alternate;
+  -webkit-animation: scaleUp 1s 0s ease-in-out alternate;
 }
 
 .fadein {

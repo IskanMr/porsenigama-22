@@ -3,6 +3,7 @@ import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Lomba.css";
+import { Link } from "react-router-dom";
 import BorderLomba from "../../assets/images/homepage/border-lomba.png";
 import BorderLombaMobile from "../../assets/images/homepage/border-lomba-mobile.png";
 import TigaBintangLomba from "../../assets/images/homepage/3-bintang-lomba.png";
@@ -13,10 +14,9 @@ import CabangSeni from "../../assets/images/homepage/seni-lomba.png";
 import CabangOlahraga from "../../assets/images/homepage/olahraga-lomba.png";
 
 const Lomba = () => {
-  AOS.init({
-    offset: window.innerHeight * 1.4,
-  });
+  AOS.init();
   AOS.refresh();
+  AOS.refreshHard();
   var settings = {
     dots: true,
     infinite: true,
@@ -27,9 +27,17 @@ const Lomba = () => {
   };
   return (
     <>
-      <div className="relative bg-blue pt-10 pb-24 md:pb-12 z-10">
-        <img src={BorderLomba} className="mx-auto hidden md:block" alt="" />
-        <img src={BorderLombaMobile} className="mx-auto md:hidden" alt="" />
+      <div className="relative bg-blue z-10">
+        <img
+          src={BorderLomba}
+          className="mx-auto hidden md:block pt-10"
+          alt=""
+        />
+        <img
+          src={BorderLombaMobile}
+          className="mx-auto md:hidden pt-16"
+          alt=""
+        />
         <p
           className="font-universalserif text-2xl md:text-2xl xl:text-4xl text-yellow absolute text-center md:hidden"
           style={{
@@ -49,31 +57,35 @@ const Lomba = () => {
           LOMBA
         </p>
         <div
-          className="pt-12 rounded-3rem w-3/4 xl:w-1/2 gap-24 lg mx-auto z-10 hidden md:flex md:flex-row"
-          data-aos="fade-down"
-          data-aos-duration="2000"
+          className="pt-8 pb-16 rounded-3rem w-3/4 xl:w-1/2 gap-24 lg mx-auto z-10 hidden md:flex md:flex-row"
+          data-aos="zoom-in-up"
+          data-aos-duration="2750"
         >
           <div className="h-full w-full z-10">
-            <img
-              src={CabangSeni}
-              className="mx-auto z-10 cursor-pointer shake"
-              alt=""
-            />
+            <Link to="cabang">
+              <img
+                src={CabangSeni}
+                className="mx-auto z-10 cursor-pointer shake-right"
+                alt=""
+              />
+            </Link>
             {/* <p className="text-center">SENI</p> */}
           </div>
           <div className="h-full w-full z-10">
-            <img
-              src={CabangOlahraga}
-              className="mx-auto z-10 cursor-pointer shake"
-              alt=""
-            />
+            <Link to="cabang">
+              <img
+                src={CabangOlahraga}
+                className="mx-auto z-10 cursor-pointer shake-left"
+                alt=""
+              />
+            </Link>
             {/* <p>OLAHRAGA</p> */}
           </div>
         </div>
         <div
-          className="mx-auto items-center justify-center md:hidden"
-          data-aos="fade-down"
-          data-aos-duration="1600"
+          className="mx-auto items-center justify-center md:hidden pb-24"
+          data-aos="zoom-in-up"
+          data-aos-duration="2400"
         >
           <Slider {...settings}>
             <div className="xl:px-20 xl:py-5 px-7 py-10">
@@ -82,7 +94,13 @@ const Lomba = () => {
                 className="absolute mx-auto"
                 alt=""
               /> */}
-              <img src={CabangSeni} className="mx-auto cursor-pointer" alt="" />
+              <Link to="cabang">
+                <img
+                  src={CabangSeni}
+                  className="mx-auto cursor-pointer transform translate-x-4"
+                  alt=""
+                />
+              </Link>
             </div>
             <div className="xl:px-20 xl:py-5 px-7 py-10">
               {/* <img
@@ -90,32 +108,34 @@ const Lomba = () => {
                 className="absolute mx-auto"
                 alt=""
               /> */}
-              <img
-                src={CabangOlahraga}
-                className="mx-auto cursor-pointer"
-                alt=""
-              />
+              <Link to="cabang">
+                <img
+                  src={CabangOlahraga}
+                  className="mx-auto cursor-pointer transform -translate-x-2"
+                  alt=""
+                />
+              </Link>
             </div>
           </Slider>
         </div>
         <img
           src={TigaBintangLomba}
-          className="absolute top-24 left-24 hidden xl:block"
+          className="absolute top-20 left-8 xl:left-24 transform scale-50 lg:scale-75 xl:scale-90"
           alt=""
         />
         <img
           src={ExplodeLombaKanan}
-          className="absolute right-24 top-12 hidden xl:block"
+          className="absolute right-1 top-12 transform scale-40 lg:scale-50 xl:scale-90 xl:right-32"
           alt=""
         />
         <img
           src={ExplodeLombaKiri}
-          className="absolute top-72 left-24 z-0 hidden xl:block transform scale-75"
+          className="absolute -bottom-16 lg:-bottom-12 xl:left-20 xl:-bottom-2 -left-5 z-0 transform scale-40 lg:scale-50 xl:scale-90"
           alt=""
         />
         <img
           src={ExplodeLombaKecil}
-          className="absolute top-80 right-48 z-0 hidden xl:block transform scale-90"
+          className="absolute bottom-5 right-32 z-0 transform scale-90 hidden xl:block"
           alt=""
         />
       </div>

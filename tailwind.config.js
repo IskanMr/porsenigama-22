@@ -13,6 +13,8 @@ module.exports = {
       backgroundImage: {
         "homepage-section-3":
           "url('/src/assets/images/homepage/bg-section-3.png')",
+          "homepage-section-1":
+          "url('/src/assets/images/homepage/rip-paper-section-1.png')",
         "pattern-cabang": "url('/src/assets/images/cabang/5328478.svg')",
         "pattern-cabangDetail":
           "url('/src/assets/images/cabang/cabangDetail/Mask group (3).png')",
@@ -26,6 +28,7 @@ module.exports = {
         red: "#804964",
         krem: "#FDE9B6",
         inporse: "#FAFBFC",
+        bginporse: "#E85126",
         borderpeta: "#D9D9D9",
         textpeta: "#E41D21",
         hyperlink: "#3366CC",
@@ -65,6 +68,7 @@ module.exports = {
       },
       scale: {
         200: "2",
+        40:".3"
       },
       screens: {
         "450px": { min: "450px", max: "768px" },
@@ -78,6 +82,7 @@ module.exports = {
         "28rem": "28rem",
         "36rem": "36rem",
         "38rem": "38rem",
+        "62rem": "62rem",
       },
       zIndex: {
         "-1": "-1",

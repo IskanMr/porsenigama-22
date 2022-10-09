@@ -33,12 +33,18 @@ const Inporse = () => {
     slidesToScroll: 1,
   };
 
-  AOS.init({});
+  AOS.init();
   AOS.refresh();
+  AOS.refreshHard();
 
   return (
     <>
-      <div className="z-10 relative bg-homepage-section-3 pt-80 md:pt-21rem pb-24 md:pb-32">
+      {/* <img
+        src={BgInporse}
+        className="absolute z-20 transform -translate-y-1"
+        alt=""
+      /> */}
+      <div className="z-20 relative bg-bginporse py-12 md:py-24 xl:py-24 xl:pt-60">
         <img
           src={BorderInporseMobile}
           className="mx-auto transform translate-x-2 md:hidden"
@@ -74,12 +80,31 @@ const Inporse = () => {
           alt=""
         />
         <div
-          className="mt-16 mx-auto items-center justify-center md:w-2/3 w-4/5 rounded-3rem bg-opacity-100 text-xl bg-inporse font-montserrat overflow-hidden font-medium py-8 shadow-2xl"
-          data-aos="fade-down"
-          data-aos-offset="800"
+          className="my-5 md:my-10 mx-auto items-center justify-center md:w-2/3 w-4/5 rounded-3rem bg-opacity-100 text-xl bg-inporse font-montserrat overflow-hidden font-medium py-8 shadow-2xl"
+          data-aos="flip-up"
+          // data-aos-offset="800"
           data-aos-duration="1600"
         >
           <Slider ref={(c) => (slider.current = c)} {...settings}>
+            <div className="overflow-hidden xl:px-20 xl:py-5 px-7 py-3">
+              <img
+                className="mx-auto items-center justify-center rounded-3xl"
+                src={GambarPorsenigamaInporse}
+                alt=""
+              />
+              <p className="text-justify pt-5 text-sm md:text-base xl:text-lg">
+                Porsenigama pertama kali diselenggarakan pada tahun 1983.
+                Porsenigama lahir karena pada saat itu dinilai belum adanya
+                kegiatan yang mewadahi interaksi bersama antar fakultas di UGM,
+                sehingga muncullah gagasan untuk membentuk kompetisi yang dapat
+                mewadahi interaksi antar fakultas tersebut. Porsenigama
+                didirikan oleh Bapak Arudji. Beliau menjabat sebagai ketua
+                Porsenigama untuk pertama kali. Pekan Olahraga dan Seni
+                Universitas Gadjah Mada (Porsenigama) dengan nama awal “Pordies”
+                atau Pekan Olahraga Dies kemudian pada tahun 2011 diganti nama
+                menjadi “Porsenigama”.{" "}
+              </p>
+            </div>
             <div className="xl:px-20 xl:py-5 px-7 py-3">
               <img
                 className="mx-auto items-center justify-center"
@@ -144,25 +169,6 @@ const Inporse = () => {
                 </p>
               </div>
             </div>
-            <div className="overflow-hidden xl:px-20 xl:py-5 px-7 py-3">
-              <img
-                className="mx-auto items-center justify-center rounded-3xl"
-                src={GambarPorsenigamaInporse}
-                alt=""
-              />
-              <p className="text-justify pt-5 text-sm md:text-base xl:text-lg">
-                Porsenigama pertama kali diselenggarakan pada tahun 1983.
-                Porsenigama lahir karena pada saat itu dinilai belum adanya
-                kegiatan yang mewadahi interaksi bersama antar fakultas di UGM,
-                sehingga muncullah gagasan untuk membentuk kompetisi yang dapat
-                mewadahi interaksi antar fakultas tersebut. Porsenigama
-                didirikan oleh Bapak Arudji. Beliau menjabat sebagai ketua
-                Porsenigama untuk pertama kali. Pekan Olahraga dan Seni
-                Universitas Gadjah Mada (Porsenigama) dengan nama awal “Pordies”
-                atau Pekan Olahraga Dies kemudian pada tahun 2011 diganti nama
-                menjadi “Porsenigama”.{" "}
-              </p>
-            </div>
             <div className="xl:px-20 xl:py-5 px-7 py-3">
               <img
                 className="mx-auto items-center justify-center rounded-3xl"
@@ -191,27 +197,27 @@ const Inporse = () => {
         />
         <img
           src={VectorKiri}
-          className="absolute top-96 left-10 hidden md:block"
+          className="absolute top-20 xl:top-60 xl:left-7 left-0 hidden md:block scale-75 transform xl:scale-100"
           alt=""
         />
         <img
           src={VectorKanan}
-          className="absolute right-9 top-32rem hidden md:block"
+          className="absolute right-5 xl:right-14 xl:top-80 top-40 hidden md:block transform scale-75 xl:scale-100"
           alt=""
         />
         <img
           src={BintangKuning}
-          className="absolute left-96 pt-2 hidden md:block"
+          className="absolute left-24 xl:left-60 xl:pt-0 bottom-3 pt-0 hidden md:block transform scale-75 xl:scale-90"
           alt=""
         />
         <img
           src={PaperKiri}
-          className="left-0 absolute hidden xl:block"
+          className="-left-20 md:-left-8 xl:-left-3 -bottom-48 absolute transform scale-40 md:scale-75 xl:scale-90"
           alt=""
         />
         <img
           src={PaperKanan}
-          className="right-0 absolute hidden xl:block"
+          className="-right-20 md:-right-8 xl:-right-3 -bottom-48 absolute transform scale-40 md:scale-75 xl:scale-90"
           alt=""
         />
       </div>

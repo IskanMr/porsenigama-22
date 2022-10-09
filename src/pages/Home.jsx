@@ -12,9 +12,9 @@ const Home = () => {
       <HtmlHead title="Beranda" decription="[insert page description]" />
       <main className="overflow-hidden">
         <Logo />
-        <Tentang />
+        <Tentang id="tentang" />
         <Inporse />
-        <Peta />
+        {/* <Peta /> */}
         <Lomba />
       </main>
     </>

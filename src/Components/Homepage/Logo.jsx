@@ -1,6 +1,5 @@
-import { useRef } from "react";
 import "./Logo.css";
-import LogoSection1 from "../../assets/images/homepage/logo-section-1.png";
+import LogoSection1 from "../../assets/images/homepage/logo-section-1.gif";
 import LogoSection1Mobile from "../../assets/images/homepage/logo-section-1-mobile.png";
 import TeksPorsenigama from "../../assets/images/homepage/text-porsenigama-section-1.png";
 import ScrollDown from "../../assets/images/homepage/scroll-down.png";
@@ -11,17 +10,14 @@ import RipPaperMobile from "../../assets/images/homepage/rip-paper-mobile.png";
 import RipPaperAdd from "../../assets/images/homepage/rip-paper-add.png";
 
 const Logo = () => {
-  const content = useRef(null);
-  const contentmobile = useRef(null);
   return (
     <>
-      <div className="w-full items-center bg-blue pt-10 md:pt-0 py-10 pb-24 md:pb-60 z-20">
+      <div className="bg-blue py-14 pb-48 md:pb-60 z-20">
         <div className="relative">
           <img
             src={RipPaper}
-            className="absolute hidden md:block z-0 md:mt-23rem lg:mt-28rem xl:mt-38rem"
+            className="absolute hidden md:block z-0 md:mt-23rem xl:mt-28rem"
             alt=""
-            ref={content}
           />
           <img
             src={RipPaperAdd}
@@ -55,59 +51,56 @@ const Logo = () => {
           />
           <img
             src={RipPaperMobile}
-            className="absolute md:hidden z-0 transform scale-y-150 scale-x-125"
+            className="absolute md:hidden z-0 transform scale-y-150 sm:mt-62rem"
             alt=""
-            style={{ marginTop: "46rem" }}
-            ref={contentmobile}
+            style={{ marginTop: "53rem" }}
           />
-          <img
+          {/* <img
             src={RipPaperMobile}
-            className="absolute hidden 405px:block md:hidden z-0 transform scale-y-150 scale-x-125"
+            className="absolute hidden 405px:block md:hidden z-0 transform scale-y-150 scale-x-125 overflow-hidden sm:mt-58rem"
             alt=""
-            style={{ marginTop: "45rem", marginLeft: "20rem" }}
-          />
-          <div className="md:grid-cols-2 md:grid m-auto flex flex-col">
-            <div className="col-span-1 mx-auto md:pt-0 items-center justify-center z-10">
-              <img
-                src={TeksPorsenigamaMobile}
-                className="-translate-x-2 transform md:hidden fadein"
-                alt=""
-              />
+            style={{ marginTop: "53rem", marginLeft: "20rem" }}
+          /> */}
+        </div>
+        <div className="md:grid-cols-2 md:grid m-auto flex flex-col">
+          <div className="col-span-1 mx-auto md:pt-0 items-center justify-center z-10">
+            <img
+              src={TeksPorsenigamaMobile}
+              className="-translate-x-2 transform md:hidden fadein"
+              alt=""
+            />
+            <a href="#tentang">
               <img
                 src={ScrollDownMobile}
                 className="mx-auto pt-2 md:hidden animate-bounce cursor-pointer fadein"
                 alt=""
-                onClick={() => {
-                  contentmobile.current.scrollIntoView({ behavior: "smooth" });
-                }}
               />
-              <img
-                src={LogoSection1}
-                className="hidden md:block logo"
-                style={{ scale: "95%" }}
-                alt=""
-              />
-            </div>
-            <div className="col-span-1 m-auto md:px-3 xl:px-5 pt-8 rounded-lg z-10">
-              <img
-                src={LogoSection1Mobile}
-                className="md:hidden p-5 translate-x-7 transform logo"
-                alt=""
-              />
-              <img
-                src={TeksPorsenigama}
-                className="mb-8 hidden md:block transform xl:-translate-x-8 -translate-x-6 fadein"
-                alt=""
-              />
-              <img
+            </a>
+            <img
+              src={LogoSection1}
+              className="hidden md:block logo"
+              style={{ scale: "150%" }}
+              alt=""
+            />
+          </div>
+          <div className="col-span-1 m-auto md:px-3 xl:px-5 pt-8 rounded-lg z-10">
+            <img
+              src={LogoSection1Mobile}
+              className="md:hidden p-5 translate-x-7 transform logo"
+              alt=""
+            />
+            <img
+              src={TeksPorsenigama}
+              className="mb-8 hidden md:block transform xl:-translate-x-8 -translate-x-6 fadein"
+              alt=""
+            />
+            <a href="#tentang">
+              <img           
                 src={ScrollDown}
                 className="items-center justify-center mx-auto hidden md:block animate-bounce cursor-pointer fadein"
-                onClick={() => {
-                  content.current.scrollIntoView({ behavior: "smooth" });
-                }}
                 alt=""
               />
-            </div>
+            </a>
           </div>
         </div>
       </div>
