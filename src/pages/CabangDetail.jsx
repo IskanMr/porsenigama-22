@@ -35,7 +35,7 @@ const Header = ({ id, cabangHeader }) => {
             className="absolute top-1 lg:top-6 xl:top-10 2xl:top-4 left-10 xl:left-16"
             style={{ width: "137px"}}
             src={vector1}
-            alt=""
+            alt="Vector"
           />
         </div>
         <div className="relative" style={{ width: "30%" }}>
@@ -43,7 +43,7 @@ const Header = ({ id, cabangHeader }) => {
             className="w-full mt-10"
             style={{ width: "858px" }}
             src={`${assetsCabangDetail}/icon-${id}.png`}
-            alt="Gambar Cabang"
+            alt={`Cabang ${id}`}
           />
         </div>
         <div className="relative" style={{ width: "5%" }}>
@@ -51,7 +51,7 @@ const Header = ({ id, cabangHeader }) => {
               className="absolute -top-52 lg:-top-64 xl:-top-72 2xl:-top-80 right-20 lg:right-24 2xl:right-36"
               style={{ width: "70px" }}
               src={vector2}
-              alt=""
+              alt="Vector"
             />
         </div>
         <div className="z-20 relative w-full h-full flex flex-col w-1/3 sm:w-1/2 -ml-20 2xl:-ml-28 items-center justify-center m-auto" style={{ width: "45%" }}>
@@ -60,7 +60,7 @@ const Header = ({ id, cabangHeader }) => {
             {id} 
           </h1>
             {/* <div className="">
-                  <img src={paperDesc} alt="" className="absolute m-auto" />
+                  <img src={paperDesc} alt="Robekan kertas" className="absolute m-auto" />
                   <p className="hidden lg:block lg:text-xl z-40">
                     {cabangHeader} 
                   </p>
@@ -68,7 +68,7 @@ const Header = ({ id, cabangHeader }) => {
         </div>
         <img
           src={rippedPaper}
-          alt=""
+          alt="Robekan kertas"
           className="w-screen absolute -bottom-14 xs:-bottom-14 sm:-bottom-20 md:-bottom-28 lg:-bottom-36 xl:-bottom-48"
           style={{
             filter:

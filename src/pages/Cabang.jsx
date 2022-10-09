@@ -37,7 +37,7 @@ const Cabang = () => {
               src={Cover} 
               className="w-3/4 lg:w-11/12 mb-8" 
               style={{width:"600px"}} 
-              alt="Logo Porsenigama"
+              alt="Orang yang sedang bermain basket dan menari"
             />
           </div>
           <div className="md:hidden w-full pt-14 pb-14 px-10 grid justify-items-center content-center z-10 pointer-events-none m-auto">
@@ -45,14 +45,14 @@ const Cabang = () => {
               src={CoverMobile} 
               className="w-full" 
               style={{scale:"1000px"}} 
-              alt="Logo Porsenigama"
+              alt="Orang yang sedang bermain basket dan menari"
             />
           </div>
           <div className="m-auto mr-6 lg:mr-14 z-10 m-auto">
             <img 
               src={TeksCabang} 
               className="mb-8 pointer-events-none" 
-              alt="Cabang Lomba" 
+              alt="Cabang lomba" 
             />
             <img
               src={ScrollDown}
@@ -74,7 +74,7 @@ const Cabang = () => {
             <img
               className="pointer-events-none transform transition-transform transition-300 hover:scale-110"
               src={TeksOlahraga}
-              alt="Cabang Olahraga"
+              alt="Cabang olahraga"
             />
           </button>
           <button
@@ -84,7 +84,7 @@ const Cabang = () => {
             <img
               className="pointer-events-none"
               src={TeksSeni}
-              alt="Cabang Seni"
+              alt="Cabang seni"
             />
           </button>
         </div>
@@ -99,7 +99,7 @@ const Cabang = () => {
                 <img
                   className="pointer-events-none"
                   src={`${assetsCabang}/ICON-${item.title}.png`}
-                  alt="Icon cabang"
+                  alt={`Icon ${item.title}`}
                 />
                 <p className="font-montserrat font-bold uppercase text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl text-center">
                   {item.title}
