@@ -54,6 +54,7 @@ const Standings = () => {
     "lukis",
     "vokal-grup",
     "lakon",
+    "z-fest"
   ];
 
   const filtercabdetaillib = [
@@ -88,6 +89,7 @@ const Standings = () => {
     "Lukis",
     "Vokal Grup",
     "Naskah Lakon",
+    "Z-Fest"
   ];
 
   /**
@@ -301,6 +303,7 @@ const Standings = () => {
           <option value="27">Lukis</option>
           <option value="28">Vokal Grup</option>
           <option value="29">Naskah Lakon</option>
+          <option value="30">Z-Fest</option>
         </select>
       </div>
       <div className="w-full flex justify-center my-12 text-center relative">
