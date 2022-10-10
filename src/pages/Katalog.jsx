@@ -73,6 +73,9 @@ const Katalog = () => {
                 alt={title}
                 className="2xl:w-56 2xl:h-56 rounded-full hover:scale-110 duration-100 transform"
               />
+              <p className="text-white text-lg font-montserrat text-center mt-3">
+                {title}
+              </p>
             </a>
           </div>
         ))}
