@@ -55,8 +55,8 @@ const Header = ({ id, cabangHeader }) => {
             />
         </div>
         <div className="z-20 relative w-full h-full flex flex-col w-1/3 sm:w-1/2 -ml-20 2xl:-ml-28 items-center justify-center m-auto" style={{ width: "45%" }}>
-          <img src={paperTitle} style={{ width: "762px" }} alt="" className="absolute w-7/12 sm:w-full -mt-44 mr-14 m-auto" />
-          <h1 className="font-bold sm:text-2xl md:text-4xl lg:text-4xl 2xl:text-5xl uppercase text-white font-universalserif z-40 -mt-56 ">
+          <img src={paperTitle} style={{ width: "762px" }} alt={`Cabang ${id}`} className="absolute w-7/12 sm:w-full md:-mt-48 lg:-mt-44 mr-14 m-auto" />
+          <h1 className="font-bold sm:text-2xl md:text-4xl lg:text-4xl 2xl:text-5xl uppercase text-white font-universalserif z-40 -mt-56 mr-10">
             {id} 
           </h1>
             {/* <div className="">

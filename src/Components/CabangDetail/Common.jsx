@@ -127,7 +127,7 @@ const Common = ({
     <>
      
       <div className="flex flex-col h-screen justify-center bg-pattern-cabangDetail bg-cover px-7 md:px-20 pt-20 xl:pt-36 2xl:pt-56 pb-10">
-        <div className="flex flex-col sm:flex-row items-start justify-between pb-5 sm:pb-10 md:pt-14 lg:pt-20 xl:pt-20 2xl:pt-0 font-montserrat">
+        <div className="flex flex-col sm:flex-row items-start justify-between pb-5 sm:pb-6 md:pt-14 lg:pt-20 xl:pt-20 2xl:pt-0 font-montserrat">
           <div
             className={`relative bg-white w-full sm:min-w-max sm:w-1/3 ${
               showCategory
@@ -156,7 +156,7 @@ const Common = ({
             </div>
             {showCategory && (
               <div
-                className="absolute min-w-full sm:h-48 lg:h-64 xl:h-80 2xl:h-96 grid grid-flow-row auto-rows-max overflow-y-auto z-30 bg-white border-2 border-t-0 border-black py-1"
+                className="absolute min-w-full max-h-screen sm:max-h-48 lg:max-h-64 xl:max-h-80 2xl:max-h-96 grid grid-flow-row auto-rows-max overflow-y-auto z-30 bg-white border-2 border-t-0 border-black py-1"
                 style={{ boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)" }}
               >
                 {/* <div>
@@ -180,7 +180,7 @@ const Common = ({
               </div>
             )}
           </div>
-          <div className="grid content-start justify-items-start sm:justify-items-end place-self-start sm:place-self-center gap-y-3 sm:gap-y-5 pt-5 sm:pt-0">
+          <div className="grid content-start justify-items-start sm:justify-items-end place-self-start sm:place-self-center gap-y-3 sm:gap-y-3 pt-5 sm:pt-0">
             <Hasil id={id} />
             <Award id={id} />
           </div>
