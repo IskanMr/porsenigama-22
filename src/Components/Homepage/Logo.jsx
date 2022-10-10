@@ -72,7 +72,7 @@ const Logo = () => {
             <a href="#tentang">
               <img
                 src={ScrollDownMobile}
-                className="mx-auto pt-2 md:hidden animate-bounce cursor-pointer fadein"
+                className="mx-auto py-2 md:hidden cursor-pointer animate-bounce fadein"
                 alt=""
               />
             </a>
