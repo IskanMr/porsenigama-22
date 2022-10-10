@@ -8,7 +8,7 @@ import { ReactComponent as RetractUpIcon } from "../assets/icons/chevron-up.svg"
 
 const footLinks = [
   { name: "Beranda", url: "/" },
-  { name: "Klasemen", url: "/klasemen" },
+  // { name: "Klasemen", url: "/klasemen" },
   { name: "Cabang", url: "/cabang" },
   { name: "Galeri", url: "/galeri" },
   { name: "Faq", url: "/faq" },

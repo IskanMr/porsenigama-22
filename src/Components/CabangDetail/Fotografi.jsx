@@ -13,7 +13,7 @@ const Fotografi = ({ id, openModal }) => {
         <Hasil id={id} />
       </div>
       <ul className="flex flex-wrap gap-2">
-        {dataFotografi.map((_, id) => (
+        {/* {dataFotografi.map((_, id) => (
           <li key={id + 1} className="flex-grow sm:h-64">
             <button className="w-full h-full" onClick={() => openModal(id)}>
               <img
@@ -24,7 +24,7 @@ const Fotografi = ({ id, openModal }) => {
               ></img>
             </button>
           </li>
-        ))}
+        ))} */}
       </ul>
     </div>
   );

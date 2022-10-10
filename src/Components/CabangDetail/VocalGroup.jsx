@@ -21,7 +21,7 @@ const VocalGroup = ({ id, openModal }) => {
         <Hasil id={id} />
       </div>
       <ul className="flex flex-wrap justify-center gap-5 lg:gap-10 px-5 lg:px-10 mx-auto">
-        {dataVocalGroup.map((data, index) => (
+        {/* {dataVocalGroup.map((data, index) => (
           <li key={data.id}>
             <button
               className="p-4 border border-biru bg-biru rounded-2xl"
@@ -37,7 +37,7 @@ const VocalGroup = ({ id, openModal }) => {
               </p>
             </button>
           </li>
-        ))}
+        ))} */}
       </ul>
     </div>
   );
