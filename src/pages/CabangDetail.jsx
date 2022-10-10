@@ -5,6 +5,8 @@ import { dataVocalGroup } from "../data/dataVocalGroup";
 
 import { cabangList } from "../data/dataCabangs";
 import { Hasil } from "../Components/CabangDetail";
+import { Award } from "../Components/CabangDetail";
+
 import vector1 from "../assets/images/cabang/cabangDetail/Group 108.png";
 import vector2 from "../assets/images/cabang/cabangDetail/Vector (2).png";
 import paperDesc from "../assets/images/cabang/cabangDetail/Vector 13.png";
@@ -135,8 +137,9 @@ const CabangDetail = (props) => {
                   {id !== "Fotografi" && id !== "Vocal Group" && (
                     <>
                       {dataCabang.casen == true && (
-                          <div className="pb-64">
-                            <Hasil id={id} />
+                          <div className="pb-64 ">
+                            <Hasil className="" id={id} />
+                            <Award  id={id} />
                           </div>
                         )}
                         
