@@ -206,7 +206,7 @@ const supporterList = [
       article: "",
       video: "",
       chant: "",
-      infografis: "fkh.jpg",
+      infografis: "kehutanan.jpg",
     },
   },
   {
