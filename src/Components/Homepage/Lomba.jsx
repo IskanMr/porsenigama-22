@@ -97,7 +97,7 @@ const Lomba = () => {
               <Link to="cabang">
                 <img
                   src={CabangSeni}
-                  className="mx-auto cursor-pointer transform translate-x-4"
+                  className="mx-auto cursor-pointer shake-right"
                   alt=""
                 />
               </Link>
@@ -111,7 +111,7 @@ const Lomba = () => {
               <Link to="cabang">
                 <img
                   src={CabangOlahraga}
-                  className="mx-auto cursor-pointer transform -translate-x-2"
+                  className="mx-auto cursor-pointer shake-left"
                   alt=""
                 />
               </Link>
