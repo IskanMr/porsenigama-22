@@ -67,12 +67,18 @@ const Katalog = () => {
             key={i}
             className="z-20 w-1/3 sm:w-1/4 lg:w-1/5 flex items-center justify-center"
           >
-            <a href={`katalog/${id}`}>
+            <a
+              href={`katalog/${id}`}
+              className="hover:scale-110 duration-100 transform"
+            >
               <img
                 src={`${assetsKatalog}/supporter/${logo}`}
                 alt={title}
-                className="2xl:w-56 2xl:h-56 rounded-full hover:scale-110 duration-100 transform"
+                className="2xl:w-56 2xl:h-56 rounded-full "
               />
+              <p className="text-white text-lg font-montserrat text-center mt-3">
+                {title}
+              </p>
             </a>
           </div>
         ))}

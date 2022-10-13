@@ -180,6 +180,7 @@ const Common = ({
               </div>
             )}
           </div>
+        
           <div className="grid content-start justify-items-start sm:justify-items-end place-self-start sm:place-self-center gap-y-3 sm:gap-y-3 pt-5 sm:pt-0">
             <Hasil id={id} />
             <Award id={id} />
@@ -192,7 +193,9 @@ const Common = ({
                 <>
                 
                   <iframe className="z-99 h-full" src={`${data.link}/module`} width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
-                
+                <div className="mt-2 sm:mt-0 text-yellow text-sm sm:text-lg font-bold ">
+                  Jadwal dapat berubah sewaktu-waktu !
+                </div>
                 </>
               )
             }

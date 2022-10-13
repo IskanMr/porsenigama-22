@@ -35,7 +35,7 @@ const Hasil = (props) => {
   return (
     <>
       {standingsRef.length > 0 && (
-        <div className="grid z-20">
+        <div className="grid my-6 z-20">
           <p className="text-center font-montserrat">
             <button
               onClick={() => setVisiblePopup(!visiblePopup)}

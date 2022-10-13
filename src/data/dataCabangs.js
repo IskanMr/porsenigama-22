@@ -446,11 +446,11 @@ const cabangList = [
     categoryData: [
       {
         category: "Dota 2",
-        link: 'https://challonge.com/ValorantPSG22'
+        link: 'https://challonge.com/Dota2PSG22'
       },
       {
         category: "Valorant",
-        link: 'https://challonge.com/Dota2PSG22'
+        link: 'https://challonge.com/ValorantPSG22'
       },
       {
         category: "Mobile Legends",
