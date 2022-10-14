@@ -75,6 +75,7 @@ module.exports = {
         "450px": { min: "450px", max: "768px" },
         "405px": { min: "405px", max: "767px" },
         "1700px": "1700px",
+        "425px": { min: "425px", max: "767px" },
       },
       borderWidth: {},
       margin: {
