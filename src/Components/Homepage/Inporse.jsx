@@ -46,16 +46,22 @@ const Inporse = () => {
       /> */}
       <div className="z-20 relative bg-bginporse py-12 md:py-24 xl:py-24 xl:pt-60">
         <img
+          data-aos="zoom-in"
+          data-aos-delay="400"
           src={BorderInporseMobile}
           className="mx-auto transform translate-x-2 md:hidden"
           alt=""
         />
         <img
+          data-aos="zoom-in"
+          data-aos-delay="400"
           src={BorderInporse}
           className="mx-auto md:block hidden transform translate-x-2"
           alt=""
         />
         <p
+          data-aos="zoom-in"
+          data-aos-delay="400"
           className="font-universalserif text-3xl xl:text-4xl text-yellow absolute text-center px-10 hidden md:block"
           style={{
             left: "50%",
@@ -65,6 +71,8 @@ const Inporse = () => {
           INPORSE
         </p>
         <p
+          data-aos="zoom-in"
+          data-aos-delay="400"
           className="font-universalserif text-3xl xl:text-4xl text-yellow absolute text-center px-10 md:hidden"
           style={{
             left: "50%",
@@ -82,6 +90,7 @@ const Inporse = () => {
         <div
           className="my-5 md:my-10 mx-auto items-center justify-center md:w-2/3 w-4/5 rounded-3rem bg-opacity-100 text-xl bg-inporse font-montserrat overflow-hidden font-medium py-8 shadow-2xl"
           data-aos="flip-up"
+          data-aos-delay="300"
           // data-aos-offset="800"
           data-aos-duration="1600"
         >

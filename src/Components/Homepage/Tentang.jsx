@@ -58,7 +58,7 @@ const Tentang = () => {
         className="z-30 relative pt-5 pb-14 md:pt-12 md:mb-12"
         id={"tentang"}
       >
-        <div className="relative md:mb-10 mb-0">
+        <div className="relative md:mb-10 mb-0" data-aos="fade-down">
           <img
             src={BgTeksTentangPorsenigamaMobile}
             className="mx-auto pt-16 md:hidden"
@@ -95,6 +95,7 @@ const Tentang = () => {
           data-aos="fade-down"
           // data-aos-offset="586"
           data-aos-duration="1600"
+          data-aos-delay="300"
           style={{ backgroundColor: "#D9D9D9" }}
         >
           {/* <h2 className="font-montserrat font-bold text-2xl align-middle justify-center items-center flex leading-tes">

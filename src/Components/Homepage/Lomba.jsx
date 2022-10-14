@@ -29,16 +29,22 @@ const Lomba = () => {
     <>
       <div className="relative bg-blue z-10">
         <img
+          data-aos="fade-down"
+          data-aos-delay="400"
           src={BorderLomba}
           className="mx-auto hidden md:block pt-10"
           alt=""
         />
         <img
+          data-aos="fade-down"
+          data-aos-delay="400"
           src={BorderLombaMobile}
           className="mx-auto md:hidden pt-16"
           alt=""
         />
         <p
+          data-aos="fade-down"
+          data-aos-delay="400"
           className="font-universalserif text-2xl md:text-2xl xl:text-4xl text-yellow absolute text-center md:hidden"
           style={{
             left: "49.5%",
@@ -48,6 +54,8 @@ const Lomba = () => {
           LOMBA
         </p>
         <p
+          data-aos="fade-down"
+          data-aos-delay="400"
           className="font-universalserif text-2xl md:text-3xl xl:text-4xl text-yellow absolute text-center hidden md:block"
           style={{
             left: "49.5%",
@@ -59,7 +67,8 @@ const Lomba = () => {
         <div
           className="pt-8 pb-16 rounded-3rem w-3/4 xl:w-1/2 gap-24 lg mx-auto z-10 hidden md:flex md:flex-row"
           data-aos="zoom-in-up"
-          data-aos-duration="2750"
+          data-aos-duration="2500"
+          data-aos-delay="1500"
         >
           <div className="h-full w-full z-10">
             <Link to="cabang">

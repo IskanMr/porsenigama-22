@@ -87,7 +87,7 @@ const Logo = () => {
             <img
               src={LogoSection1}
               className="md:hidden logo"
-              style={{ scale:"150%" }}
+              style={{ scale: "150%" }}
               alt=""
             />
             <img
@@ -96,7 +96,7 @@ const Logo = () => {
               alt=""
             />
             <a href="#tentang">
-              <img           
+              <img
                 src={ScrollDown}
                 className="items-center justify-center mx-auto hidden md:block animate-bounce cursor-pointer fadein"
                 alt=""
