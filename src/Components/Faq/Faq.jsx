@@ -13,13 +13,6 @@ export function FAQ({ item }) {
   const openPanelChevronIconCSS = "transform rotate-180";
   const ChevronIconCSS = "w-5 h-5 md:w-7 md:h-7 text-cstmdarkergreen";
 
-  const thisList = () => {
-    if (item.lists !== "null") {
-      const list = item.lists.map((id, list) => <li key={id}>{list}</li>);
-      return list;
-    }
-  };
-
   return (
     <>
       <Disclosure as="div" className={disclosureContainerCSS}>
@@ -35,7 +28,7 @@ export function FAQ({ item }) {
               </div>
 
               <ChevronDownIcon
-                className={`${
+                className={`hidden md:flex ${
                   open ? openPanelChevronIconCSS : ""
                 } ${ChevronIconCSS}`}
               />

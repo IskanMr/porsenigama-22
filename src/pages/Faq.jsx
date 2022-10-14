@@ -1,9 +1,11 @@
 import { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import { HtmlHead } from "../Components/HtmlHead";
 import { FAQ } from "../Components/Faq/Faq";
 
-import { ReactComponent as Search } from "../assets/icons/search.svg";
+import { ReactComponent as Search } from "../assets/icons/search-purp.svg";
 import Title from "../assets/images/faq/faqTitle.png";
 
 import Questions from "../resources/questions.json";
@@ -43,19 +45,35 @@ const Faq = () => {
     { id: "tangkai-seni", name: "Seni" },
   ];
 
+  AOS.init();
+  AOS.refresh();
+  AOS.refreshHard();
+
   return (
     <>
       <HtmlHead title="Faq" decription="[insert page description]" />
       <div className="min-h-screen bg-blue font-body px-6 md:px-0 pb-9">
         <div className="flex flex-col w-full justify-items-center items-center">
           <span>
-            <img src={Title} alt="title" />
+            <img
+              data-aos="zoom-in-down"
+              data-aos-duration="1000"
+              data-aos-easing=" ease-in-out"
+              src={Title}
+              alt="title"
+            />
           </span>
 
           <div className="flex w-full mt-6 justify-items-center place-content-center">
-            <label className="flex w-full md:w-2/5 p-3 bg-white items-center text-sm md:text-base border-2 border-black">
+            <label
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing=" ease-in-out"
+              data-aos-delay="200"
+              className="flex w-full md:w-2/5 p-3 bg-white items-center text-sm md:text-base border-2 border-purple"
+            >
               <span>
-                <Search className="h-4 md:h-5" />
+                <Search className="h-4 md:h-5 " />
               </span>
               <input
                 className="flex flex-grow ml-1 md:ml-2 border-none outline-none"
@@ -67,7 +85,13 @@ const Faq = () => {
               />
             </label>
           </div>
-          <div className="flex w-full md:w-3/12 justify-items-center items-center place-content-center mt-3 gap-1 md:gap-3">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing=" ease-in-out"
+            data-aos-delay="400"
+            className="flex w-full md:w-3/12 justify-items-center items-center place-content-center mt-3 gap-1 md:gap-3"
+          >
             {categories.map((category) => (
               <button
                 type="button"
@@ -83,7 +107,13 @@ const Faq = () => {
         </div>
 
         <div className="flex justify-center mt-6">
-          <div className="flex flex-col w-100 md:w-3/4">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing=" ease-in-out"
+            data-aos-delay="600"
+            className="flex flex-col w-100 md:w-3/4"
+          >
             {list.map((item) => (
               <FAQ item={item} />
             ))}
