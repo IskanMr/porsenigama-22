@@ -55,7 +55,7 @@ export function PageHeader({ className }) {
           alt="logo"
           className="h-10 w-auto md:h-14"
         />
-        <div className="text-white ml-2 text-xl md:text-2xl group-hover:text-oranges-default transition ease-in-out duration-300">
+        <div className="hidden md:block text-white ml-2 text-xl md:text-2xl group-hover:text-oranges-default transition ease-in-out duration-300">
           Porsenigama UGM 2022
         </div>
       </NavLinkStock>
