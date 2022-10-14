@@ -29,10 +29,11 @@ const Cabang = () => {
       >
         <img 
           src={RippedPaper} 
-          className="w-full absolute m-auto -bottom-14 xs:-bottom-14 sm:-bottom-20 md:-bottom-28 lg:-bottom-36 xl:-bottom-48 pointer-events-none"
+          className="w-full absolute m-auto -bottom-14 xs:-bottom-14 sm:-bottom-20 md:-bottom-28 lg:-bottom-36 xl:-bottom-48 2xl:-bottom-60 pointer-events-none"
+          alt="Robekan kertas"
         />
         <div className="w-3/4 sm:w-3/5 md:w-full flex flex-col-reverse justify-center md:grid grid-cols-1 md:grid-cols-2 justify-items-center content-center mx-auto">
-          <div className="hidden md:grid w-full pt-5 md:pt-16 px-10 grid justify-items-center content-center z-10 pointer-events-none m-auto">
+          <div className="hidden w-full md:grid justify-items-center content-center pt-5 md:pt-16 px-10 z-10 pointer-events-none m-auto">
             <img 
               src={Cover} 
               className="w-3/4 lg:w-11/12 mb-8" 
@@ -48,7 +49,7 @@ const Cabang = () => {
               alt="Orang yang sedang bermain basket dan menari"
             />
           </div>
-          <div className="m-auto mr-6 lg:mr-14 z-10 m-auto">
+          <div className="m-auto mr-6 lg:mr-14 z-10">
             <img 
               src={TeksCabang} 
               className="mb-8 pointer-events-none" 

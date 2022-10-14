@@ -39,7 +39,7 @@ const Hasil = (props) => {
           <p className="text-center font-montserrat">
             <button
               onClick={() => setVisiblePopup(!visiblePopup)}
-              className="rounded-xl py-2 lg:py-3 px-5 border-2 bg-orange border-2 text-white text-sm md:text-base lg:text-xl xl:text-2xl transform scale-90 md:scale-100 transition duration-300 md:hover:scale-105"
+              className="rounded-xl py-2 lg:py-3 px-5 bg-orange border-2 text-white text-sm md:text-base lg:text-xl xl:text-2xl transform scale-90 md:scale-100 transition duration-300 md:hover:scale-105"
             >
               Peraihan Medali
             </button>
