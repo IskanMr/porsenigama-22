@@ -29,7 +29,7 @@ const Cabang = () => {
       >
         <img 
           src={RippedPaper} 
-          className="w-full absolute m-auto -bottom-14 xs:-bottom-14 sm:-bottom-20 md:-bottom-28 lg:-bottom-36 xl:-bottom-48 2xl:-bottom-60 pointer-events-none"
+          className="w-full absolute m-auto -bottom-14 425px:-bottom-20 sm:-bottom-20 md:-bottom-28 lg:-bottom-36 xl:-bottom-48 2xl:-bottom-60 pointer-events-none"
           alt="Robekan kertas"
         />
         <div className="w-3/4 sm:w-3/5 md:w-full flex flex-col-reverse justify-center md:grid grid-cols-1 md:grid-cols-2 justify-items-center content-center mx-auto">
@@ -67,7 +67,7 @@ const Cabang = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center bg-pattern-cabang" style={{backgroundSize: "cover"}} ref={content}>
-        <div className="flex justify-center w-1/2 sm:w-2/5 md:w-1/3 pt-8 md:pt-20 my-8 sm:my-14 lg:my-14 xl:my-20 2xl:my-28 space-x-8 lg:space-x-24">
+        <div className="flex justify-center w-3/5 425px:w-1/2 sm:w-2/5 md:w-2/5 xl:w-1/3 pt-8 425px:pt-14 md:pt-20 my-8 sm:my-14 lg:my-14 xl:my-20 2xl:my-28 space-x-8 sm:space-x-14 lg:space-x-24">
           <button
             className="transform duration-200 transition-300 hover:scale-110"
             onClick={() => setList(caborList)}
@@ -102,7 +102,7 @@ const Cabang = () => {
                   src={`${assetsCabang}/ICON-${item.title}.png`}
                   alt={`Icon ${item.title}`}
                 />
-                <p className="font-montserrat font-bold uppercase text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl text-center">
+                <p className="font-montserrat font-bold uppercase text-xs 425px:text-base sm:text-sm md:text-lg lg:text-xl xl:text-2xl text-center">
                   {item.title}
                 </p>
               </div>

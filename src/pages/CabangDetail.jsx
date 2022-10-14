@@ -199,7 +199,7 @@ const CabangDetail = (props) => {
                   {id !== "Fotografi" && id !== "Vocal Group" && (
                     <>
                       {dataCabang.casen == true && (
-                          <div className="pb-64 ">
+                          <div className="bg-pattern-cabangDetail bg-cover pt-16 md:pt-28 lg:pt-36 xl:pt-48 pb-14 md:pb-20 lg:pb-28">
                             <Hasil className="" id={id} />
                             <Award  id={id} />
                           </div>

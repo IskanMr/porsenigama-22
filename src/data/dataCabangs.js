@@ -344,7 +344,7 @@ const cabangList = [
   {
     title: "Badminton",
     description:
-      "Penjelasan dikit po ya Penjelasan dikit po ya Penjelasan dikit po ya",
+      "Bulu tangkis atau badminton adalah olahraga yang menggunakan raket dan kok sebagai alatnya serta dapat dimainkan secara perseorangan (single) atau ganda (double). Olahraga ini juga cukup populer di kalangan masyarakat Indonesia.",
     category: [
 
       "Tunggal Putra",
@@ -1005,7 +1005,7 @@ const cabangList = [
   },
   {
     title: "Monolog",
-    description: "Monolog sendiri merupakan ilmu yang  mengajarkan tentang seni peran yang mana didalamnya dibutuhkan satu orang atau dialog bisu untuk melakukan adegan seni peran tersebut. Monolog sendiri masuk kedalam salah satu bentuk pertunjukkan teater yang sering diperlombakan dalam berbagai ajang seperti Peksimida/Peksimprov, maupun Peksiminas. Pada pelaksanaan Porsenigama 2022 kali ini, tangkai lomba monolog menjadi salah satu jenis lomba yang akan dilaksanakan secara luring (offline) pada tanggal 19-20 November 2022 mendatang di Gedung ",
+    description: "Monolog sendiri merupakan ilmu yang  mengajarkan tentang seni peran yang mana didalamnya dibutuhkan satu orang atau dialog bisu untuk melakukan adegan seni peran tersebut. Monolog sendiri masuk kedalam salah satu bentuk pertunjukkan teater yang sering diperlombakan dalam berbagai ajang seperti Peksimida/Peksimprov, maupun Peksiminas. Pada pelaksanaan Porsenigama 2022 kali ini, tangkai lomba monolog menjadi salah satu jenis lomba yang akan dilaksanakan secara luring (offline) pada tanggal 19-20 November 2022.",
     casen: true,
   },
   {
