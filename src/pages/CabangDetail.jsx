@@ -93,7 +93,7 @@ const Header = ({ id, cabangHeader }) => {
               "drop-shadow(12px -3px 4px rgba(0, 0, 0, 0.25))"
           }}
         />
-        <div className="md:hidden relative w-full h-full flex flex-col gap-y-8 items-center justify-center 425px:pt-8 pb-40 sm:pb-48">
+        <div className="md:hidden relative w-full h-full flex flex-col gap-y-8 items-center justify-center 425px:pt-8 pb-28 sm:pb-48">
           <div className="z-20 relative w-full h-full flex flex-col items-center justify-center pt-20" style={{ width: "40%" }}>
             <img 
               src={paperTitle} 
