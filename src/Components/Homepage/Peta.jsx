@@ -4,6 +4,7 @@ import ExplodePetaKanan from "../../assets/images/homepage/explode-section-2.png
 import TigaBintangPeta from "../../assets/images/homepage/3-bintang-peta.png";
 import RipPaperPetaKiri from "../../assets/images/homepage/rip-paper-peta-kiri.png";
 import RipPaperPetaKanan from "../../assets/images/homepage/rip-paper-peta-kanan.png";
+import Map from './PetaComponents';
 
 const Peta = () => {
   return (
@@ -23,8 +24,11 @@ const Peta = () => {
         >
           PETA
         </p>
-        <div className="bg-borderpeta mx-auto w-2/3 h-24rem text-center justify-center items-center font-montserrat text-4xl font-bold animate-pulse">
+        {/* <div className="bg-borderpeta mx-auto w-2/3 h-24rem text-center justify-center items-center font-montserrat text-4xl font-bold animate-pulse">
           <p className="transform translate-y-36">COMING SOON!</p>
+        </div> */}
+        <div className="flex flex-col items-center justify-center mx-auto">
+        <Map />
         </div>
         <img
           src={ExplodePetaKiri}
