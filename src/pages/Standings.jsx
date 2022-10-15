@@ -1,10 +1,11 @@
 /** 
  * Komponen ini compatible dengan react-router-dom v5. 
  * Jika ingin menggunakan react-router-dom v6, ubah useHistory() menjadi useNavigate()
-**/
+ **/
 import { db } from "../resources/db";
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
+import { HtmlHead } from "../Components/HtmlHead";
 import {
   collection,
   query,
@@ -12,6 +13,21 @@ import {
   orderBy,
   getDocs,
 } from "firebase/firestore";
+
+import Transisi from "../assets/images/klasemen/transisi.png";
+import TransisiMobile from "../assets/images/klasemen/transisi-mobile.png";
+import Bg from "../assets/images/klasemen/bg-isi-klasemen-mobile-merah.png";
+import BgMobile from "../assets/images/klasemen/bg-isi-klasemen-mobile-merah.png";
+import TeksKlasemen from "../assets/images/klasemen/teks-klasemen.png";
+import TeksKlasemenMobile from "../assets/images/klasemen/teks-klasemen-mobile.png";
+import Keseluruhan from "../assets/images/klasemen/keseluruhan.png";
+import KeseluruhanMobile from "../assets/images/klasemen/keseluruhan-mobile.png";
+import Printilan from "../assets/images/klasemen/printilan.png";
+import MedaliEmas from "../assets/images/klasemen/medali-gold.png";
+import MedaliSilver from "../assets/images/klasemen/medali-silver.png";
+import MedaliBronze from "../assets/images/klasemen/medali-bronze.png";
+
+
 
 const Standings = () => {
   const navigate = useHistory();
@@ -91,6 +107,8 @@ const Standings = () => {
     "Naskah Lakon",
     "Z-Fest"
   ];
+
+  
 
   /**
    * Fungsi ini untuk mengambil data dari firestore
@@ -186,6 +204,7 @@ const Standings = () => {
     //console.log(data);
     setStandingsData(data);
   };
+  
 
   useEffect(() => {
     if (filter === "0") {
@@ -202,280 +221,297 @@ const Standings = () => {
     setFilter(document.getElementById("filterli").value);
   };
 
-  return (
-    <div className="min-h-screen font-nuku tracking-wide bg-krem relative overflow-hidden">
-      <img
-        src={`${process.env.PUBLIC_URL}/images/Standings/Bg.png`}
-        alt=""
-        className="absolute"
-      />
-      <div className="h-4 md:hidden"></div>
-      <div
-        className="hidden lg:flex"
-        style={{
-          height: "50vh",
-        }}
-      ></div>
-      <h1
-        className="font-bold pt-24 text-center text-5xl md:text-7xl lg:text-fourteenvh tracking-wider relative text-biru"
-        style={{
-          textShadow: [
-            "-1px -1px 0 #FBE5D2",
-            "-0.5px -1px 0 #FBE5D2",
-            "0px -1px 0 #FBE5D2",
-            "0.5px -1px 0 #FBE5D2",
-            "1px -1px 0 #FBE5D2",
-            "1.5px -0.5px 0 #FBE5D2",
-            "2px 0px 0 #FBE5D2",
-            "2.5px 0.5px 0 #FBE5D2",
-            "3px 1px 0 #FBE5D2",
-            "3.5px 1.5px 0 #FBE5D2",
-            "4px 2px 0 #FBE5D2",
-            "4.5px 3.5px 0 #FBE5D2",
-            "5px 3px 0 #FBE5D2",
-            "-1px 0px 0 #FBE5D2",
-            "-1px 1px 0 #FBE5D2",
-            "-0.5px 1.5px 0 #FBE5D2",
-            "0px 2px 0 #FBE5D2",
-            "0.5px 2.5px 0 #FBE5D2",
-            "1px 1px 0 #FBE5D2",
-            "1.5px 1.5px 0 #FBE5D2",
-            "2px 2px 0 #FBE5D2",
-            "2.5px 2.5px 0 #FBE5D2",
-            "3px 3px 0 #FBE5D2",
-            "3.5px 3.5px 0 #FBE5D2",
-            "4px 4px 0 #FBE5D2",
-            "4.5px 4.5px 0 #FBE5D2",
-            "5px 5px 0 #FBE5D2",
-            "1px 3px 0 #FBE5D2",
-            "1.5px 3.5px 0 #FBE5D2",
-            "2px 4px 0 #FBE5D2",
-            "2.5px 4.5px 0 #FBE5D2",
-            "3px 5px 0 #FBE5D2",
-          ],
-        }}
-      >
-        Klasemen
-      </h1>
-      <div className="h-4 md:hidden"></div>
-      <div
-        className="hidden md:flex"
-        style={{
-          height: "50vh",
-        }}
-      ></div>
-      {/* <Hasil filter={filter}/> */}
-      <div className="flex justify-end mx-12">
-        <select
-          id="filterli"
-          className="dropdown relative font-sansPro font-semibold text-xs md:text-threevh"
-          onClick={optionClick}
-        >
-          <option value="0" selected="selected">
-            Keseluruhan
-          </option>
-          <option value="1">Atletik</option>
-          <option value="2">Badminton</option>
-          <option value="3">Basket</option>
-          <option value="4">Berkuda</option>
-          <option value="5">Bridge</option>
-          <option value="6">Catur</option>
-          <option value="7">E-Sport</option>
-          <option value="8">Futsal</option>
-          <option value="9">Hockey</option>
-          <option value="10">Judo</option>
-          <option value="11">Karate</option>
-          <option value="12">Kempo</option>
-          <option value="13">Orienteering</option>
-          <option value="14">Panahan</option>
-          <option value="15">Pencak Silat</option>
-          <option value="16">Renang</option>
-          <option value="17">Sepak Bola</option>
-          <option value="18">Softball</option>
-          <option value="19">Taekwondo</option>
-          <option value="20">Tenis Meja</option>
-          <option value="21">Voli</option>
-          <option value="22">Tari</option>
-          <option value="23">Band</option>
-          <option value="24">Fotografi</option>
-          <option value="25">Vokal Keroncong</option>
-          <option value="26">Monolog</option>
-          <option value="27">Lukis</option>
-          <option value="28">Vokal Grup</option>
-          <option value="29">Naskah Lakon</option>
-          <option value="30">Z-Fest</option>
-        </select>
-      </div>
-      <div className="w-full flex justify-center my-12 text-center relative">
-        <table className="text-sm md:text-fivevh mx-12 md:table-fixed md:w-full">
-          <thead>
-            <tr>
-              <th
-                className="px-6 border-3 border-ungugaje md:w-3/5"
-                style={{ borderTop: "none", borderLeft: "none" }}
-              ></th>
-              <th
-                className="px-6 border-3 border-ungugaje"
-                align="center"
-                style={{ borderTop: "none" }}
-              >
-                <img
-                  src={`${process.env.PUBLIC_URL}/images/Standings/Mendali gold.png`}
-                  alt="Tabel perolehan medali emas"
-                  className="transform scale-150 md:scale-100 md:w-1/2 md:h-1/2"
-                />
-              </th>
-              <th
-                className="px-6 border-3 border-ungugaje"
-                align="center"
-                style={{ borderTop: "none" }}
-              >
-                <img
-                  src={`${process.env.PUBLIC_URL}/images/Standings/Mendali silver.png`}
-                  alt="Tabel perolehan medali emas"
-                  className="transform scale-150 md:scale-100 md:w-1/2 md:h-1/2"
-                />
-              </th>
-              <th
-                className="px-6 border-3 border-ungugaje"
-                align="center"
-                style={{ borderTop: "none" }}
-              >
-                <img
-                  src={`${process.env.PUBLIC_URL}/images/Standings/Mendali bronze.png`}
-                  alt="Tabel perolehan medali emas"
-                  className="transform scale-150 md:scale-100 md:w-1/2 md:h-1/2"
-                />
-              </th>
-              <th
-                className="lg:px-6 border-3 border-ungugaje text-lg lg:text-fivevh"
-                style={{ borderTop: "none" }}
-              >
-                total
-              </th>
-            </tr>
-          </thead>
-          {(() => {
-            if (filter === "0") {
-              return (
-                <tbody>
-                  {standingsData.map((faculty, index) => (
-                    <tr key={faculty.name}>
-                      <td
-                        className="px-6 border-3 text-left border-ungugaje font-sansPro font-bold"
-                        style={{ borderLeft: "none", borderBottom: "none" }}
-                      >
-                        {faculty.name}
-                      </td>
-                      <td
-                        className="px-6 border-3 border-ungugaje"
-                        style={{ borderBottom: "none" }}
-                      >
-                        {faculty.gold}
-                      </td>
-                      <td
-                        className="px-6 border-3 border-ungugaje"
-                        style={{ borderBottom: "none" }}
-                      >
-                        {faculty.silver}
-                      </td>
-                      <td
-                        className="px-6 border-3 border-ungugaje"
-                        style={{ borderBottom: "none" }}
-                      >
-                        {faculty.bronze}
-                      </td>
-                      <td
-                        className="px-6 border-3 border-ungugaje"
-                        style={{ borderBottom: "none" }}
-                      >{`${
-                        faculty.silver + faculty.gold + faculty.bronze
-                      }`}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              );
-            } else {
-              return (
-                <tbody>
-                  {standingsData.map((faculty, index) => (
-                    <tr key={faculty.name}>
-                      <td
-                        className="px-6 border-3 text-left border-ungugaje font-sansPro font-bold"
-                        style={{ borderLeft: "none", borderBottom: "none" }}
-                      >
-                        {faculty.name}
-                      </td>
-                      <td
-                        className="px-6 border-3 border-ungugaje"
-                        style={{ borderBottom: "none" }}
-                      >
-                        {faculty[filterlib[Number(filter)]] !== undefined &&
-                        faculty[filterlib[Number(filter)]].gold !== undefined
-                          ? faculty[filterlib[Number(filter)]].gold
-                          : 0}
-                      </td>
-                      <td
-                        className="px-6 border-3 border-ungugaje"
-                        style={{ borderBottom: "none" }}
-                      >
-                        {faculty[filterlib[Number(filter)]] !== undefined &&
-                        faculty[filterlib[Number(filter)]].silver !== undefined
-                          ? faculty[filterlib[Number(filter)]].silver
-                          : 0}
-                      </td>
-                      <td
-                        className="px-6 border-3 border-ungugaje"
-                        style={{ borderBottom: "none" }}
-                      >
-                        {faculty[filterlib[Number(filter)]] !== undefined &&
-                        faculty[filterlib[Number(filter)]].bronze !== undefined
-                          ? faculty[filterlib[Number(filter)]].bronze
-                          : 0}
-                      </td>
-                      <td
-                        className="px-6 border-3 border-ungugaje"
-                        style={{ borderBottom: "none" }}
-                      >
-                        {faculty[filterlib[Number(filter)]] !== undefined &&
-                        faculty[filterlib[Number(filter)]].total !== undefined
-                          ? faculty[filterlib[Number(filter)]].total
-                          : 0}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              );
-            }
-          })()}
-        </table>
-      </div>
-      <div className="flex justify-between mx-4 md:mx-20">
-        <button
-          className="cursor-pointer transform scale-50 md:scale-100 transition duration-300 md:hover:scale-105"
-          onClick={goBack}
-        >
-          <img src={`${process.env.PUBLIC_URL}/images/News/Back.png`} alt="" />
-        </button>
-        {filter !== "0" ? (
-          <a
-            className="cursor-pointer transform scale-50 md:scale-100 transition duration-300 md:hover:scale-105"
-            key={filtercabdetaillib[Number(filter)]}
-            href={`${process.env.PUBLIC_URL}/cabang/${
-              filtercabdetaillib[Number(filter)]
-            }`}
-          >
-            <img
-              src={`${process.env.PUBLIC_URL}/images/Standings/Detail.png`}
-              alt=""
+
+    return (
+    
+    <>
+      <HtmlHead title="Standings" decription="[insert page description]" />
+      <div className="min-h-screen font-display tracking-widest relative overflow-hidden">  
+        
+
+        <div className="relative w-full justify-center items-center bg-blue flex flex-col p-5 pb-14 md:pb-32 lg:py-58">
+          <img
+            src={TeksKlasemen}
+            className="items-center justify-center hidden md:block pl-60"
+            alt=""
+          />
+
+          <img
+            src={TeksKlasemenMobile}
+            className="items-center justify-center md:hidden pl-10"
+            alt=""
+          />
+
+          <div
+            className="hidden lg:flex"
+            style={{
+              height: "20vh", 
+            }}
+          ></div>
+
+          <div className="absolute z-20 xs:-bottom-14 sm:-bottom-20 md:-bottom-28 lg:-bottom-50 xl:-bottom-56 bg-transisi-mobile">
+            <img 
+              src={Transisi} 
             />
-          </a>
-        ) : (
-          ""
-        )}
-      </div>
-      <div className="h-4 md:h-20"></div>
-    </div>
+          </div>
+
+
+        </div>
+          
+        <div>
+          {/* <Hasil filter={filter}/> */}
+
+          <div className="z-10">
+            <img 
+              src={Bg}
+              className="md:absolute w-full"
+            />
+
+            <img 
+              src={BgMobile}
+              className= "md:hidden w-full"
+            />
+          </div>
+
+          <div className="z-60">
+            <img 
+              src={Keseluruhan}
+              className="absolute justify-end max-w-xs xl: m-52"
+          />
+
+          </div>
+
+          <div className="absolute">
+            <img 
+              src={Printilan}
+              className="z-40 xl:-bottom-16 py-16 mt-20 ml-12" // problem di display type absolute & relative, kalo dituker jadi absolute kepotong
+            />
+          </div>
+        </div>
+
+          <div className="flex justify-end mx-12">
+              <select
+                id="filterli"
+                className="dropdown relative font-sansPro font-semibold text-xs md:text-threevh z-3"
+                onClick={optionClick}
+              >
+                <option value="0" selected="selected">
+                  Keseluruhan
+                </option>
+                <option value="1">Atletik</option>
+                <option value="2">Badminton</option>
+                <option value="3">Basket</option>
+                <option value="4">Berkuda</option>
+                <option value="5">Bridge</option>
+                <option value="6">Catur</option>
+                <option value="7">E-Sport</option>
+                <option value="8">Futsal</option>
+                <option value="9">Hockey</option>
+                <option value="10">Judo</option>
+                <option value="11">Karate</option>
+                <option value="12">Kempo</option>
+                <option value="13">Orienteering</option>
+                <option value="14">Panahan</option>
+                <option value="15">Pencak Silat</option>
+                <option value="16">Renang</option>
+                <option value="17">Sepak Bola</option>
+                <option value="18">Softball</option>
+                <option value="19">Taekwondo</option>
+                <option value="20">Tenis Meja</option>
+                <option value="21">Voli</option>
+                <option value="22">Tari</option>
+                <option value="23">Band</option>
+                <option value="24">Fotografi</option>
+                <option value="25">Vokal Keroncong</option>
+                <option value="26">Monolog</option>
+                <option value="27">Lukis</option>
+                <option value="28">Vokal Grup</option>
+                <option value="29">Naskah Lakon</option>
+                <option value="30">Z-fest</option>
+              </select>
+            </div>
+
+
+          <div className="flex justify-center my-12 text-center relative text-white px-60 py-24">
+          
+            <table className="text-lg z-30 md:text-fivevh mx-28 md:table-fixed md:w-full mt-52">
+              
+              <thead>
+                <tr>
+                  <th
+                    className="px-5 py-2 border-4 border-black md:w-3/5"
+                    style={{ borderTop: "solid", borderLeft: "solid", borderRight: "solid"}}
+                  >
+                    Fakultas
+                  </th>
+                  <th
+                    className="px-5 py-2 border-4 border-black"
+                    align="center"
+                    style={{ borderTop: "solid", borderRight: "solid" }}
+                  >
+                    <img
+                      src={MedaliEmas}
+                      alt="Tabel perolehan medali emas"
+                      className="transform scale-150 md:scale-100 md:w-1/2 md:h-1/2"
+                    />
+                  </th>
+                  <th
+                    className="px-5 py-2 border-4 border-black"
+                    align="center"
+                    style={{ borderTop: "solid", borderRight: "solid"}}
+                  >
+                    <img
+                      src={MedaliSilver}
+                      alt="Tabel perolehan medali emas"
+                      className="transform scale-150 md:scale-100 md:w-1/2 md:h-1/2"
+                    />
+                  </th>
+                  <th
+                    className="px-5 py-2 border-4 border-black"
+                    align="center"
+                    style={{ 
+                      borderTop: "solid", 
+                      borderRight: "solid", }}
+                  >
+                    <img
+                      src={MedaliBronze}
+                      alt="Tabel perolehan medali emas"
+                      className="transform scale-150 md:scale-100 md:w-1/2 md:h-1/2"
+                    />
+                  </th>
+                  <th
+                    className="lg:px-45 py-2 border-4 border-black text-lg lg:text-fivevh"
+                    style={{ borderTop: "solid", borderRight: "solid" }}
+                  >
+                    total
+                  </th>
+                </tr>
+              </thead>
+              {(() => {
+                if (filter === "0") {
+                  return (
+                    <tbody>
+                      {standingsData.map((faculty, index) => (
+                        
+                          <tr key={faculty.name} style={{border:"solid"}} className="hover:bg-black">
+                            <td
+                              className="px-5 py-4 border-4 text-left border-black font-sansPro font-medium"
+                              // style={{ border: "solid" }}
+                            >
+                              {faculty.name}
+                            </td>
+                            <td
+                              className="px-5 py-2 border-4 border-black"
+                              // style={{ border: "solid" }}
+                            >
+                              {faculty.gold}
+                            </td>
+                            <td
+                              className="px-5 py-2 border-4 border-black"
+                              // style={{ border: "solid" }}
+                            >
+                              {faculty.silver}
+                            </td>
+                            <td
+                              className="px-5 py-2 border-4 border-black"
+                              // style={{ border: "solid" }}
+                            >
+                              {faculty.bronze}
+                            </td>
+                            <td
+                              className="px-5 py-2 border-4 border-black"
+                              // style={{ border: "solid" }}
+                            >{`${
+                              faculty.silver + faculty.gold + faculty.bronze
+                            }`}</td>
+                          </tr>
+                       
+                      ))}
+                    </tbody>
+                  );
+                } else {
+                  return (
+                    <tbody>
+                      {standingsData.map((faculty, index) => (
+                        <tr key={faculty.name}>
+                          <td
+                            className="px-5 py-2 border-4 text-left border-black font-sansPro font-bold"
+                            style={{ borderLeft: "solid", borderBottom: "solid" }}
+                          >
+                            {faculty.name}
+                          </td>
+                          <td
+                            className="px-5 py-2 border-4 border-black"
+                            style={{ borderBottom: "solid" }}
+                          >
+                            {faculty[filterlib[Number(filter)]] !== undefined &&
+                            faculty[filterlib[Number(filter)]].gold !== undefined
+                              ? faculty[filterlib[Number(filter)]].gold
+                              : 0}
+                          </td>
+                          <td
+                            className="px-5 py-2 border-4 border-black"
+                            style={{ borderBottom: "solid" }}
+                          >
+                            {faculty[filterlib[Number(filter)]] !== undefined &&
+                            faculty[filterlib[Number(filter)]].silver !== undefined
+                              ? faculty[filterlib[Number(filter)]].silver
+                              : 0}
+                          </td>
+                          <td
+                            className="px-5 py-2 border-4 border-black"
+                            style={{ borderBottom: "solid" }}
+                          >
+                            {faculty[filterlib[Number(filter)]] !== undefined &&
+                            faculty[filterlib[Number(filter)]].bronze !== undefined
+                              ? faculty[filterlib[Number(filter)]].bronze
+                              : 0}
+                          </td>
+                          <td
+                            className="px-5 py-2 border-3 border-black"
+                            style={{ borderBottom: "solid" }}
+                          >
+                            {faculty[filterlib[Number(filter)]] !== undefined &&
+                            faculty[filterlib[Number(filter)]].total !== undefined
+                              ? faculty[filterlib[Number(filter)]].total
+                              : 0}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  );
+                }
+              })()}
+            </table>
+          </div>
+          <div className="flex justify-between mx-4 md:mx-20">
+            <button
+              className="cursor-pointer transform scale-50 md:scale-100 transition duration-300 md:hover:scale-105"
+              onClick={goBack}
+            >
+              {/* <img src={`${process.env.PUBLIC_URL}/images/News/Back.png`} alt="" /> */}
+            </button>
+            {filter !== "0" ? (
+              <a
+                className="cursor-pointer transform scale-50 md:scale-100 transition duration-300 md:hover:scale-105"
+                key={filtercabdetaillib[Number(filter)]}
+                href={`${process.env.PUBLIC_URL}/cabang/${
+                  filtercabdetaillib[Number(filter)]
+                }`}
+              >
+                <img
+                  src={`${process.env.PUBLIC_URL}/images/Standings/Detail.png`}
+                  alt=""
+                />
+              </a>
+            ) : (
+              ""
+            )}
+          </div>
+          <div className="h-4 md:h-20"></div>
+        </div>
+      
+    </>
   );
 };
 
