@@ -7,7 +7,7 @@ const supporterList = [
       // article: `Sastro Conthong merupakan wadah untuk mendukung pejuang-pejuang ilmu budaya yang sedang berlaga di medan laga Porsenigama. sastro Conthong berisikan seluruh mahasiswa Ilmu Budaya tanpa terkecuali. Asal-usul nama Sastro Conthong berasal dari kata Sastro yang berarti sastra dan conthong berarti Mulut, sehingga Sastro Conthong bermakna Pendukung kontingen ilmu budaya yang siap bernyanyi bersorak untuk mendukung secara penuh kontingen Ilmu Budaya yang sedang berlaga di lapangan. Sastro Conthong mempunyai Slogan " Superbia in Cultura" yang berarti "Kebanggaan dalam budaya" serta mempunyai logo (maskot) kebanggan "Gajah Ganesha" Gajah Ganesha sendiri merupakan simbol kebijaksanaan, kebenaran dan keberanian dalam kehidupan.`,
       // article: "",
       video: "https://youtube.com/embed/pBC0-oCKBLc",
-      chant: "https://youtube.com/embed/ldMuRofHVsU",
+      chant: "",
       infografis: "feb.jpg",
     },
   },
@@ -206,7 +206,7 @@ const supporterList = [
       article: "",
       video: "",
       chant: "",
-      infografis: "fkh.jpg",
+      infografis: "kehutanan.jpg",
     },
   },
   {

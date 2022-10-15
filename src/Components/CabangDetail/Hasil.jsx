@@ -35,11 +35,11 @@ const Hasil = (props) => {
   return (
     <>
       {standingsRef.length > 0 && (
-        <div className="relative z-20">
+        <div className="grid my-6 z-20">
           <p className="text-center font-montserrat">
             <button
               onClick={() => setVisiblePopup(!visiblePopup)}
-              className="rounded-xl py-2 px-5 border-2 bg-orange border-2 text-white text-2xl transform scale-90 md:scale-100 transition duration-300 md:hover:scale-105"
+              className="rounded-xl py-2 lg:py-3 px-5 bg-orange border-2 text-white text-sm md:text-base lg:text-xl xl:text-2xl transform scale-90 md:scale-100 transition duration-300 md:hover:scale-105"
             >
               Peraihan Medali
             </button>
@@ -55,7 +55,7 @@ const Hasil = (props) => {
               onClick={() => setVisiblePopup(!visiblePopup)}
             >
               <div
-                className="bg-white border-2 border-ungugaje min-h-24 font-montserrat rounded-4xl w-5/6 md:pr-10"
+                className="bg-krem border-2 border-black lg:min-h-24 font-montserrat rounded-3xl w-3/4 lg:w-5/6"
                 style={{
                   backgroundImage: `url('${process.env.PUBLIC_URL}/images/News/Group 51.png')`,
                 }}
@@ -64,47 +64,50 @@ const Hasil = (props) => {
                 <div className="flex justify-end">
                   <button
                     onClick={() => setVisiblePopup(!visiblePopup)}
-                    className="md:mx-4 my-4 bg-merah text-kuning text-3xl md:text-2xl rounded-xl px-8 py-2 font-montserrat transform scale-50 md:scale-100 transition duration-300 md:hover:scale-105"
+                    className="md:mx-4 mt-3 xl:my-4 text-3xl md:text-xl lg:text-2xl rounded-xl px-2 md:px-8 py-2 font-montserrat transform scale-50 md:scale-100 transition duration-300 md:hover:scale-105"
                   >
                     Tutup
                   </button>
                 </div>
                 {standingsRef.length > 0 && (
-                  <div className="mx-4 my-4 grid grid-flow-col auto-cols-max overflow-x-auto font-montserrat text-black text-base md:text-2xl font-semibold">
+                  <div className="mx-4 my-4 h-96 lg:h-auto grid grid-flow-row lg:grid-flow-col auto-rows-max lg:auto-cols-max overflow-y-auto lg:overflow-x-auto font-montserrat text-black text-base md:text-2xl font-semibold">
                     
                     {standingsRef.map((cabang, index) => (
                       <>
                       {!cabang.gold? <div/> : 
-                      <div className="p-4 border-2 border-ungugaje bg-krem m-2 rounded-xl">
-                      <p
-                        className="text-2xl md:text-fivevh uppercase font-bold text-kuning"
-                      >
-                        {cabang.name}
-                      </p>
-                      <p className="flex">
-                        <img
-                          src={`${process.env.PUBLIC_URL}/images/Standings/Mendali gold.png`}
-                          alt="Tabel perolehan medali emas"
-                          className="transform w-5 h-6 md:w-10 md:h-11"
-                        />
-                        {cabang.gold}
-                      </p>
-                      <p className="flex">
-                        <img
-                          src={`${process.env.PUBLIC_URL}/images/Standings/Mendali silver.png`}
-                          alt="Tabel perolehan medali emas"
-                          className="transform w-5 h-6 md:w-10 md:h-11"
-                        />
-                        {cabang.silver}
-                      </p>
-                      <p className="flex">
-                        <img
-                          src={`${process.env.PUBLIC_URL}/images/Standings/Mendali bronze.png`}
-                          alt="Tabel perolehan medali emas"
-                          className="transform w-5 h-6 md:w-10 md:h-11"
-                        />
-                        {cabang.bronze}
-                      </p>
+                      <div className="p-4 bg-white border-2 border-white m-2 rounded-xl">
+                        <p
+                          className="text-xl md:text-2xl uppercase font-bold mb-3"
+                        >
+                          {cabang.name}
+                        </p>
+                        <p className="flex gap-x-3 mb-3">
+                          <img
+                            src={`${process.env.PUBLIC_URL}/images/Standings/Mendali gold.png`}
+                            alt="Tabel perolehan medali emas"
+                            title="Emas"
+                            className="transform w-5 h-6 md:w-10 md:h-11"
+                          />
+                          {cabang.gold}
+                        </p>
+                        <p className="flex gap-x-3 mb-3">
+                          <img
+                            src={`${process.env.PUBLIC_URL}/images/Standings/Mendali silver.png`}
+                            alt="Tabel perolehan medali perak"
+                            title="Perak"
+                            className="transform w-5 h-6 md:w-10 md:h-11"
+                          />
+                          {cabang.silver}
+                        </p>
+                        <p className="flex gap-x-3">
+                          <img
+                            src={`${process.env.PUBLIC_URL}/images/Standings/Mendali bronze.png`}
+                            alt="Tabel perolehan medali perunggu"
+                            title="Perunggu"
+                            className="transform w-5 h-6 md:w-10 md:h-11"
+                          />
+                          {cabang.bronze}
+                        </p>
                     </div>}
                     </>
                       

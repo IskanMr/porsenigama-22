@@ -23,7 +23,7 @@ export const PageFooter = (props) => {
     >
       <div className="flex flex-col md:flex-row justify-center md:justify-evenly items-center md:items-start">
         <div className="flex flex-col w-3/4 md:w-1/2 mt-8 mb-4 mx-4">
-          <div className="text-lg">
+          <div className="text-sm md:text-lg">
             <p className="uppercase font-semibold">
               FORUM KOMUNIKASI UNIT KEGIATAN MAHASISWA
             </p>
@@ -78,9 +78,9 @@ export const PageFooter = (props) => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-2 justify-items-center mt-8 mb-4 w-1/2 lg:w-1/4 lg:self-start">
-          <div className="col-span-2">
-            <p className="font-semibold text-lg text-center">
+        <div className="grid grid-cols-3 gap-1 justify-items-center mt-8 mb-4 w-1/2 lg:w-1/4 lg:self-start">
+          <div className="col-span-3">
+            <p className="font-semibold text-sm md:text-lg text-center">
               Diselenggarakan Oleh
             </p>
           </div>
@@ -92,6 +92,11 @@ export const PageFooter = (props) => {
           <img
             className="md:w-28 md:h-28 w-20 h-20 m-2 object-scale-down"
             src={assets + "logo-psg.png"}
+            alt="logo psg"
+          />
+          <img
+            className="md:w-28 md:h-28 w-20 h-20 m-2 object-scale-down"
+            src={assets + "logo-forkom.png"}
             alt="logo psg"
           />
         </div>

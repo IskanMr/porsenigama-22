@@ -126,24 +126,24 @@ const Common = ({
   return (
     <>
      
-      <div className="flex flex-col h-screen justify-center bg-pattern-cabangDetail bg-cover md:px-20 pt-20 xl:pt-36 2xl:pt-56 pb-10">
-        <div className="flex flex-row items-start justify-between pb-10">
+      <div className="flex flex-col h-screen justify-center bg-pattern-cabangDetail bg-cover px-7 md:px-20 pt-20 xl:pt-36 2xl:pt-56 pb-10">
+        <div className="flex flex-col sm:flex-row items-start justify-between pb-5 sm:pb-6 md:pt-14 lg:pt-20 xl:pt-20 2xl:pt-0 font-montserrat">
           <div
-            className={`z-10 relative bg-white sm:min-w-max sm:w-1/3 ${
+            className={`relative bg-white w-full sm:min-w-max sm:w-1/3 ${
               showCategory
                 ? "border-2 border-black"
                 : "border-2 border-black"
-            } py-3 lg:text-xl xl:text-2xl`}
+            } py-1 lg:py-2 xl:py-3 text-sm md:text-base lg:text-xl xl:text-2xl`}
             style={{
-              boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)",
+              boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)"
             }}
           >
             <div
               className="flex justify-between cursor-pointer"
               onClick={() => setShowCategory((prevState) => !prevState)}
             >
-              <p className="px-6 py-2 text-black">{selectedCategory}</p>
-              <div className="flex justify-center px-4">
+              <p className="px-4 md:px-6 py-2 text-black">{selectedCategory}</p>
+              <div className="flex justify-center px-4 w-14 md:w-16 xl:w-20">
                 <img
                   className={`py-3 ${
                     showCategory ? "transition transform rotate-180" : ""
@@ -156,7 +156,7 @@ const Common = ({
             </div>
             {showCategory && (
               <div
-                className="absolute w-full bg-white border-2 border-t-0 border-black py-1"
+                className="absolute min-w-full max-h-screen sm:max-h-48 lg:max-h-64 xl:max-h-80 2xl:max-h-96 grid grid-flow-row auto-rows-max overflow-y-auto z-30 bg-white border-2 border-t-0 border-black py-1"
                 style={{ boxShadow: "4px 4px 4px rgba(0, 0, 0, 0.25)" }}
               >
                 {/* <div>
@@ -171,7 +171,7 @@ const Common = ({
                   categoryDatas.map((data) => (
                     <p
                       key={data}
-                      className="px-6 py-3 text-black hover:bg-yellow hover:rounded-full cursor-pointer"
+                      className="px-4 md:px-6 py-3 text-black hover:bg-yellow hover:rounded-full cursor-pointer"
                       onClick={() => selectCategoryHandler(data)}
                     >
                       {data}
@@ -180,7 +180,8 @@ const Common = ({
               </div>
             )}
           </div>
-          <div className="grid grid-rows-2 content-start justify-items-end gap-y-5">
+        
+          <div className="grid content-start justify-items-start sm:justify-items-end place-self-start sm:place-self-center gap-y-3 sm:gap-y-3 pt-5 sm:pt-0">
             <Hasil id={id} />
             <Award id={id} />
           </div>
@@ -192,7 +193,9 @@ const Common = ({
                 <>
                 
                   <iframe className="z-99 h-full" src={`${data.link}/module`} width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
-                
+                <div className="mt-2 sm:mt-0 text-yellow text-sm sm:text-lg font-bold ">
+                  Jadwal dapat berubah sewaktu-waktu !
+                </div>
                 </>
               )
             }

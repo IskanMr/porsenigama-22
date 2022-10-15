@@ -395,7 +395,7 @@ const Standings = () => {
                         
                           <tr key={faculty.name} style={{border:"solid"}} className="hover:bg-black">
                             <td
-                              className="px-5 py-2 py-4 border-4 text-left border-black font-sansPro font-medium"
+                              className="px-5 py-4 border-4 text-left border-black font-sansPro font-medium"
                               // style={{ border: "solid" }}
                             >
                               {faculty.name}

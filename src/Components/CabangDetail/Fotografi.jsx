@@ -5,15 +5,15 @@ const assetsCabangDetail = `${process.env.PUBLIC_URL}/images/CabangDetail`;
 
 const Fotografi = ({ id, openModal }) => {
   return (
-    <div className="flex flex-col justify-center mt-20 lg:mt-32 mb-5">
-      <h2 className="mx-auto font-nuku text-center text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white">
+    <div className="flex flex-col justify-center bg-pattern-cabangDetail bg-cover">
+      <h2 className="mx-auto font-nuku text-center text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white hidden">
         Hasil Karya
       </h2>
-      <div className="mt-10 mb-20 lg:mb-28">
+      <div className="mt-10 mb-20 lg:mb-28 mt-28 2xl:mt-36">
         <Hasil id={id} />
       </div>
       <ul className="flex flex-wrap gap-2">
-        {dataFotografi.map((_, id) => (
+        {/* {dataFotografi.map((_, id) => (
           <li key={id + 1} className="flex-grow sm:h-64">
             <button className="w-full h-full" onClick={() => openModal(id)}>
               <img
@@ -24,7 +24,7 @@ const Fotografi = ({ id, openModal }) => {
               ></img>
             </button>
           </li>
-        ))}
+        ))} */}
       </ul>
     </div>
   );
