@@ -6,9 +6,7 @@ const assetsCabangDetail = `${process.env.PUBLIC_URL}/images/CabangDetail`;
 const Fotografi = ({ id, openModal }) => {
   return (
     <div className="flex flex-col justify-center bg-pattern-cabangDetail bg-cover">
-      <h2 className="mx-auto font-nuku text-center text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white hidden">
-        Hasil Karya
-      </h2>
+    
       <div className="mt-10 mb-20 lg:mb-28 mt-28 2xl:mt-36">
         <Hasil id={id} />
       </div>
