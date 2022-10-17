@@ -125,7 +125,7 @@ const cabangList = [
       {
         category: "Karate Kumite Perorangan -60 Putra",
         iframe: true,
-        link: 'test'
+        link: 'https://challonge.com/KarateKumiteMin60PutraPSG22'
       },
       {
         category: "Karate Kumite Perorangan -55 Putri",
