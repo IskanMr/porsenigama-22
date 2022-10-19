@@ -3,6 +3,7 @@ import { caborList, casenList } from "../data/dataCabang";
 import { HtmlHead } from "../Components/HtmlHead";
 import styled from 'styled-components'
 import Logo from "../assets/images/cabang/Group 138.svg";
+import "../Components/Cabang/cabang.css";
 import TeksCabang from "../assets/images/cabang/Group 169.png";
 import ScrollDown from "../assets/images/cabang/Polygon 1.svg";
 import RippedPaper from "../assets/images/cabang/Group 137.png";
@@ -55,13 +56,13 @@ const Cabang = () => {
               className="pointer-events-none" 
               alt="Cabang lomba" 
             />
-            <div className="group flex justify-center relative">
-                <a href="https://bit.ly/RilisJadwalCaborTasen" className="bg-orange text-white font-universalserif px-3 py-1.5 lg:px-4 lg:py-2 xl:px-5 text-xs 425px:text-base sm:text-lg xl:text-2xl 2xl:text-2xl rounded-xl xl:rounded-2xl transform duration-200 transition-300 hover:scale-110 cursor-pointer">
-                  Rundown
-                </a>
-                <span className="group-hover:opacity-100 transition-opacity bg-purple px-4 py-2 text-sm 2xl:text-base text-center text-gray-100 rounded-xl absolute bottom-14 xl:bottom-16 translate-y-1 transform opacity-0 mx-auto">
-                  Jadwal seluruh pertandingan Porsenigama
-                </span>
+            <div className="relative flex justify-center hover-trigger">
+              <a className="bg-orange text-white font-universalserif px-3 py-1.5 lg:px-4 lg:py-2 xl:px-5 text-xs 425px:text-base sm:text-lg xl:text-2xl 2xl:text-2xl rounded-xl xl:rounded-2xl transform duration-200 transition-300 hover:scale-110 cursor-pointer">
+                Rundown
+              </a>
+              <span className="hover-target bg-purple px-4 py-2 text-xs 425px:text-sm xl:text-base text-center text-gray-100 rounded-xl absolute bottom-9 425px:bottom-12 md:bottom-12 lg:bottom-14 xl:bottom-14 mx-auto">
+                Jadwal seluruh pertandingan Porsenigama
+              </span>
             </div>
             <img
               src={ScrollDown}
@@ -121,5 +122,6 @@ const Cabang = () => {
     </>
   );
 };
+
 
 export { Cabang };
