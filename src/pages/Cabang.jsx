@@ -57,7 +57,7 @@ const Cabang = () => {
               alt="Cabang lomba" 
             />
             <div className="relative flex justify-center hover-trigger">
-              <a className="bg-orange text-white font-universalserif px-3 py-1.5 lg:px-4 lg:py-2 xl:px-5 text-xs 425px:text-base sm:text-lg xl:text-2xl 2xl:text-2xl rounded-xl xl:rounded-2xl transform duration-200 transition-300 hover:scale-110 cursor-pointer">
+              <a href="https://bit.ly/RilisJadwalCaborTasen" className="bg-orange text-white font-universalserif px-3 py-1.5 lg:px-4 lg:py-2 xl:px-5 text-xs 425px:text-base sm:text-lg xl:text-2xl 2xl:text-2xl rounded-xl xl:rounded-2xl transform duration-200 transition-300 hover:scale-110 cursor-pointer">
                 Rundown
               </a>
               <span className="hover-target bg-purple px-4 py-2 text-xs 425px:text-sm xl:text-base text-center text-gray-100 rounded-xl absolute bottom-9 425px:bottom-12 md:bottom-12 lg:bottom-14 xl:bottom-14 mx-auto">
