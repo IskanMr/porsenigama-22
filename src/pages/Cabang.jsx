@@ -22,7 +22,7 @@ const Cabang = () => {
     <>
       <HtmlHead title="Cabang" decription="[insert page description]" />
       <div 
-        className="relative w-full h-full bg-blue py-14 md:py-1 pb-20 sm:pb-40 md:pb-40 lg:pb-48"
+        className="relative w-full h-full bg-blue py-14 lg:py-1 pb-20 sm:pb-40 md:pb-40 lg:pb-48"
         style={{
           height: "100vh"
         }}
@@ -36,7 +36,7 @@ const Cabang = () => {
           <div className="hidden w-full md:grid justify-items-center content-center pt-5 md:pt-16 px-10 z-10 pointer-events-none m-auto">
             <img 
               src={Cover} 
-              className="w-3/4 lg:w-11/12 mb-8" 
+              className="w-full lg:w-11/12 mb-8" 
               style={{ width: "600px"}} 
               alt="Orang yang sedang bermain basket dan menari"
             />
@@ -49,19 +49,27 @@ const Cabang = () => {
               alt="Orang yang sedang bermain basket dan menari"
             />
           </div>
-          <div className="m-auto mr-6 lg:mr-14 z-10">
+          <div className="m-auto flex flex-col mr-6 lg:mr-14 z-10">
             <img 
               src={TeksCabang} 
-              className="mb-8 pointer-events-none" 
+              className="pointer-events-none" 
               alt="Cabang lomba" 
             />
+            <div className="group flex justify-center relative">
+                <a href="https://bit.ly/RilisJadwalCaborTasen" className="bg-orange text-white font-universalserif px-3 py-1.5 lg:px-4 lg:py-2 text-xs 425px:text-base sm:text-lg xl:text-xl rounded-xl transform duration-200 transition-300 hover:scale-110 cursor-pointer">
+                  Rundown
+                </a>
+                <span className="group-hover:opacity-100 transition-opacity bg-purple px-4 py-2 text-sm text-gray-100 rounded-xl absolute bottom-14 translate-y-1 transform opacity-0 mx-auto">
+                  Jadwal seluruh pertandingan Porsenigama
+                </span>
+            </div>
             <img
               src={ScrollDown}
-              className="m-auto w-12 sm:w-16 md:w-16 lg:w-20 xl:w-24 2xl:w-28 -mt-8 2xl:-mt-16 animate-bounce cursor-pointer"
+              className="m-auto w-12 sm:w-16 md:w-16 lg:w-20 xl:w-24 2xl:w-28 animate-bounce mt-6 425px:mt-10 xl:mt-16 cursor-pointer"
               onClick={() => {
                 content.current.scrollIntoView({ behavior: "smooth" });
               }}
-              alt="Scroll Down"
+              alt="Scroll down"
             />
           </div>
         </div>
@@ -85,7 +93,7 @@ const Cabang = () => {
             <img
               className="pointer-events-none"
               src={TeksSeni}
-              alt="Cabang seni"
+              alt="Tangkai seni"
             />
           </button>
         </div>

@@ -42,6 +42,7 @@ module.exports = {
       },
       inset: {
         "32rem": "32rem",
+        "31rem": "31rem",
       },
       fontSize: {},
       width: {},
