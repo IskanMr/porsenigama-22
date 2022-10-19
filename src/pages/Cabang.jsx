@@ -56,10 +56,10 @@ const Cabang = () => {
               alt="Cabang lomba" 
             />
             <div className="group flex justify-center relative">
-                <a href="https://bit.ly/RilisJadwalCaborTasen" className="bg-orange text-white font-universalserif px-3 py-1.5 lg:px-4 lg:py-2 text-xs 425px:text-base sm:text-lg xl:text-xl rounded-xl transform duration-200 transition-300 hover:scale-110 cursor-pointer">
+                <a href="https://bit.ly/RilisJadwalCaborTasen" className="bg-orange text-white font-universalserif px-3 py-1.5 lg:px-4 lg:py-2 xl:px-5 text-xs 425px:text-base sm:text-lg xl:text-2xl 2xl:text-2xl rounded-xl xl:rounded-2xl transform duration-200 transition-300 hover:scale-110 cursor-pointer">
                   Rundown
                 </a>
-                <span className="group-hover:opacity-100 transition-opacity bg-purple px-4 py-2 text-sm text-gray-100 rounded-xl absolute bottom-14 translate-y-1 transform opacity-0 mx-auto">
+                <span className="group-hover:opacity-100 transition-opacity bg-purple px-4 py-2 text-sm 2xl:text-base text-center text-gray-100 rounded-xl absolute bottom-14 xl:bottom-16 translate-y-1 transform opacity-0 mx-auto">
                   Jadwal seluruh pertandingan Porsenigama
                 </span>
             </div>
