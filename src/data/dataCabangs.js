@@ -75,7 +75,7 @@ const cabangList = [
   {
     title: "Sepak Bola",
     description:
-      "Sepak bola adalah salah satu cabang olahraga tim, yang masing-masing pemainnya umumnya memainkan suatu bola khusus dengan kaki mereka di atas lapangan rumput. Olahraga ini dimainkan oleh dua tim yang masing-masing beranggotakan 11 orang pemain inti dan beberapa pemain cadangan dimana masing-masing tim berupaya untuk menang dan mencetak gol ke gawang lawan.",
+      "Sepak bola adalah olahraga yang dimainkan oleh dua tim yang masing-masing beranggotakan 11 orang pemain inti dan beberapa pemain cadangan. Masing-masing tim berupaya untuk menang dan mencetak gol ke gawang lawan sebanyak mungkin.",
     category: [
       "Sepak Bola Putra",
 
@@ -137,7 +137,7 @@ const cabangList = [
   {
     title: "Silat",
     description:
-      "Pencak Silat yaitu permainan (keahlian) dalam mempertahankan diri dengan keahlian menangkis, menyerang serta membela diri menggunakan atau tanpa senjata. Pencak silat merupakansuatu seni bela diri tradisional yang berasal dari Kepulauan Nusantara (Indonesia).",
+      "Pencak silat adalah seni bela diri tradisional yang merujuk pada keahlian dalam mempertahankan diri dengan keahlian menangkis, menyerang serta membela diri menggunakan atau tanpa senjata.",
     category: [
       "Seni Tunggal Putra",
       "Seni Tunggal Putri",
@@ -236,7 +236,7 @@ const cabangList = [
   {
     title: "Taekwondo",
     description:
-      "Taekwondo merupakan olahraga bela diri yang berkembang pada 37 Masehi pada dinasti Kogooryo di Korea. Bela diri Taekwondo dikenal sebagai bela diri andalan yang digunakan para Ksatria. Di Indonesia sendiri Tae Kwon Do berkembang sekitar tahun 1975. Sebagai bela diri, Tae Kwon Do memiliki filosofi yang tertanam di dalamnya berupa budi pekerti, kejujuran, ketabahan, penguasaan diri, dan semangat pantang menyerah.",
+      "Taekwondo merupakan olahraga bela diri yang berkembang pada 37 Masehi pada dinasti Kogooryo di Korea. Taekwondo memiliki filosofi yang tertanam di dalamnya berupa budi pekerti, kejujuran, ketabahan, penguasaan diri, dan semangat pantang menyerah.",
     category: [
       "Putra Under 54 kg",
       "Putra Under 58 kg",
@@ -405,7 +405,7 @@ const cabangList = [
   {
     title: "Catur",
     description:
-      "Catur adalah permainan papan strategi dua orang yang dimainkan pada sebuah papan kotak-kotak yang terdiri dari 64 kotak, yang disusun dalam petak 8×8, yang terbagi sama rata dalam kelompok warna putih dan hitam.",
+      "Catur adalah permainan papan strategi dua orang yang dimainkan pada sebuah papan kotak-kotak yang terdiri dari 64 kotak (8×8) yang terbagi sama rata dalam kelompok warna putih dan hitam.",
     category: [
       "Catur Cepat Campuran",
       "Catur Cepat Putra",
@@ -435,7 +435,7 @@ const cabangList = [
   {
     title: "E-Sport",
     description:
-      "Esports adalah cabang olahraga modern yang menggunakan peralatan elektronik sebagai media dalam permainannya. Cabang olahraga ini mengandalkan otak untuk berpikir cepat karena diperlukan strategi yang matang untuk meraih poin dan memenangkan games. Dalam Porsenigama 2022 kali ini, cabang games dalam Esports dimainkan dengan menggunakan PC/Komputer dan Smartphone/Mobile sebagai medianya.",
+      "Esports adalah cabang olahraga modern yang menggunakan peralatan elektronik sebagai media dalam permainannya. Dalam Porsenigama 2022, cabang games dalam esports dimainkan dengan menggunakan PC/komputer dan smartphone/mobile sebagai medianya.",
     category: [
       "Valorant",
       "Dota 2",
@@ -470,7 +470,7 @@ const cabangList = [
   {
     title: "Judo",
     description:
-      "Judo adalah olahraga bela diri yang menitik beratkan pada bantingan dan bukan pukulan maupun tendangan.",
+      "Judo adalah olahraga bela diri yang menitik beratkan pada bantingan, bukan pukulan maupun tendangan.",
     category: [
       "Judo Kelas +100 kg Putra",
       "Judo Kelas -100 kg Putra",
@@ -577,7 +577,7 @@ const cabangList = [
       "Estafet 4x100 meter Putri",
       "Lompat Jauh Putri",
     ],
-    description: "Atletik secara umum adalah perlombaan olahraga yang berbentuk seperti aktivitas berjalan, berlari, melompat, dan melempar. Dari empat aktivitas itu akhirnya berkembang menjadi berbagai macam cabang dan nomor.",
+    description: "Atletik secara umum adalah perlombaan olahraga yang berbentuk seperti aktivitas berjalan, berlari, melompat, dan melempar. Dari keempat aktivitas tersebut kemudian berkembang menjadi berbagai macam cabang dan nomor.",
     categoryData: [{
         category: "Lari 100 meter Putra",
         iframe: false,
@@ -656,7 +656,7 @@ const cabangList = [
       "Basket Putra",
       "Basket Putri",
     ],
-    description: "Olahraga yang berasal dari Amerika Serikat. Basket dimainkan secara berkelompok berisi 5 orang. Tim saling bertanding dengan cara memasukkan bola ke keranjang lawan sebanyak-banyaknya.",
+    description: "Basket adalah olahraga yang berasal dari Amerika Serikat. Basket dimainkan secara berkelompok berisi 5 orang. Tim saling bertanding dengan cara memasukkan bola ke keranjang lawan sebanyak-banyaknya.",
     categoryData: [{
         category: "Basket Putra",
         iframe: true,
@@ -677,7 +677,7 @@ const cabangList = [
         "Jumping 30-50cm Optimum Time",
         "Jumping 50-70cm Optimum Time",
     ],
-    description: "Cabang Olahraga yang mengacu kepada keterampilan menunggangi, mengendarai, melompat atau berlari menggunakan kuda.",
+    description: "Berkuda adalah cabang olahraga yang mengacu kepada keterampilan menunggangi, mengendarai, melompat atau berlari menggunakan kuda.",
     categoryData: [{
         category: "Dressage Walk Trot 2",
         iframe: false,
@@ -731,7 +731,7 @@ const cabangList = [
       "Futsal Putra",
       "Futsal Putri",
     ],
-    description: "Futsal adalah permainan bola yang dimainkan oleh dua tim, yang masing-masing beranggotakan lima orang. Tujuannya adalah memasukkan bola ke gawang lawan, dengan memanipulasi bola dengan kaki. Selain lima pemain utama, setiap regu juga diizinkan memiliki pemain cadangan.",
+    description: "Futsal adalah permainan bola yang dimainkan oleh dua tim, yang masing-masing beranggotakan lima orang. Tujuannya adalah memasukkan bola ke gawang lawan sebanyak mungkin.",
     categoryData: [{
         category: "Futsal Putra",
         iframe: true,
@@ -984,43 +984,43 @@ const cabangList = [
   },
   {
     title: "Seni Tari",
-    description: "Tangkai Seni Tari merupakan salah satu tangkai seni yang diperlombakan dalam Porsenigama 2022. Tangkai Seni Tari pada tahun ini dilaksanakan secara offline di Auditorium Fakultas Ilmu Budaya Universitas Gadjah Mada. Tema yang diusung dalam perlombaan ini yaitu “Lestarikan Kearifan Lokal di Era Transisi Pandemi”. Kategori tangkai seni tari pada kali ini yaitu tradisional kategori kreasi atau garapan tari yang berpijak dengan tradisi budaya Indonesia. Jumlah peserta dalam 1 kontingen yaitu  2 (dua) orang penari berpasangan tiap fakultas.",
+    description: "Tangkai seni tari pada tahun ini dilaksanakan secara luring di Auditorium Fakultas Ilmu Budaya Universitas Gadjah Mada. Tema yang diusung dalam perlombaan ini yaitu “Lestarikan Kearifan Lokal di Era Transisi Pandemi”. Kategori tangkai seni tari pada kali ini yaitu tradisional kategori kreasi atau garapan tari yang berpijak dengan tradisi budaya Indonesia. Jumlah peserta dalam 1 kontingen yaitu 2 orang penari berpasangan tiap fakultas.",
     casen: true, 
   },
   {
     title: "Z-Fest",
-    description: "Tangkai Seni Band adalah sebuah perlombaan seni band yang diikuti oleh perwakilan 3-6 orang dalam tiap fakultas di UGM. Pada Porsenigama 2022, tangkai seni band mengangkat tema \"Alunan Melodi Bangkitkan Gelora Kreasi\" yang mengusung kebangkitan semangat setelah adanya pandemi.",
+    description: "Tangkai seni band adalah sebuah perlombaan seni band yang diikuti oleh perwakilan 3-6 orang dalam tiap fakultas di UGM. Pada Porsenigama 2022, tangkai seni band mengangkat tema \"Alunan Melodi Bangkitkan Gelora Kreasi\" yang mengusung kebangkitan semangat setelah adanya pandemi.",
     casen: true,
   },
   {
     title: "Fotografi",
-    description: "Tangkai Seni Fotografi merupakan perlombaan seni fotografi yang diikuti oleh satu orang perwakilan kontingen dalam Porsenigama 2022. Fotografi merupakan metode untuk menghasilkan gambar atau foto dengan merekam pantulan cahaya dari objek. Dalam Porsenigama 2022, tangkai seni fotografi mengangkat tema \"Semangat Juang \" yang menjadi ajakan bagi mahasiswa untuk memvisualisasikan semangat juang dalam menyambut Porsenigama 2022."
+    description: "Tangkai seni fotografi merupakan perlombaan seni fotografi yang diikuti oleh satu orang perwakilan kontingen dalam Porsenigama 2022. Tahun ini, tangkai seni fotografi mengangkat tema \"Semangat Juang\" yang menjadi ajakan bagi mahasiswa untuk memvisualisasikan semangat juang dalam menyambut Porsenigama 2022."
     ,
     casen: true,
   },
   {
     title: "Naskah Lakon",
-    description: "Naskah lakon disebut pula dengan skenario. Naskah ini menjadi bentuk penuangan ide cerita ke dalam alur cerita dan susunannya. Pada Porsenigama tahun 2022, tangkai seni naskah lakon menjadi salah satu tangkai perlombaan yang akan dilaksanakan secara daring (online) dengan metode pengumpulan naskah. Naskah lakon dibuat oleh 1 orang setiap fakultas dengan tema bebas sesuai kreativitas masing-masing.",
+    description: "Naskah lakon disebut pula dengan skenario. Naskah ini menjadi bentuk penuangan ide cerita ke dalam alur cerita dan susunannya. Pada Porsenigama 2022, tangkai seni naskah lakon menjadi salah satu tangkai perlombaan yang akan dilaksanakan secara daring dengan metode pengumpulan naskah. Naskah lakon dibuat oleh 1 perwakilan setiap fakultas dengan tema bebas sesuai kreativitas masing-masing.",
     casen: true,
   },
   {
     title: "Monolog",
-    description: "Monolog sendiri merupakan ilmu yang  mengajarkan tentang seni peran yang mana didalamnya dibutuhkan satu orang atau dialog bisu untuk melakukan adegan seni peran tersebut. Monolog sendiri masuk kedalam salah satu bentuk pertunjukkan teater yang sering diperlombakan dalam berbagai ajang seperti Peksimida/Peksimprov, maupun Peksiminas. Pada pelaksanaan Porsenigama 2022 kali ini, tangkai lomba monolog menjadi salah satu jenis lomba yang akan dilaksanakan secara luring (offline) pada tanggal 19-20 November 2022.",
+    description: "Monolog merupakan ilmu yang  mengajarkan tentang seni peran yang mana didalamnya dibutuhkan satu orang atau dialog bisu untuk melakukan adegan seni peran tersebut. Monolog termasuk dalam salah satu bentuk pertunjukkan teater. Pada pelaksanaan Porsenigama 2022, tangkai lomba monolog akan dilaksanakan secara luring pada tanggal 19-20 November 2022.",
     casen: true,
   },
   {
     title: "Vocal Group",
-    description: "Vokal Grup merupakan sekumpulan penyanyi yang menyanyikan lagu secara bersama-sama dengan konsep satu suara, dua suara, atau lebih. Umumnya, vokal grup terdiri dari beberapa penyanyi yang mampu menyanyikan lagu dengan berbagai jenis variasi suara seperti bass, alto, sopran, dan tenor. Vokal grup sendiri terdiri dari kumpulan penyanyi yang berjumlah 3 (tiga) hingga 10 (sepuluh) orang. Pada Porsenigama 2022, perlombaan vokal grup akan diadakan secara luring/offline dimana tiap fakultas mengirimkan 1 tim perwakilan yang terdiri dari 5 (lima) hingga 8 (depalan) orang. Tiap tim bebas mengaransemen lagu yang akan dibawakan dengan syarat tidak menghilangkan nada asli lagu tersebut.",
+    description: "Vokal grup merupakan sekumpulan penyanyi yang menyanyikan lagu secara bersama-sama dengan konsep satu suara, dua suara, atau lebih. Pada Porsenigama 2022, perlombaan vokal grup akan diadakan secara luring/offline. Setiap fakultas mengirimkan 1 tim perwakilan yang terdiri dari 5 hingga 8FF orang. Tiap tim bebas mengaransemen lagu yang akan dibawakan dengan syarat tidak menghilangkan nada asli lagu tersebut.",
     casen: true,
   },
   {
     title: "Vokal Keroncong",
-    description: "Musik keroncong adalah salah satu kebudayaan khas Bangsa Indonesia yang sampai sekarang masih dilestarikan. Pada Porsenigama 2022, keroncong akan turut berpartisipasi dalam rangkaian acara melalui tangkai seni vokal keroncong. Nantinya setiap fakultas mengirimkan satu perwakilan penyanyi dan membawakan 1 lagu pilihan dari 4 lagu yang tersedia. Perlombaan akan dilaksanakan secara offline di Auditorium Fakultas Kehutanan UGM.",
+    description: "Musik keroncong adalah salah satu kebudayaan khas bangsa Indonesia yang sampai sekarang masih dilestarikan. Pada Porsenigama 2022, setiap fakultas mengirimkan satu perwakilan penyanyi dan membawakan 1 lagu pilihan dari 4 lagu yang tersedia. Perlombaan akan dilaksanakan secara offline di Auditorium Fakultas Kehutanan UGM.",
     casen: true,
   },
   {
     title: "Lukis",
-    description: "Seni lukis adalah salah satu cabang dari seni rupa yang berfokus pada kegiatan melukis. Seni lukis tercipta dari imajinasi seniman yang diekspresikan melalui media garis, warna, tekstur, gelap terang, maupun bidang dan bentuk. Pada Porsenigama 2022, cabang lomba seni lukis dilaksanakan secara offline dengan dua metode yaitu tradisional dan digital. Pada tahun ini cabang Seni Lukis Porsenigama mengusung tema \“Clinquant morn\” yang berarti esok yang berkilauan emas.",
+    description: "Seni lukis adalah cabang seni rupa yang berfokus pada kegiatan melukis. Seni lukis tercipta dari imajinasi seniman yang diekspresikan melalui media garis, warna, tekstur, gelap terang, maupun bidang dan bentuk. Pada Porsenigama 2022, cabang lomba seni lukis dilaksanakan secara offline dengan dua metode yaitu tradisional dan digital. Pada tahun ini cabang Seni Lukis Porsenigama mengusung tema \“Clinquant morn\” yang berarti esok yang berkilauan emas.",
     casen: true,
   },
   
