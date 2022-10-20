@@ -4,7 +4,7 @@ import ExplodePetaKanan from "../../assets/images/homepage/explode-section-2.png
 import TigaBintangPeta from "../../assets/images/homepage/3-bintang-peta.png";
 import RipPaperPetaKiri from "../../assets/images/homepage/rip-paper-peta-kiri.png";
 import RipPaperPetaKanan from "../../assets/images/homepage/rip-paper-peta-kanan.png";
-import Map from './PetaComponents';
+import Map from "./PetaComponents";
 
 const Peta = () => {
   return (
@@ -24,25 +24,22 @@ const Peta = () => {
         >
           PETA
         </p>
-        {/* <div className="bg-borderpeta mx-auto w-2/3 h-24rem text-center justify-center items-center font-montserrat text-4xl font-bold animate-pulse">
-          <p className="transform translate-y-36">COMING SOON!</p>
-        </div> */}
         <div className="flex flex-col items-center justify-center mx-auto">
-        <Map />
+          <Map />
         </div>
         <img
           src={ExplodePetaKiri}
-          className="absolute left-10 hidden lg:block top-0 pt-96"
+          className="absolute -left-6 hidden lg:block bottom-12 transform scale-50 z-0"
           alt=""
         />
         <img
           src={ExplodePetaKanan}
-          className="absolute right-9 top-0 pt-80 hidden lg:block"
+          className="absolute -right-16 top-48 hidden lg:block transform scale-50"
           alt=""
         />
         <img
           src={TigaBintangPeta}
-          className="absolute right-56 top-16 hidden lg:block"
+          className="absolute right-24 top-16 hidden lg:block transform scale-75"
           alt=""
         />
         <img
@@ -52,7 +49,7 @@ const Peta = () => {
         />
         <img
           src={RipPaperPetaKanan}
-          className="-right-20 -top-48  lg:-right-16 absolute scale-50 lg:scale-75 transform z-20"
+          className="-right-20 -top-48 lg:-right-16 absolute scale-50 lg:scale-75 transform z-20"
           alt=""
         />
       </div>
