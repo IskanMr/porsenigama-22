@@ -3,7 +3,7 @@ import { caborList, casenList } from "../data/dataCabang";
 import { HtmlHead } from "../Components/HtmlHead";
 import styled from 'styled-components'
 import Logo from "../assets/images/cabang/Group 138.svg";
-import "../Components/Cabang/cabang.css";
+import "../Components/Cabang/button.css";
 import TeksCabang from "../assets/images/cabang/Group 169.png";
 import ScrollDown from "../assets/images/cabang/Polygon 1.svg";
 import RippedPaper from "../assets/images/cabang/Group 137.png";
