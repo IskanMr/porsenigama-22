@@ -52,7 +52,7 @@ const Faq = () => {
   return (
     <>
       <HtmlHead title="Faq" decription="[insert page description]" />
-      <div className="min-h-screen bg-blue font-body">
+      <div className="min-h-screen bg-blue font-body px-6 md:px-0 pb-9">
         <div className="flex flex-col w-full justify-items-center items-center">
           <span>
             <img
