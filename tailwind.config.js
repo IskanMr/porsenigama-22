@@ -63,6 +63,7 @@ module.exports = {
       boxShadow: {},
       borderRadius: {
         large: "5rem",
+        medium: "3rem",
         "3rem": "3rem",
       },
       lineHeight: {

@@ -91,7 +91,7 @@ const Tentang = () => {
           </h1>
         </div>
         <div
-          className="z-20 rounded-large w-5/6 xl:w-3/4 mx-auto pb-5 mt-5 md:mt-0 md:pb-12"
+          className="z-20 rounded-medium md:rounded-large w-5/6 xl:w-3/4 mx-auto pb-5 mt-5 md:mt-0 md:pb-12"
           data-aos="fade-down"
           // data-aos-offset="586"
           data-aos-duration="1600"
@@ -101,7 +101,7 @@ const Tentang = () => {
           {/* <h2 className="font-montserrat font-bold text-2xl align-middle justify-center items-center flex leading-tes">
             MENGENAL PORSENIGAMA
           </h2> */}
-          <h2 className="font-montserrat font-bold text-md md:text-2xl flex items-center justify-center text-center pb-5 pt-5">
+          <h2 className="font-montserrat font-bold text-md md:text-2xl flex items-center justify-center text-center px-5 pb-5 pt-5">
             MENGENAL PORSENIGAMA
           </h2>
           <p className="text-justify md:px-12 px-5 text-sm md:text-lg font-montserrat hidden md:block z-20">
@@ -175,12 +175,14 @@ const Tentang = () => {
         </div>
         <img
           src={BintangKuning}
-          className="top-0 pt-28 left-0 xl:px-10 px-1 absolute hidden md:block transform scale-75 xl:scale-100"
+          className="hidden md:block absolute w-1/4 2xl:w-1/5 -top-10 xl:-top-4 2xl:-top-28 2xl:pt-32 -left-7 xl:-left-10 2xl:left-4 px-1 xl:px-10"
+          style={{ scale: "40%" }}
           alt=""
         />
         <img
           src={TigaBintang}
-          className="absolute right-0 px-1 xl:px-10 top-0 pt-32 hidden md:block transform scale-75 xl:scale-100"
+          className="hidden md:block absolute w-1/4 2xl:w-1/5 -top-20 lg:-top-28 2xl:-top-20 -right-14 2xl:-right-10 px-1 xl:px-10 pt-32"
+          style={{ scale: "45%" }}
           alt=""
         />
         {/* <img
@@ -190,17 +192,18 @@ const Tentang = () => {
         /> */}
         <img
           src={TigaBintangMobile}
-          className="absolute right-0 top-44 md:hidden"
+          className="absolute 425px:w-16 right-0 top-28 md:hidden"
+          style={{ scale: "90%" }}
           alt=""
         />
         <img
           src={BintangKuningMobile}
-          className="absolute left-4 top-48 md:hidden"
+          className="absolute left-4 top-28 md:hidden"
           alt=""
         />
         <img
           src={BgInporse}
-          className="absolute z-20 transform md:-translate-y-1 translate-y-5 "
+          className="w-full absolute z-20 transform md:-translate-y-1 translate-y-5 "
           alt=""
         />
       </div>
