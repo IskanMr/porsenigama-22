@@ -16,7 +16,6 @@ import {
 
 import Transisi from "../assets/images/klasemen/transisi.png";
 import TransisiMobile from "../assets/images/klasemen/transition-mobile.png";
-import TransisiMobile2 from "../assets/images/klasemen/transition-mobile-2.png";
 import TeksKlasemen from "../assets/images/klasemen/teks-klasemen.png";
 import TeksKlasemenMobile from "../assets/images/klasemen/teks-klasemen-mobile.png";
 import Printilan from "../assets/images/klasemen/printilan.png";
