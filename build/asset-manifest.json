@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/2022/porsenigama/static/css/main.eb9cb0e0.chunk.css",
-    "main.js": "/2022/porsenigama/static/js/main.a4fd35b5.chunk.js",
-    "main.js.map": "/2022/porsenigama/static/js/main.a4fd35b5.chunk.js.map",
+    "main.css": "/2022/porsenigama/static/css/main.c6e37ae0.chunk.css",
+    "main.js": "/2022/porsenigama/static/js/main.58fb0b0f.chunk.js",
+    "main.js.map": "/2022/porsenigama/static/js/main.58fb0b0f.chunk.js.map",
     "runtime-main.js": "/2022/porsenigama/static/js/runtime-main.52f90992.js",
     "runtime-main.js.map": "/2022/porsenigama/static/js/runtime-main.52f90992.js.map",
     "static/css/2.615009a6.chunk.css": "/2022/porsenigama/static/css/2.615009a6.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.3e5b3086.chunk.js.map": "/2022/porsenigama/static/js/2.3e5b3086.chunk.js.map",
     "index.html": "/2022/porsenigama/index.html",
     "static/css/2.615009a6.chunk.css.map": "/2022/porsenigama/static/css/2.615009a6.chunk.css.map",
-    "static/css/main.eb9cb0e0.chunk.css.map": "/2022/porsenigama/static/css/main.eb9cb0e0.chunk.css.map",
+    "static/css/main.c6e37ae0.chunk.css.map": "/2022/porsenigama/static/css/main.c6e37ae0.chunk.css.map",
     "static/js/2.3e5b3086.chunk.js.LICENSE.txt": "/2022/porsenigama/static/js/2.3e5b3086.chunk.js.LICENSE.txt",
     "static/media/index.css": "/2022/porsenigama/static/media/slick.c94f7671.ttf",
     "static/media/Cover Mobile.d4ce3728.png": "/2022/porsenigama/static/media/Cover Mobile.d4ce3728.png",
@@ -21,9 +21,10 @@
     "static/media/Group 169.2a60a4e8.png": "/2022/porsenigama/static/media/Group 169.2a60a4e8.png",
     "static/media/Group 170.c1c9ca32.png": "/2022/porsenigama/static/media/Group 170.c1c9ca32.png",
     "static/media/Group 171.82201ecf.png": "/2022/porsenigama/static/media/Group 171.82201ecf.png",
+    "static/media/Karate.39218a18.png": "/2022/porsenigama/static/media/Karate.39218a18.png",
+    "static/media/Keroncong.668fa35f.png": "/2022/porsenigama/static/media/Keroncong.668fa35f.png",
     "static/media/Polygon 1.f787ce9a.svg": "/2022/porsenigama/static/media/Polygon 1.f787ce9a.svg",
     "static/media/Vector 13.24cadbdf.png": "/2022/porsenigama/static/media/Vector 13.24cadbdf.png",
-    "static/media/bg-isi-klasemen-mobile-merah.cbf02649.png": "/2022/porsenigama/static/media/bg-isi-klasemen-mobile-merah.cbf02649.png",
     "static/media/bg-text-peta.0c10f696.png": "/2022/porsenigama/static/media/bg-text-peta.0c10f696.png",
     "static/media/bg-text-tentang-mobile.9d919a5f.png": "/2022/porsenigama/static/media/bg-text-tentang-mobile.9d919a5f.png",
     "static/media/bg-text-tentang-porsenigama.6539ad0d.png": "/2022/porsenigama/static/media/bg-text-tentang-porsenigama.6539ad0d.png",
@@ -65,8 +66,8 @@
     "static/media/teks-klasemen.ea8f4879.png": "/2022/porsenigama/static/media/teks-klasemen.ea8f4879.png",
     "static/media/text-porsenigama-mobile.a383da2c.png": "/2022/porsenigama/static/media/text-porsenigama-mobile.a383da2c.png",
     "static/media/text-porsenigama-section-1.3071668b.png": "/2022/porsenigama/static/media/text-porsenigama-section-1.3071668b.png",
-    "static/media/transisi-mobile.b912eeda.png": "/2022/porsenigama/static/media/transisi-mobile.b912eeda.png",
     "static/media/transisi.a38c957d.png": "/2022/porsenigama/static/media/transisi.a38c957d.png",
+    "static/media/transition-mobile.f9b10bcd.png": "/2022/porsenigama/static/media/transition-mobile.f9b10bcd.png",
     "static/media/transition-section.527c6139.png": "/2022/porsenigama/static/media/transition-section.527c6139.png",
     "static/media/vektor-kiri-inporse.bb182e3c.png": "/2022/porsenigama/static/media/vektor-kiri-inporse.bb182e3c.png",
     "static/media/vektor2.552c8e81.png": "/2022/porsenigama/static/media/vektor2.552c8e81.png"
@@ -75,7 +76,7 @@
     "static/js/runtime-main.52f90992.js",
     "static/css/2.615009a6.chunk.css",
     "static/js/2.3e5b3086.chunk.js",
-    "static/css/main.eb9cb0e0.chunk.css",
-    "static/js/main.a4fd35b5.chunk.js"
+    "static/css/main.c6e37ae0.chunk.css",
+    "static/js/main.58fb0b0f.chunk.js"
   ]
 }
