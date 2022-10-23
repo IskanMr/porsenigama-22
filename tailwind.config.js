@@ -13,14 +13,16 @@ module.exports = {
       backgroundImage: {
         "homepage-section-3":
           "url('/src/assets/images/homepage/bg-section-3.png')",
-          "homepage-section-1":
+        "homepage-section-1":
           "url('/src/assets/images/homepage/rip-paper-section-1.png')",
         "pattern-cabang": "url('/src/assets/images/cabang/5328478.svg')",
         "pattern-cabangDetail":
           "url('/src/assets/images/cabang/cabangDetail/Mask group (3).png')",
         "nama-fakultas": "url('/src/assets/images/katalog/namaFakultas.png')",
-        "galeri-mobile": "url('/src/assets/images/galeri/bg-isi-galeri-mobile.png')",
-        "bg-pattern-klasemen": "url('/src/assets/images/klasemen/bg-isi-klasemen-merah.png')",
+        "galeri-mobile":
+          "url('/src/assets/images/galeri/bg-isi-galeri-mobile.png')",
+        "pattern-klasemen":
+          "url('/src/assets/images/klasemen/bg-isi-klasemen-merah.png')",
       },
       colors: {
         blue: "#48C0EE",
@@ -72,7 +74,7 @@ module.exports = {
       },
       scale: {
         200: "2",
-        40:".3"
+        40: ".3",
       },
       screens: {
         "450px": { min: "450px", max: "768px" },

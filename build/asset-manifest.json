@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/2022/porsenigama/static/css/main.eee379fc.chunk.css",
-    "main.js": "/2022/porsenigama/static/js/main.d5180271.chunk.js",
-    "main.js.map": "/2022/porsenigama/static/js/main.d5180271.chunk.js.map",
+    "main.css": "/2022/porsenigama/static/css/main.eb9cb0e0.chunk.css",
+    "main.js": "/2022/porsenigama/static/js/main.a4fd35b5.chunk.js",
+    "main.js.map": "/2022/porsenigama/static/js/main.a4fd35b5.chunk.js.map",
     "runtime-main.js": "/2022/porsenigama/static/js/runtime-main.52f90992.js",
     "runtime-main.js.map": "/2022/porsenigama/static/js/runtime-main.52f90992.js.map",
     "static/css/2.615009a6.chunk.css": "/2022/porsenigama/static/css/2.615009a6.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.3e5b3086.chunk.js.map": "/2022/porsenigama/static/js/2.3e5b3086.chunk.js.map",
     "index.html": "/2022/porsenigama/index.html",
     "static/css/2.615009a6.chunk.css.map": "/2022/porsenigama/static/css/2.615009a6.chunk.css.map",
-    "static/css/main.eee379fc.chunk.css.map": "/2022/porsenigama/static/css/main.eee379fc.chunk.css.map",
+    "static/css/main.eb9cb0e0.chunk.css.map": "/2022/porsenigama/static/css/main.eb9cb0e0.chunk.css.map",
     "static/js/2.3e5b3086.chunk.js.LICENSE.txt": "/2022/porsenigama/static/js/2.3e5b3086.chunk.js.LICENSE.txt",
     "static/media/index.css": "/2022/porsenigama/static/media/slick.c94f7671.ttf",
     "static/media/Cover Mobile.d4ce3728.png": "/2022/porsenigama/static/media/Cover Mobile.d4ce3728.png",
@@ -75,7 +75,7 @@
     "static/js/runtime-main.52f90992.js",
     "static/css/2.615009a6.chunk.css",
     "static/js/2.3e5b3086.chunk.js",
-    "static/css/main.eee379fc.chunk.css",
-    "static/js/main.d5180271.chunk.js"
+    "static/css/main.eb9cb0e0.chunk.css",
+    "static/js/main.a4fd35b5.chunk.js"
   ]
 }
