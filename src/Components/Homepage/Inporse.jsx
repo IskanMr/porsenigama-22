@@ -206,27 +206,28 @@ const Inporse = () => {
         />
         <img
           src={VectorKiri}
-          className="absolute top-20 xl:top-60 xl:left-7 left-0 hidden md:block scale-75 transform xl:scale-100"
+          className="hidden md:block absolute w-2/5 lg:w-2/5 xl:w-1/3 2xl:w-1/3 top-1 lg:-top-10 xl:top-12 2xl:top-10 -left-16 lg:-left-28 xl:-left-20 2xl:-left-36"
+          style={{ scale: "40%" }}
           alt=""
         />
         <img
           src={VectorKanan}
-          className="absolute right-5 xl:right-14 xl:top-80 top-40 hidden md:block transform scale-75 xl:scale-100"
+          className="hidden md:block absolute w-24 lg:w-28 xl:w-auto right-5 xl:right-14 md:top-36 lg:top-40 xl:top-72"
           alt=""
         />
         <img
           src={BintangKuning}
-          className="absolute left-24 xl:left-60 xl:pt-0 bottom-3 pt-0 hidden md:block transform scale-75 xl:scale-90"
+          className="hidden md:block w-16 xl:w-20 absolute right-24 xl:right-60 pt-0 xl:pt-0 mr-40 lg:mr-56 xl:mr-36 2xl:mr-56 bottom-6"
           alt=""
         />
         <img
           src={PaperKiri}
-          className="-left-20 md:-left-8 xl:-left-3 -bottom-48 absolute transform scale-40 md:scale-75 xl:scale-90"
+          className="absolute w-20 425px:w-28 md:w-32 lg:w-36 2xl:w-auto -left-5 425px:-left-6 md:-left-8 xl:-left-3 -bottom-20 425px:-bottom-28 md:-bottom-28 lg:-bottom-32 2xl:-bottom-48"
           alt=""
         />
         <img
           src={PaperKanan}
-          className="-right-20 md:-right-8 xl:-right-3 -bottom-48 absolute transform scale-40 md:scale-75 xl:scale-90"
+          className="absolute w-20 425px:w-28 md:w-32 lg:w-36 2xl:w-auto -right-5 425px:-right-6 md:-right-8 xl:-right-3 -bottom-20 425px:-bottom-28 md:-bottom-28 lg:-bottom-36 2xl:-bottom-48"
           alt=""
         />
       </div>
