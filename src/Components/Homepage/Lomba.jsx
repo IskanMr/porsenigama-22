@@ -134,12 +134,12 @@ const Lomba = () => {
         />
         <img
           src={ExplodeLombaKanan}
-          className="absolute right-1 top-12 transform scale-40 lg:scale-50 xl:scale-90 xl:right-32 hidden lg:block"
+          className="hidden absolute right-1 top-12 transform scale-40 lg:scale-50 xl:scale-90 xl:right-32"
           alt=""
         />
         <img
           src={ExplodeLombaKiri}
-          className="absolute -bottom-16 lg:-bottom-12 xl:left-20 xl:bottom-12 -left-5 z-0 transform scale-40 lg:scale-50 xl:scale-90 hidden lg:block"
+          className="hidden absolute -bottom-16 lg:-bottom-12 xl:left-20 xl:bottom-12 -left-5 z-0 transform scale-40 lg:scale-50 xl:scale-90"
           alt=""
         />
         <img
