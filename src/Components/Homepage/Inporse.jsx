@@ -222,12 +222,12 @@ const Inporse = () => {
         />
         <img
           src={PaperKiri}
-          className="absolute w-20 425px:w-28 md:w-32 lg:w-36 2xl:w-auto -left-5 425px:-left-6 md:-left-8 xl:-left-3 -bottom-20 425px:-bottom-28 md:-bottom-28 lg:-bottom-32 2xl:-bottom-48"
+          className="absolute w-20 425px:w-28 md:w-32 lg:w-36 2xl:w-48 -left-5 425px:-left-6 md:-left-8 xl:-left-3 2xl:-left-6 -bottom-20 425px:-bottom-28 md:-bottom-28 lg:-bottom-32 2xl:-bottom-44"
           alt=""
         />
         <img
           src={PaperKanan}
-          className="absolute w-20 425px:w-28 md:w-32 lg:w-36 2xl:w-auto -right-5 425px:-right-6 md:-right-8 xl:-right-3 -bottom-20 425px:-bottom-28 md:-bottom-28 lg:-bottom-36 2xl:-bottom-48"
+          className="absolute w-20 425px:w-28 md:w-32 lg:w-36 2xl:w-48 -right-5 425px:-right-6 md:-right-8 xl:-right-3 2xl:-right-6 -bottom-20 425px:-bottom-28 md:-bottom-28 lg:-bottom-36 2xl:-bottom-48"
           alt=""
         />
       </div>

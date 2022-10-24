@@ -129,7 +129,7 @@ const Lomba = () => {
         </div>
         <img
           src={TigaBintangLomba}
-          className="absolute w-32 2xl:w-36 top-20 left-8 xl:left-24 2xl:left-48 hidden lg:block"
+          className="absolute w-24 2xl:w-36 top-20 left-20 xl:left-24 2xl:left-48 hidden lg:block"
           alt=""
         />
         <img
@@ -144,7 +144,7 @@ const Lomba = () => {
         />
         <img
           src={ExplodeLombaKecil}
-          className="absolute w-32 2xl:w-36 bottom-5 right-32 2xl:right-44 z-0 transform scale-90 hidden xl:block"
+          className="absolute w-32 2xl:w-40 bottom-5 xl:bottom-10 right-32 2xl:right-44 z-0 transform scale-90 hidden xl:block"
           alt=""
         />
       </div>
