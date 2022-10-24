@@ -96,6 +96,10 @@ const casenList = [
     
   },
   {
+    title: "Band",
+    
+  },
+  {
     title: "Monolog",
     
   },
