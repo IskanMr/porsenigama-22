@@ -35,7 +35,7 @@ const Award = (props) => {
   return (
     <>
       {standingsRef.length > 0 && (
-        <div className="grid z-20">
+        <div className="grid z-10">
           <p className="text-center font-montserrat">
             <button
               onClick={() => setVisiblePopup(!visiblePopup)}

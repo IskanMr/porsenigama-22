@@ -352,6 +352,7 @@ const cabangList = [
       "Ganda Putra",
       "Ganda Putri",
       "Ganda Campuran",
+      "Beregu Campuran"
     ],
     categoryData: [
       {
@@ -373,6 +374,10 @@ const cabangList = [
       {
         category: "Ganda Campuran",
         link: 'https://challonge.com/BulutangkisGandaCampuranPSG22'
+      },
+      {
+        category: "Beregu Campuran",
+        link: 'https://challonge.com/BulutangkisBereguPSG22'
       },
     ],
   },
