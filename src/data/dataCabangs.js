@@ -992,12 +992,6 @@ const cabangList = [
     description: "Tangkai seni tari pada tahun ini dilaksanakan secara luring di Auditorium Fakultas Ilmu Budaya Universitas Gadjah Mada. Tema yang diusung dalam perlombaan ini yaitu “Lestarikan Kearifan Lokal di Era Transisi Pandemi”. Kategori tangkai seni tari pada kali ini yaitu tradisional kategori kreasi atau garapan tari yang berpijak dengan tradisi budaya Indonesia. Jumlah peserta dalam 1 kontingen yaitu 2 orang penari berpasangan tiap fakultas.",
     casen: true, 
   },
-  ,
-  {
-    title: "Band",
-    description: "Tangkai seni band adalah sebuah perlombaan seni band yang diikuti oleh perwakilan 3-6 orang dalam tiap fakultas di UGM. Pada Porsenigama 2022, tangkai seni band mengangkat tema \"Alunan Melodi Bangkitkan Gelora Kreasi\" yang mengusung kebangkitan semangat setelah adanya pandemi.",
-    casen: true,
-  },
   {
     title: "Z-Fest",
     description: "Tangkai seni band adalah sebuah perlombaan seni band yang diikuti oleh perwakilan 3-6 orang dalam tiap fakultas di UGM. Pada Porsenigama 2022, tangkai seni band mengangkat tema \"Alunan Melodi Bangkitkan Gelora Kreasi\" yang mengusung kebangkitan semangat setelah adanya pandemi.",
