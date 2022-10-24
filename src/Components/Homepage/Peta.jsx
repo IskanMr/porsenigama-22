@@ -29,17 +29,17 @@ const Peta = () => {
         </div>
         <img
           src={ExplodePetaKiri}
-          className="absolute -left-6 hidden lg:block bottom-12 transform scale-50 z-0"
+          className="absolute w-32 2xl:w-40 left-3 hidden lg:block top-72 z-0"
           alt=""
         />
         <img
           src={ExplodePetaKanan}
-          className="absolute -right-16 top-48 hidden lg:block transform scale-50"
+          className="absolute w-56 2xl:w-auto -right-10 bottom-32 hidden lg:block transform scale-50"
           alt=""
         />
         <img
           src={TigaBintangPeta}
-          className="absolute right-24 top-16 hidden lg:block transform scale-75"
+          className="absolute w-36 2xl:w-auto right-24 top-16 hidden lg:block transform scale-75"
           alt=""
         />
         <img
