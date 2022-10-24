@@ -1,6 +1,8 @@
 import { useState, useRef } from "react";
 import { caborList, casenList } from "../data/dataCabang";
 import { HtmlHead } from "../Components/HtmlHead";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import styled from "styled-components";
 import Logo from "../assets/images/cabang/Group 138.svg";
 import "../Components/Cabang/button.css";
@@ -19,6 +21,10 @@ const Cabang = () => {
   const content = useRef(null);
   const width = window.innerWidth;
 
+  AOS.init();
+  AOS.refresh();
+  AOS.refreshHard();
+
   return (
     <>
       <HtmlHead title="Cabang" decription="[insert page description]" />
@@ -33,7 +39,12 @@ const Cabang = () => {
           className="w-full absolute m-auto -bottom-14 425px:-bottom-20 sm:-bottom-20 md:-bottom-28 lg:-bottom-36 xl:-bottom-48 2xl:-bottom-60 pointer-events-none"
           alt="Robekan kertas"
         />
-        <div className="w-3/4 sm:w-3/5 md:w-full flex flex-col-reverse justify-center md:grid grid-cols-1 md:grid-cols-2 justify-items-center content-center mx-auto">
+        <div 
+          className="w-3/4 sm:w-3/5 md:w-full flex flex-col-reverse justify-center md:grid grid-cols-1 md:grid-cols-2 justify-items-center content-center mx-auto" 
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="200"
+        >
           <div className="hidden w-full md:grid justify-items-center content-center pt-5 md:pt-16 px-10 z-10 pointer-events-none m-auto">
             <img
               src={Cover}
@@ -84,7 +95,11 @@ const Cabang = () => {
         style={{ backgroundSize: "cover" }}
         ref={content}
       >
-        <div className="flex justify-center w-3/5 425px:w-1/2 sm:w-2/5 md:w-2/5 xl:w-1/3 pt-8 425px:pt-14 md:pt-20 my-8 sm:my-14 lg:my-14 xl:my-20 2xl:my-28 space-x-8 sm:space-x-14 lg:space-x-24">
+        <div 
+          className="flex justify-center w-3/5 425px:w-1/2 sm:w-2/5 md:w-2/5 xl:w-1/3 pt-8 425px:pt-14 md:pt-20 my-8 sm:my-14 lg:my-14 xl:my-20 2xl:my-28 space-x-8 sm:space-x-14 lg:space-x-24"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        >
           <button
             className="transform duration-200 transition-300 hover:scale-110"
             onClick={() => setList(caborList)}
@@ -106,7 +121,11 @@ const Cabang = () => {
             />
           </button>
         </div>
-        <div className="flex flex-wrap justify-center w-5/6 gap-x-10 md:gap-x-0 gap-y-10 lg:gap-y-14 xl:gap-y-20 pb-20">
+        <div 
+          className="flex flex-wrap justify-center w-5/6 gap-x-10 md:gap-x-0 gap-y-10 lg:gap-y-14 xl:gap-y-20 pb-20" 
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           {list.map((item) => (
             <a
               className="w-1/3 transform duration-200 transition-transform transition-300 hover:scale-110"
