@@ -79,7 +79,7 @@ const Logo = () => {
             <img
               src={LogoSection1}
               className="hidden md:block logo"
-              style={{ scale: "150%", transform: 'translate(-5%,0%)' }}
+              style={{ scale: "150%" }}
               alt=""
             />
           </div>

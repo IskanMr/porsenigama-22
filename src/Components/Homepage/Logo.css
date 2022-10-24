@@ -1,9 +1,11 @@
 @keyframes scaleUp {
   0% {
     transform: scale(0.3);
+    /* transform: translate(-5%, 0%); */
   }
   100% {
     transform: scale(1);
+    /* transform: translate(-5%, 0%); */
   }
 }
 
@@ -55,6 +57,7 @@
 .logo {
   animation: scaleUp 1s 0s ease-in-out alternate;
   -webkit-animation: scaleUp 1s 0s ease-in-out alternate;
+  padding-right: 40px;
 }
 
 .fadein {

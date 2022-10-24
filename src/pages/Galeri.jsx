@@ -86,7 +86,7 @@ const Galeri = () => {
                   className={`m-auto p-1 relative rounded-xl shadow green-900`}
                 >
                   <button
-                    className="md:text-4xl text-6xl text-white bg-merah absolute md:-top-8 -top-8 md:-right-4 -right-2 px-2 rounded-full overflow-hidden z-40"
+                    className="md:text-4xl text-3xl text-white bg-merah absolute md:-top-8 -top-8 md:-right-4 -right-2 px-2 rounded-full overflow-hidden z-40"
                     onClick={closeFoto}
                   >
                     <FontAwesomeIcon icon={faTimes} />
