@@ -192,13 +192,13 @@ const Tentang = () => {
         /> */}
         <img
           src={TigaBintangMobile}
-          className="absolute 425px:w-16 right-0 top-28 md:hidden"
+          className="absolute 425px:w-16 right-0 top-28 hidden"
           style={{ scale: "90%" }}
           alt=""
         />
         <img
           src={BintangKuningMobile}
-          className="absolute left-4 top-28 md:hidden"
+          className="absolute left-4 top-28 hidden"
           alt=""
         />
         <img
