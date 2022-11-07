@@ -23,6 +23,7 @@ module.exports = {
           "url('/src/assets/images/galeri/bg-isi-galeri-mobile.png')",
         "pattern-klasemen":
           "url('/src/assets/images/klasemen/bg-isi-klasemen-merah.png')",
+          "homepage-sponsor": "url('/src/assets/images/homepage/bg-sponsor.png')",
       },
       colors: {
         blue: "#48C0EE",
@@ -36,6 +37,7 @@ module.exports = {
         borderpeta: "#D9D9D9",
         textpeta: "#E41D21",
         hyperlink: "#3366CC",
+        sponsor: "#BEAE1D",
       },
       fontFamily: {
         display: ["Universal Serif", "system-ui", "sans-serif"],
@@ -63,7 +65,9 @@ module.exports = {
         "1/10": "10%",
         "1/20": "5%",
       },
-      boxShadow: {},
+      boxShadow: {
+        "sponsor": '12px 13px 4px rgba(0, 0, 0, 0.25)',
+      },
       borderRadius: {
         large: "5rem",
         medium: "3rem",
