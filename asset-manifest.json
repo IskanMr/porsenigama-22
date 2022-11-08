@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/2022/porsenigama/static/css/main.c6e37ae0.chunk.css",
-    "main.js": "/2022/porsenigama/static/js/main.58fb0b0f.chunk.js",
-    "main.js.map": "/2022/porsenigama/static/js/main.58fb0b0f.chunk.js.map",
+    "main.css": "/2022/porsenigama/static/css/main.c048871d.chunk.css",
+    "main.js": "/2022/porsenigama/static/js/main.9313127a.chunk.js",
+    "main.js.map": "/2022/porsenigama/static/js/main.9313127a.chunk.js.map",
     "runtime-main.js": "/2022/porsenigama/static/js/runtime-main.52f90992.js",
     "runtime-main.js.map": "/2022/porsenigama/static/js/runtime-main.52f90992.js.map",
     "static/css/2.615009a6.chunk.css": "/2022/porsenigama/static/css/2.615009a6.chunk.css",
-    "static/js/2.3e5b3086.chunk.js": "/2022/porsenigama/static/js/2.3e5b3086.chunk.js",
-    "static/js/2.3e5b3086.chunk.js.map": "/2022/porsenigama/static/js/2.3e5b3086.chunk.js.map",
+    "static/js/2.4650ed93.chunk.js": "/2022/porsenigama/static/js/2.4650ed93.chunk.js",
+    "static/js/2.4650ed93.chunk.js.map": "/2022/porsenigama/static/js/2.4650ed93.chunk.js.map",
     "index.html": "/2022/porsenigama/index.html",
     "static/css/2.615009a6.chunk.css.map": "/2022/porsenigama/static/css/2.615009a6.chunk.css.map",
-    "static/css/main.c6e37ae0.chunk.css.map": "/2022/porsenigama/static/css/main.c6e37ae0.chunk.css.map",
-    "static/js/2.3e5b3086.chunk.js.LICENSE.txt": "/2022/porsenigama/static/js/2.3e5b3086.chunk.js.LICENSE.txt",
+    "static/css/main.c048871d.chunk.css.map": "/2022/porsenigama/static/css/main.c048871d.chunk.css.map",
+    "static/js/2.4650ed93.chunk.js.LICENSE.txt": "/2022/porsenigama/static/js/2.4650ed93.chunk.js.LICENSE.txt",
+    "static/media/3-bintang-sponsor.fd3b9152.png": "/2022/porsenigama/static/media/3-bintang-sponsor.fd3b9152.png",
     "static/media/index.css": "/2022/porsenigama/static/media/slick.c94f7671.ttf",
     "static/media/Cover Mobile.d4ce3728.png": "/2022/porsenigama/static/media/Cover Mobile.d4ce3728.png",
     "static/media/Cover.243f1074.png": "/2022/porsenigama/static/media/Cover.243f1074.png",
@@ -32,6 +33,8 @@
     "static/media/border-inporse-section-3.e581dcd3.png": "/2022/porsenigama/static/media/border-inporse-section-3.e581dcd3.png",
     "static/media/border-lomba-mobile.1474e3ee.png": "/2022/porsenigama/static/media/border-lomba-mobile.1474e3ee.png",
     "static/media/border-lomba.c668e287.png": "/2022/porsenigama/static/media/border-lomba.c668e287.png",
+    "static/media/border-sponsor-mobile.9f377552.png": "/2022/porsenigama/static/media/border-sponsor-mobile.9f377552.png",
+    "static/media/border-sponsor.57576c9b.png": "/2022/porsenigama/static/media/border-sponsor.57576c9b.png",
     "static/media/chevron-up.564f0b35.svg": "/2022/porsenigama/static/media/chevron-up.564f0b35.svg",
     "static/media/explode-kecil-lomba.1b484d21.png": "/2022/porsenigama/static/media/explode-kecil-lomba.1b484d21.png",
     "static/media/explode-peta-kiri.512e2292.png": "/2022/porsenigama/static/media/explode-peta-kiri.512e2292.png",
@@ -48,6 +51,7 @@
     "static/media/list.b8fa93e0.svg": "/2022/porsenigama/static/media/list.b8fa93e0.svg",
     "static/media/logo-section-1-mobile.d4ce3728.png": "/2022/porsenigama/static/media/logo-section-1-mobile.d4ce3728.png",
     "static/media/logo-section-1.9e2d0edb.gif": "/2022/porsenigama/static/media/logo-section-1.9e2d0edb.gif",
+    "static/media/logo-telkomsel.2ef2df36.png": "/2022/porsenigama/static/media/logo-telkomsel.2ef2df36.png",
     "static/media/olahraga-lomba.32d19929.png": "/2022/porsenigama/static/media/olahraga-lomba.32d19929.png",
     "static/media/paper-kanan-section-3.b56bc45d.png": "/2022/porsenigama/static/media/paper-kanan-section-3.b56bc45d.png",
     "static/media/paper-kiri-section-3.24dce144.png": "/2022/porsenigama/static/media/paper-kiri-section-3.24dce144.png",
@@ -58,7 +62,7 @@
     "static/media/rip-paper-mobile.d8090128.png": "/2022/porsenigama/static/media/rip-paper-mobile.d8090128.png",
     "static/media/rip-paper-peta-kanan.3bd8bb5c.png": "/2022/porsenigama/static/media/rip-paper-peta-kanan.3bd8bb5c.png",
     "static/media/rip-paper-peta-kiri.1f8acb21.png": "/2022/porsenigama/static/media/rip-paper-peta-kiri.1f8acb21.png",
-    "static/media/search-purp.d3e35e90.svg": "/2022/porsenigama/static/media/search-purp.d3e35e90.svg",
+    "static/media/search-purp.579981ed.svg": "/2022/porsenigama/static/media/search-purp.579981ed.svg",
     "static/media/seni-lomba.3870c8ee.png": "/2022/porsenigama/static/media/seni-lomba.3870c8ee.png",
     "static/media/teks-galeri-mobile.9b6acc3f.png": "/2022/porsenigama/static/media/teks-galeri-mobile.9b6acc3f.png",
     "static/media/teks-galeri.fad23e1d.png": "/2022/porsenigama/static/media/teks-galeri.fad23e1d.png",
@@ -75,8 +79,8 @@
   "entrypoints": [
     "static/js/runtime-main.52f90992.js",
     "static/css/2.615009a6.chunk.css",
-    "static/js/2.3e5b3086.chunk.js",
-    "static/css/main.c6e37ae0.chunk.css",
-    "static/js/main.58fb0b0f.chunk.js"
+    "static/js/2.4650ed93.chunk.js",
+    "static/css/main.c048871d.chunk.css",
+    "static/js/main.9313127a.chunk.js"
   ]
 }
