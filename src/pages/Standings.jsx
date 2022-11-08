@@ -315,6 +315,9 @@ const Standings = () => {
             <table className="text-xs lg:text-sm md:text-base xl:text-xl z-30 md:text-fivevh xl:mx-60 m-auto md:table-fixed md:w-full mt-4 md:mx-20 md:my-32 sm:mt-20">
               <thead>
                 <tr>
+                  <th className="lg:py-2 lg:mx-10 border-2 md:border-4 border-black text-xs lg:text-fivevh xl:text-lg lg:text-xs md:text-base p-1 md:w-1/10">
+                    Rank
+                  </th>
                   <th className="lg:mx-5 lg:py-2 border-2 md:border-4 border-black xl:w-3/5 mx-2">
                     Fakultas
                   </th>
@@ -359,6 +362,9 @@ const Standings = () => {
                     <tbody>
                       {standingsData.map((faculty, index) => (
                         <tr key={faculty.name}>
+                          <td className="px-2 py-4 border-2 md:border-4 border-black font-sansPro font-medium">
+                            {index + 1}
+                          </td>
                           <td className="px-2 py-4 border-2 md:border-4 text-left border-black font-sansPro font-medium">
                             {faculty.name}
                           </td>
@@ -383,6 +389,9 @@ const Standings = () => {
                     <tbody>
                       {standingsData.map((faculty, index) => (
                         <tr key={faculty.name}>
+                          <td className="px-2 py-4 border-2 md:border-4 border-black font-sansPro font-medium">
+                            {index + 1}
+                          </td>
                           <td className="px-2 py-4 border-2 md:border-4 text-left border-black font-sansPro font-medium">
                             {faculty.name}
                           </td>
