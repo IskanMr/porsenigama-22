@@ -10,8 +10,16 @@ const Sponsor = () => {
       <div className="bg-homepage-sponsor relative py-20 lg:py-36 z-20">
         <div className="bg-sponsor w-3/4 mx-auto rounded-medium bg-opacity-50 filter shadow-sponsor z-20 relative">
           <div className="py-6">
-            <img src={BorderSponsor} className="mx-auto lg:block hidden" alt="" />
-            <img src={BorderSponsorMobile} className="mx-auto lg:hidden" alt="" />
+            <img 
+              src={BorderSponsor} 
+              className="mx-auto lg:block hidden" 
+              alt="Dekorasi kertas" 
+            />
+            <img 
+              src={BorderSponsorMobile} 
+              className="mx-auto lg:hidden" 
+              alt="Dekorasi kertas" 
+            />
             <p
               className="lg:text-3xl text-2xl text-red lg:text-inporse font-universalserif absolute"
               style={{
@@ -22,13 +30,24 @@ const Sponsor = () => {
               SPONSOR
             </p>
             <div className="lg:w-1/2 lg:h-1/2 lg:p-10 p-10 mx-auto">
-              <img src={LogoTelkomsel} alt="" />
+              <img 
+                src={LogoTelkomsel} 
+                alt="Logo Telkomsel" 
+              />
             </div>
           </div>
         </div>
         <div className="relative">
-          <img src={TigaBintang} className="lg:block absolute bottom-56 left-0 z-30 hidden" alt="" />
-          <img src={Kembang} className="lg:block absolute -bottom-32 left-96 z-0 hidden" alt="" />
+          <img 
+            src={TigaBintang} 
+            className="hidden lg:block absolute w-44 xl:w-48 2xl:w-56 bottom-64 2xl:bottom-64 left-0 z-30" 
+            alt="Dekorasi tiga bintang" 
+          />
+          <img 
+            src={Kembang} 
+            className="hidden lg:block absolute w-28 xl:w-32 2xl:w-36 -bottom-20 right-32 2xl:right- z-0" 
+            alt="Dekorasi" 
+          />
         </div>
       </div>
     </>
